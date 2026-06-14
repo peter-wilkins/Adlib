@@ -152,7 +152,9 @@ def elevenlabs_asset(data: dict[str, Any]) -> AudioAsset | None:
             data.get("takeSlug"),
             data.get("voiceProfile"),
             data.get("voiceRole"),
+            data.get("testStatus"),
             voice,
+            *quality_gate_tags(data),
         ]
     )
     media_url = copy_media(original, asset_id, sha)
@@ -178,7 +180,7 @@ def elevenlabs_asset(data: dict[str, Any]) -> AudioAsset | None:
         reaper_path=str(data.get("reaperAssetPath") or original),
         media_url=media_url,
         sha256=sha,
-        notes=response_notes(data),
+        notes=elevenlabs_notes(data),
         created_at=created_at,
         search_text="",
     )
@@ -1090,6 +1092,10 @@ def campaign_from_parts(parts: list[str]) -> str:
     return ""
 
 
+def elevenlabs_notes(data: dict[str, Any]) -> str:
+    return "; ".join(bit for bit in (response_notes(data), quality_gate_notes(data)) if bit)
+
+
 def response_notes(data: dict[str, Any]) -> str:
     headers = data.get("responseHeaders") or (data.get("responseMeta") or {}).get("headers") or {}
     bits = []
@@ -1097,6 +1103,54 @@ def response_notes(data: dict[str, Any]) -> str:
         if headers.get(key):
             bits.append(f"{key}={headers[key]}")
     return "; ".join(bits)
+
+
+def quality_gate_tags(data: dict[str, Any]) -> list[str]:
+    preflight = technical_preflight(data)
+    if not preflight:
+        return []
+    drift = preflight.get("scriptDrift") if isinstance(preflight.get("scriptDrift"), dict) else {}
+    transcription = preflight.get("transcription") if isinstance(preflight.get("transcription"), dict) else {}
+    backend = transcription.get("backend") if isinstance(transcription.get("backend"), dict) else {}
+    return unique_tags(
+        [
+            "quality-gate",
+            "technical-preflight",
+            preflight.get("status"),
+            drift.get("status"),
+            backend.get("provider"),
+            backend.get("processorId"),
+        ]
+    )
+
+
+def quality_gate_notes(data: dict[str, Any]) -> str:
+    preflight = technical_preflight(data)
+    if not preflight:
+        return ""
+    drift = preflight.get("scriptDrift") if isinstance(preflight.get("scriptDrift"), dict) else {}
+    transcription = preflight.get("transcription") if isinstance(preflight.get("transcription"), dict) else {}
+    backend = transcription.get("backend") if isinstance(transcription.get("backend"), dict) else {}
+    bits = [
+        f"preflight={preflight.get('status')}",
+        f"script-drift={drift.get('status')}",
+    ]
+    if backend.get("processorId"):
+        bits.append(f"transcriber={backend.get('processorId')}")
+    if drift.get("extra_leading_words"):
+        bits.append("trim-leading=" + " ".join(str(word) for word in drift["extra_leading_words"]))
+    transcript = transcription.get("postProcessedText") or transcription.get("text")
+    if transcript:
+        bits.append(f"transcript={transcript}")
+    return "; ".join(bit for bit in bits if bit and not bit.endswith("=None"))
+
+
+def technical_preflight(data: dict[str, Any]) -> dict[str, Any] | None:
+    gate = data.get("qualityGate")
+    if not isinstance(gate, dict):
+        return None
+    preflight = gate.get("technicalPreflight")
+    return preflight if isinstance(preflight, dict) else None
 
 
 def duration_for(path: Path) -> float | None:

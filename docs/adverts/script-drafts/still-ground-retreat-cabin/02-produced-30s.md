@@ -6,13 +6,13 @@ Audience: people who need silence, digital detox, writing time, or solo practice
 Goal: qualified enquiry, not mass tourism
 Claim posture: current truth from Still Ground website
 Source: https://stillground.co.uk/retreatcottage/
-URL: https://retreat.stillground.co.uk
+URL: https://stillground.co.uk
 
 ## Script
 
 Some places are not trying to entertain you.
 
-The Retreat is a tiny private cabin near Aylsham in rural Norfolk, for one guest
+The Retreat is a tiny private cabin in rural Norfolk, for one guest
 at a time.
 
 No WiFi. No television. Limited phone signal. A half-acre garden, farmland,
@@ -25,7 +25,7 @@ The Retreat at Still Ground.
 
 A space that holds you.
 
-Go to retreat.stillground.co.uk.
+Go to stillground.co.uk.
 
 ## Notes
 

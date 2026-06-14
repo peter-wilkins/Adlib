@@ -6,13 +6,13 @@ Audience: meditation beginners, stressed professionals, people in transition
 Goal: enquiry for private teaching weekend
 Claim posture: current truth from Still Ground website
 Source: https://stillground.co.uk/learn-to-meditate/
-URL: https://meditate.stillground.co.uk
+URL: https://stillground.co.uk
 
 ## Script
 
 You do not need to perform calm in a room full of strangers.
 
-At Still Ground in Aylsham, Jane offers a private weekend introduction to
+At Still Ground in North Norfolk, Jane offers a private weekend introduction to
 meditation for one guest at a time.
 
 Buddhist-informed, but without doctrine or dogma. No beliefs required. No
@@ -25,7 +25,7 @@ Learn to meditate in a weekend.
 
 Still Ground. Begin properly.
 
-Go to meditate.stillground.co.uk.
+Go to stillground.co.uk.
 
 ## Notes
 

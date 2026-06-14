@@ -219,6 +219,9 @@ def write_outputs(
         "responseHeaders": headers,
         "testStatus": "needs_audition",
     }
+    for optional_key in ("assetKind", "sourceDraft", "title"):
+        if optional_key in task:
+            metadata[optional_key] = task[optional_key]
     meta_path.write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
     return {
         "rawAudioPath": str(raw_path),

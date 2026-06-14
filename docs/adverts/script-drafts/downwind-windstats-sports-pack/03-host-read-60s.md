@@ -6,7 +6,7 @@ Audience: downwind riders, wingfoil viewers, technical sports fans
 Goal: create repeatable phrases for extreme-sports edits
 Claim posture: current truth plus vision trailer
 Source: `/home/peter/windstats/AGENT-HANDOFF.md`
-URL: https://windstats.continuumkit.org
+URL: https://downwind.continuumkit.org
 
 ## Mandatory Copy Points
 
@@ -14,8 +14,8 @@ URL: https://windstats.continuumkit.org
 - Validate conditions before critical decisions.
 - Current Windstats direction is about portable wind reporting and source comparison.
 - Live synced telemetry is vision language until proven.
-- Family line: `Windstats. Part of the Continuum family.`
-- URL: `windstats.continuumkit.org`.
+- Family line: `Part of the Continuum family.`
+- URL: `downwind.continuumkit.org`.
 
 ## Sting Bank
 
@@ -47,6 +47,6 @@ Then foil up.
 
 Let's downwind.
 
-Windstats. Part of the Continuum family.
+Part of the Continuum family.
 
-Go to windstats.continuumkit.org.
+Go to downwind.continuumkit.org.

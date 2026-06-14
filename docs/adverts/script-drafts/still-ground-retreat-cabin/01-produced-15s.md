@@ -6,7 +6,7 @@ Audience: solo retreat seekers, meditators, burned-out professionals, writers
 Goal: enquiry for a solo cabin stay
 Claim posture: current truth from Still Ground website
 Source: https://stillground.co.uk/retreatcottage/
-URL: https://retreat.stillground.co.uk
+URL: https://stillground.co.uk
 
 ## Script
 
@@ -17,7 +17,7 @@ The Retreat at Still Ground.
 
 A space that holds you.
 
-Go to retreat.stillground.co.uk.
+Go to stillground.co.uk.
 
 ## Notes
 

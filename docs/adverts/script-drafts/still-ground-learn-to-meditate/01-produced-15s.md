@@ -6,19 +6,19 @@ Audience: complete beginners and people failed by apps or group classes
 Goal: enquiry for private meditation weekend
 Claim posture: current truth from Still Ground website
 Source: https://stillground.co.uk/learn-to-meditate/
-URL: https://meditate.stillground.co.uk
+URL: https://stillground.co.uk
 
 ## Script
 
 If meditation apps never quite worked for you, try learning with a real person.
 
-A private weekend at Still Ground in Aylsham.
+A private weekend at Still Ground in North Norfolk.
 
 One guest. One teacher. No doctrine, no dogma.
 
 Leave with a practice that fits your actual life.
 
-Go to meditate.stillground.co.uk.
+Go to stillground.co.uk.
 
 ## Notes
 

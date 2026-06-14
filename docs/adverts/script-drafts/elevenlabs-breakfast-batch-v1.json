@@ -1,0 +1,2568 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "script_drafts_breakfast_batch",
+  "scriptVersion": "breakfast-batch-v1",
+  "campaign": "script-draft-breakfast-batch-20260614",
+  "productTruth": [
+    "docs/product-truths/2026-06-02-audio-advert-generator.md",
+    "docs/product-truths/2026-06-02-jobdone.md",
+    "docs/product-truths/2026-06-02-regenerative-ai-water-broadcast.md"
+  ],
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter approved generating these advert drafts with ElevenLabs on 2026-06-14 and said not to worry about spending credits because time is the enemy. Generate exact spoken text only, with dotted spoken URLs and no https or slash wording.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "narrator_lily": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Default proven narrator from existing AdLib adverts; calm, warm, lightly aspirational",
+      "defaultSettings": {
+        "stability": 0.44,
+        "similarity_boost": 0.82,
+        "style": 0.28,
+        "speed": 0.98,
+        "use_speaker_boost": true
+      }
+    },
+    "yorkshire_david": {
+      "voiceId": "8KgifH3usc0tJtr7QzP4",
+      "voiceName": "David - Yorkshire Warm, Trustworthy",
+      "role": "Selected JobDone Yorkshire tradesperson voice",
+      "defaultSettings": {
+        "stability": 0.32,
+        "similarity_boost": 0.82,
+        "style": 0.48,
+        "use_speaker_boost": true
+      }
+    },
+    "chris_sport": {
+      "voiceId": "iP95p4xoKVk53GoZ742B",
+      "voiceName": "Chris - Charming, Down-to-Earth",
+      "role": "Playful male voice for downwind stings and sports edit reads",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.78,
+        "style": 0.5,
+        "speed": 1.03,
+        "use_speaker_boost": true
+      }
+    },
+    "daniel_field": {
+      "voiceId": "onwK4e9ZLuTAKqWW03F9",
+      "voiceName": "Daniel - Steady Broadcaster",
+      "role": "Steady male voice for Field Relay technical/outdoor explanation",
+      "defaultSettings": {
+        "stability": 0.4,
+        "similarity_boost": 0.8,
+        "style": 0.34,
+        "speed": 0.99,
+        "use_speaker_boost": true
+      }
+    },
+    "river_water": {
+      "voiceId": "SAz9YHcvj6GT2YYXdXww",
+      "voiceName": "River - Relaxed, Neutral, Informative",
+      "role": "Grounded informational voice for water/restoration material",
+      "defaultSettings": {
+        "stability": 0.66,
+        "similarity_boost": 0.8,
+        "style": 0.1,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "adlib_product_service_pack_01_produced_15s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-15s/complete",
+      "text": "Got the docs, but no advert?\n\nAdLib turns product notes into quick, cheap, good-enough audio advert drafts you can test.\n\nAdLib.\n\nDocs to audio advert.\n\nPart of the Continuum family.\n\nGo to adlib.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/01-produced-15s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "AdLib Product Service Pack - Produced 15s"
+    },
+    {
+      "assetId": "adlib_product_service_pack_01_produced_15s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-15s/blocks",
+      "text": "Got the docs, but no advert?",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Produced 15s block 01"
+    },
+    {
+      "assetId": "adlib_product_service_pack_01_produced_15s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-15s/blocks",
+      "text": "AdLib turns product notes into quick, cheap, good-enough audio advert drafts you can test.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Produced 15s block 02"
+    },
+    {
+      "assetId": "adlib_product_service_pack_01_produced_15s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-15s/blocks",
+      "text": "AdLib.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Produced 15s block 03"
+    },
+    {
+      "assetId": "adlib_product_service_pack_01_produced_15s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-15s/blocks",
+      "text": "Docs to audio advert.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Produced 15s block 04"
+    },
+    {
+      "assetId": "adlib_product_service_pack_01_produced_15s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-15s/blocks",
+      "text": "Part of the Continuum family.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Produced 15s block 05"
+    },
+    {
+      "assetId": "adlib_product_service_pack_01_produced_15s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-15s/blocks",
+      "text": "Go to adlib.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Produced 15s block 06"
+    },
+    {
+      "assetId": "adlib_product_service_pack_02_produced_30s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-30s/complete",
+      "text": "You do not need a full studio day to find out whether the message works.\n\nAdLib turns docs into audio advert drafts: fast scripts, reusable voice assets, simple checks, and a searchable library of what was made.\n\nThe point is not perfect polish on the first pass. It is getting the message clear enough to hear, share, revise, and test without wasting a production budget.\n\nAdLib. Docs to audio advert.\n\nPart of the Continuum family.\n\nJoin the mailing list at adlib.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/02-produced-30s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "AdLib Product Service Pack - Produced 30s"
+    },
+    {
+      "assetId": "adlib_product_service_pack_02_produced_30s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-30s/blocks",
+      "text": "You do not need a full studio day to find out whether the message works.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Produced 30s block 01"
+    },
+    {
+      "assetId": "adlib_product_service_pack_02_produced_30s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-30s/blocks",
+      "text": "AdLib turns docs into audio advert drafts: fast scripts, reusable voice assets, simple checks, and a searchable library of what was made.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Produced 30s block 02"
+    },
+    {
+      "assetId": "adlib_product_service_pack_02_produced_30s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-30s/blocks",
+      "text": "The point is not perfect polish on the first pass. It is getting the message clear enough to hear, share, revise, and test without wasting a production budget.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Produced 30s block 03"
+    },
+    {
+      "assetId": "adlib_product_service_pack_02_produced_30s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-30s/blocks",
+      "text": "AdLib. Docs to audio advert.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Produced 30s block 04"
+    },
+    {
+      "assetId": "adlib_product_service_pack_02_produced_30s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-30s/blocks",
+      "text": "Part of the Continuum family.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Produced 30s block 05"
+    },
+    {
+      "assetId": "adlib_product_service_pack_02_produced_30s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/produced-30s/blocks",
+      "text": "Join the mailing list at adlib.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Produced 30s block 06"
+    },
+    {
+      "assetId": "adlib_product_service_pack_03_host_read_60s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/host-read-60s/complete",
+      "text": "AdLib is for the moment when the product is real enough to explain, but not polished enough to justify a whole studio process.\n\nYou already have the raw material: docs, notes, product truths, half-written pitches, and a sense of who the thing is for.\n\nAdLib turns that into audio advert drafts: short scripts, host-read versions, small reusable voice assets, rough renders, and a searchable record of what was made.\n\nThe selling point is speed and cost. Not final-agency polish on day one. Good enough to hear the message, spot what is weak, make another version, and keep the useful pieces for later.\n\nIt also keeps the boring evidence: what script was used, what voice asset was made, what passed, what failed, and where to find it again.\n\nAdLib. Docs to audio advert.\n\nAdLib is part of the Continuum family.\n\nIf you would be interested in this kind of product, join the mailing list at adlib.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/03-host-read-60s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "AdLib Product Service Pack - Host Read 60s"
+    },
+    {
+      "assetId": "adlib_product_service_pack_03_host_read_60s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/host-read-60s/blocks",
+      "text": "AdLib is for the moment when the product is real enough to explain, but not polished enough to justify a whole studio process.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Host Read 60s block 01"
+    },
+    {
+      "assetId": "adlib_product_service_pack_03_host_read_60s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/host-read-60s/blocks",
+      "text": "You already have the raw material: docs, notes, product truths, half-written pitches, and a sense of who the thing is for.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Host Read 60s block 02"
+    },
+    {
+      "assetId": "adlib_product_service_pack_03_host_read_60s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/host-read-60s/blocks",
+      "text": "AdLib turns that into audio advert drafts: short scripts, host-read versions, small reusable voice assets, rough renders, and a searchable record of what was made.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Host Read 60s block 03"
+    },
+    {
+      "assetId": "adlib_product_service_pack_03_host_read_60s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/host-read-60s/blocks",
+      "text": "The selling point is speed and cost. Not final-agency polish on day one. Good enough to hear the message, spot what is weak, make another version, and keep the useful pieces for later.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Host Read 60s block 04"
+    },
+    {
+      "assetId": "adlib_product_service_pack_03_host_read_60s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/host-read-60s/blocks",
+      "text": "It also keeps the boring evidence: what script was used, what voice asset was made, what passed, what failed, and where to find it again.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Host Read 60s block 05"
+    },
+    {
+      "assetId": "adlib_product_service_pack_03_host_read_60s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/host-read-60s/blocks",
+      "text": "AdLib. Docs to audio advert.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Host Read 60s block 06"
+    },
+    {
+      "assetId": "adlib_product_service_pack_03_host_read_60s_block_07",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/host-read-60s/blocks",
+      "text": "AdLib is part of the Continuum family.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Host Read 60s block 07"
+    },
+    {
+      "assetId": "adlib_product_service_pack_03_host_read_60s_block_08",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/adlib-product-service-pack/host-read-60s/blocks",
+      "text": "If you would be interested in this kind of product, join the mailing list at adlib.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/adlib-product-service-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "AdLib Product Service Pack - Host Read 60s block 08"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_01_produced_15s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-15s/complete",
+      "text": "Water writes the first draft of every landscape.\n\nCheckdam follows the clues: soil, slope, plants, flow, and failure.\n\nField notes, not final design advice.\n\nRestore the water. Restore the land.\n\nGo to checkdam.org.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/01-produced-15s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Checkdam Living Water Visit Pack - Produced 15s"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_01_produced_15s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-15s/blocks",
+      "text": "Water writes the first draft of every landscape.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Produced 15s block 01"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_01_produced_15s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-15s/blocks",
+      "text": "Checkdam follows the clues: soil, slope, plants, flow, and failure.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Produced 15s block 02"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_01_produced_15s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-15s/blocks",
+      "text": "Field notes, not final design advice.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Produced 15s block 03"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_01_produced_15s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-15s/blocks",
+      "text": "Restore the water. Restore the land.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Produced 15s block 04"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_01_produced_15s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-15s/blocks",
+      "text": "Go to checkdam.org.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Produced 15s block 05"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_02_produced_30s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-30s/complete",
+      "text": "Before anyone draws a plan, the land has already started speaking.\n\nWhere does the water rush away? Where does it pause? Where is the soil bare, wet, cracked, or quietly recovering?\n\nCheckdam visit videos are field notes from water-cycle restoration work: watching, asking, measuring, and learning before we claim answers.\n\nNot final design advice. Not miracle language.\n\nJust practical attention to water, land, and what might help them heal.\n\nCheckdam. Restore the water. Restore the land.\n\nGo to checkdam.org.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/02-produced-30s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Checkdam Living Water Visit Pack - Produced 30s"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_02_produced_30s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-30s/blocks",
+      "text": "Before anyone draws a plan, the land has already started speaking.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Produced 30s block 01"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_02_produced_30s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-30s/blocks",
+      "text": "Where does the water rush away? Where does it pause? Where is the soil bare, wet, cracked, or quietly recovering?",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Produced 30s block 02"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_02_produced_30s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-30s/blocks",
+      "text": "Checkdam visit videos are field notes from water-cycle restoration work: watching, asking, measuring, and learning before we claim answers.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Produced 30s block 03"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_02_produced_30s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-30s/blocks",
+      "text": "Not final design advice. Not miracle language.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Produced 30s block 04"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_02_produced_30s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-30s/blocks",
+      "text": "Just practical attention to water, land, and what might help them heal.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Produced 30s block 05"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_02_produced_30s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-30s/blocks",
+      "text": "Checkdam. Restore the water. Restore the land.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Produced 30s block 06"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_02_produced_30s_block_07",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/produced-30s/blocks",
+      "text": "Go to checkdam.org.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Produced 30s block 07"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_03_host_read_60s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/host-read-60s/complete",
+      "text": "This visit is about learning to read water in a place.\n\nWe are looking for the small evidence: where rain leaves too fast, where soil is exposed, where a hollow wants to hold moisture, where a track or ditch is accidentally moving water in the wrong direction.\n\nCheckdam's work is about practical water retention: slowing, spreading, sinking, and storing water in ways that suit the land. That can include check dams, infiltration features, earth-integrated water bodies, and designs that change as the site teaches us more.\n\nThis video is not final design advice. It is a field note: part observation, part explanation, part invitation.\n\nThe bigger vision is simple. If AI gives us leverage, some of that leverage should go into visible repair: water in the land, life in the soil, and evidence we are willing to show.\n\nCheckdam. Restore the water. Restore the land.\n\nGo to checkdam.org.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/03-host-read-60s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Checkdam Living Water Visit Pack - Host Read 60s"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_03_host_read_60s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/host-read-60s/blocks",
+      "text": "This visit is about learning to read water in a place.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Host Read 60s block 01"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_03_host_read_60s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/host-read-60s/blocks",
+      "text": "We are looking for the small evidence: where rain leaves too fast, where soil is exposed, where a hollow wants to hold moisture, where a track or ditch is accidentally moving water in the wrong direction.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Host Read 60s block 02"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_03_host_read_60s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/host-read-60s/blocks",
+      "text": "Checkdam's work is about practical water retention: slowing, spreading, sinking, and storing water in ways that suit the land. That can include check dams, infiltration features, earth-integrated water bodies, and designs that change as the site teaches us more.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Host Read 60s block 03"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_03_host_read_60s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/host-read-60s/blocks",
+      "text": "This video is not final design advice. It is a field note: part observation, part explanation, part invitation.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Host Read 60s block 04"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_03_host_read_60s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/host-read-60s/blocks",
+      "text": "The bigger vision is simple. If AI gives us leverage, some of that leverage should go into visible repair: water in the land, life in the soil, and evidence we are willing to show.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Host Read 60s block 05"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_03_host_read_60s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/host-read-60s/blocks",
+      "text": "Checkdam. Restore the water. Restore the land.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Host Read 60s block 06"
+    },
+    {
+      "assetId": "checkdam_living_water_visit_video_pack_03_host_read_60s_block_07",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/checkdam-living-water-visit-video-pack/host-read-60s/blocks",
+      "text": "Go to checkdam.org.",
+      "voiceProfiles": [
+        "river_water"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/checkdam-living-water-visit-video-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Checkdam Living Water Visit Pack - Host Read 60s block 07"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_01_produced_15s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-15s/complete",
+      "text": "Chat helps you think.\n\nContinuum helps you continue thinking.\n\nYour thoughts become threads. The source stays recoverable. The context comes back when you need it.\n\nContinuum.\n\nPreserve the thread.\n\nGo to continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/01-produced-15s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Continuum Brand Trailer - Produced 15s"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_01_produced_15s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-15s/blocks",
+      "text": "Chat helps you think.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 15s block 01"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_01_produced_15s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-15s/blocks",
+      "text": "Continuum helps you continue thinking.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 15s block 02"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_01_produced_15s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-15s/blocks",
+      "text": "Your thoughts become threads. The source stays recoverable. The context comes back when you need it.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 15s block 03"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_01_produced_15s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-15s/blocks",
+      "text": "Continuum.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 15s block 04"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_01_produced_15s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-15s/blocks",
+      "text": "Preserve the thread.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 15s block 05"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_01_produced_15s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-15s/blocks",
+      "text": "Go to continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 15s block 06"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_02_produced_30s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-30s/complete",
+      "text": "You know the feeling.\n\nYou already thought about this. You solved part of it. You made a decision.\n\nBut now it is buried in a chat, a note, a repo, a tab, or your own exhausted memory.\n\nContinuum is built around continuity of thought: spoken captures, append-only source history, and context that can be restored when the thread matters again.\n\nNot another dashboard. Not another chatbot.\n\nA memory surface for work that keeps coming back.\n\nContinuum. Preserve the thread.\n\nGo to continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/02-produced-30s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Continuum Brand Trailer - Produced 30s"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_02_produced_30s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-30s/blocks",
+      "text": "You know the feeling.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 30s block 01"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_02_produced_30s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-30s/blocks",
+      "text": "You already thought about this. You solved part of it. You made a decision.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 30s block 02"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_02_produced_30s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-30s/blocks",
+      "text": "But now it is buried in a chat, a note, a repo, a tab, or your own exhausted memory.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 30s block 03"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_02_produced_30s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-30s/blocks",
+      "text": "Continuum is built around continuity of thought: spoken captures, append-only source history, and context that can be restored when the thread matters again.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 30s block 04"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_02_produced_30s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-30s/blocks",
+      "text": "Not another dashboard. Not another chatbot.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 30s block 05"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_02_produced_30s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-30s/blocks",
+      "text": "A memory surface for work that keeps coming back.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 30s block 06"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_02_produced_30s_block_07",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-30s/blocks",
+      "text": "Continuum. Preserve the thread.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 30s block 07"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_02_produced_30s_block_08",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/produced-30s/blocks",
+      "text": "Go to continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Produced 30s block 08"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_03_host_read_60s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/host-read-60s/complete",
+      "text": "The problem with AI chat is not that it cannot help you think. It can.\n\nThe problem is what happens next week, when you know you had the thought, but you cannot find the thread anymore.\n\nContinuum is a product direction built around continuity of thought. Instead of forcing you to manage folders, dashboards, labels, and half-remembered chat titles, the idea is to preserve the source history and help you re-enter the right mental context quickly.\n\nEvery capture becomes part of an append-only event stream. The AI can summarise, connect, annotate, and surface context, but the source remains recoverable.\n\nThat is the emotional promise: less reconstruction, less continuity anxiety, more momentum restored.\n\nChat helps you think. Continuum helps you continue thinking.\n\nContinuum. Preserve the thread.\n\nGo to continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/03-host-read-60s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Continuum Brand Trailer - Host Read 60s"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_03_host_read_60s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/host-read-60s/blocks",
+      "text": "The problem with AI chat is not that it cannot help you think. It can.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Host Read 60s block 01"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_03_host_read_60s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/host-read-60s/blocks",
+      "text": "The problem is what happens next week, when you know you had the thought, but you cannot find the thread anymore.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Host Read 60s block 02"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_03_host_read_60s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/host-read-60s/blocks",
+      "text": "Continuum is a product direction built around continuity of thought. Instead of forcing you to manage folders, dashboards, labels, and half-remembered chat titles, the idea is to preserve the source history and help you re-enter the right mental context quickly.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Host Read 60s block 03"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_03_host_read_60s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/host-read-60s/blocks",
+      "text": "Every capture becomes part of an append-only event stream. The AI can summarise, connect, annotate, and surface context, but the source remains recoverable.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Host Read 60s block 04"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_03_host_read_60s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/host-read-60s/blocks",
+      "text": "That is the emotional promise: less reconstruction, less continuity anxiety, more momentum restored.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Host Read 60s block 05"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_03_host_read_60s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/host-read-60s/blocks",
+      "text": "Chat helps you think. Continuum helps you continue thinking.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Host Read 60s block 06"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_03_host_read_60s_block_07",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/host-read-60s/blocks",
+      "text": "Continuum. Preserve the thread.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Host Read 60s block 07"
+    },
+    {
+      "assetId": "continuum_brand_trailer_pack_03_host_read_60s_block_08",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-brand-trailer-pack/host-read-60s/blocks",
+      "text": "Go to continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/continuum-brand-trailer-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Continuum Brand Trailer - Host Read 60s block 08"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_01_produced_15s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-15s/complete",
+      "text": "Wind's on.\n\nBoards down.\n\nFoils up.\n\nIt's gripped.\n\nLet's downwind.\n\nPart of the Continuum family.\n\nGo to downwind.continuumkit.org.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/01-produced-15s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Downwind Windstats Sports Pack - Produced 15s"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_01_produced_15s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-15s/blocks",
+      "text": "Wind's on.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 15s block 01"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_01_produced_15s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-15s/blocks",
+      "text": "Boards down.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 15s block 02"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_01_produced_15s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-15s/blocks",
+      "text": "Foils up.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 15s block 03"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_01_produced_15s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-15s/blocks",
+      "text": "It's gripped.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 15s block 04"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_01_produced_15s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-15s/blocks",
+      "text": "Let's downwind.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 15s block 05"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_01_produced_15s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-15s/blocks",
+      "text": "Part of the Continuum family.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 15s block 06"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_01_produced_15s_block_07",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-15s/blocks",
+      "text": "Go to downwind.continuumkit.org.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 15s block 07"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_02_produced_30s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-30s/complete",
+      "text": "Oil for the foil.\n\nGrip it and rip it.\n\nSend the harbour.\n\nFoil up.\n\nRun the line.\n\nStack the speed.\n\nReplay the wobble.\n\nLaugh at the splash.\n\nLet's downwind.\n\nPart of the Continuum family.\n\nGo to downwind.continuumkit.org.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/02-produced-30s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Downwind Windstats Sports Pack - Produced 30s"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_02_produced_30s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-30s/blocks",
+      "text": "Oil for the foil.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 30s block 01"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_02_produced_30s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-30s/blocks",
+      "text": "Grip it and rip it.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 30s block 02"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_02_produced_30s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-30s/blocks",
+      "text": "Send the harbour.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 30s block 03"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_02_produced_30s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-30s/blocks",
+      "text": "Foil up.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 30s block 04"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_02_produced_30s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-30s/blocks",
+      "text": "Run the line.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 30s block 05"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_02_produced_30s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-30s/blocks",
+      "text": "Stack the speed.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 30s block 06"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_02_produced_30s_block_07",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-30s/blocks",
+      "text": "Replay the wobble.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 30s block 07"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_02_produced_30s_block_08",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-30s/blocks",
+      "text": "Laugh at the splash.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 30s block 08"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_02_produced_30s_block_09",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-30s/blocks",
+      "text": "Let's downwind.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 30s block 09"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_02_produced_30s_block_10",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-30s/blocks",
+      "text": "Part of the Continuum family.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 30s block 10"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_02_produced_30s_block_11",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/produced-30s/blocks",
+      "text": "Go to downwind.continuumkit.org.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Produced 30s block 11"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_03_host_read_60s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/host-read-60s/complete",
+      "text": "This is the downwind cut: wind check, course line, speed run, wobble replay, and whatever excuse we invent after the splash.\n\nUse the wind numbers as context, not permission. Check the real conditions.\n\nThen foil up.\n\nLet's downwind.\n\nPart of the Continuum family.\n\nGo to downwind.continuumkit.org.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/03-host-read-60s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Downwind Windstats Sports Pack - Host Read 60s"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_03_host_read_60s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/host-read-60s/blocks",
+      "text": "This is the downwind cut: wind check, course line, speed run, wobble replay, and whatever excuse we invent after the splash.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Host Read 60s block 01"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_03_host_read_60s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/host-read-60s/blocks",
+      "text": "Use the wind numbers as context, not permission. Check the real conditions.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Host Read 60s block 02"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_03_host_read_60s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/host-read-60s/blocks",
+      "text": "Then foil up.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Host Read 60s block 03"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_03_host_read_60s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/host-read-60s/blocks",
+      "text": "Let's downwind.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Host Read 60s block 04"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_03_host_read_60s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/host-read-60s/blocks",
+      "text": "Part of the Continuum family.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Host Read 60s block 05"
+    },
+    {
+      "assetId": "downwind_windstats_sports_pack_03_host_read_60s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/downwind-windstats-sports-pack/host-read-60s/blocks",
+      "text": "Go to downwind.continuumkit.org.",
+      "voiceProfiles": [
+        "chris_sport"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/downwind-windstats-sports-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Downwind Windstats Sports Pack - Host Read 60s block 06"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_01_produced_15s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-15s/complete",
+      "text": "Your hands are busy. Your eyes are busy.\n\nField Relay is the default assistant for people working outside: a talkable tricorder for notes, commands, and tools.\n\nExtend it. Command it. Take it into the field.\n\nPart of the Continuum family.\n\nGo to fieldrelay.continuumkit.org.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/01-produced-15s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Field Relay Outdoor Work Pack - Produced 15s"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_01_produced_15s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-15s/blocks",
+      "text": "Your hands are busy. Your eyes are busy.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Produced 15s block 01"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_01_produced_15s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-15s/blocks",
+      "text": "Field Relay is the default assistant for people working outside: a talkable tricorder for notes, commands, and tools.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Produced 15s block 02"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_01_produced_15s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-15s/blocks",
+      "text": "Extend it. Command it. Take it into the field.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Produced 15s block 03"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_01_produced_15s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-15s/blocks",
+      "text": "Part of the Continuum family.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Produced 15s block 04"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_01_produced_15s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-15s/blocks",
+      "text": "Go to fieldrelay.continuumkit.org.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Produced 15s block 05"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_02_produced_30s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-30s/complete",
+      "text": "Some work does not happen at a desk.\n\nYour hands are busy. Your eyes are busy. You still need notes, commands, measurements, reminders, and tools.\n\nField Relay is a default assistant for field work: part notebook, part command surface, part tricorder you can talk to.\n\nIt is designed to be extended. Bring your own agent. Add your own commands. Build tools for the work you actually do.\n\nField Relay.\n\nYour field computer, waiting for orders.\n\nPart of the Continuum family.\n\nGo to fieldrelay.continuumkit.org.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/02-produced-30s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Field Relay Outdoor Work Pack - Produced 30s"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_02_produced_30s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-30s/blocks",
+      "text": "Some work does not happen at a desk.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Produced 30s block 01"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_02_produced_30s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-30s/blocks",
+      "text": "Your hands are busy. Your eyes are busy. You still need notes, commands, measurements, reminders, and tools.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Produced 30s block 02"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_02_produced_30s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-30s/blocks",
+      "text": "Field Relay is a default assistant for field work: part notebook, part command surface, part tricorder you can talk to.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Produced 30s block 03"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_02_produced_30s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-30s/blocks",
+      "text": "It is designed to be extended. Bring your own agent. Add your own commands. Build tools for the work you actually do.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Produced 30s block 04"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_02_produced_30s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-30s/blocks",
+      "text": "Field Relay.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Produced 30s block 05"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_02_produced_30s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-30s/blocks",
+      "text": "Your field computer, waiting for orders.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Produced 30s block 06"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_02_produced_30s_block_07",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-30s/blocks",
+      "text": "Part of the Continuum family.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Produced 30s block 07"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_02_produced_30s_block_08",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/produced-30s/blocks",
+      "text": "Go to fieldrelay.continuumkit.org.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Produced 30s block 08"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_03_host_read_60s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/host-read-60s/complete",
+      "text": "Field Relay is for people whose hands and eyes are busy.\n\nField workers, boat people, land people, repair people, restoration people: anyone who needs the computer, but cannot stop the work to babysit a screen.\n\nThe shape is simple: a default assistant for the real world. A field notebook, a command line, and a tricorder you can talk to.\n\nAsk it to save the note. Run the checklist. Start the capture. Log the place. Call the tool. Hand the job to your own agent.\n\nThe important bit is extensibility. Field Relay should not only run Peter's commands. Anyone with an AI agent should be able to create the tools and command words that fit their own work.\n\nIt is early, so the safety rule still matters: always ready does not mean always recording. But the destination is clear.\n\nField Relay.\n\nYour field computer, waiting for orders.\n\nPart of the Continuum family.\n\nGo to fieldrelay.continuumkit.org.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/03-host-read-60s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Field Relay Outdoor Work Pack - Host Read 60s"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_03_host_read_60s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/host-read-60s/blocks",
+      "text": "Field Relay is for people whose hands and eyes are busy.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Host Read 60s block 01"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_03_host_read_60s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/host-read-60s/blocks",
+      "text": "Field workers, boat people, land people, repair people, restoration people: anyone who needs the computer, but cannot stop the work to babysit a screen.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Host Read 60s block 02"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_03_host_read_60s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/host-read-60s/blocks",
+      "text": "The shape is simple: a default assistant for the real world. A field notebook, a command line, and a tricorder you can talk to.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Host Read 60s block 03"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_03_host_read_60s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/host-read-60s/blocks",
+      "text": "Ask it to save the note. Run the checklist. Start the capture. Log the place. Call the tool. Hand the job to your own agent.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Host Read 60s block 04"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_03_host_read_60s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/host-read-60s/blocks",
+      "text": "The important bit is extensibility. Field Relay should not only run Peter's commands. Anyone with an AI agent should be able to create the tools and command words that fit their own work.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Host Read 60s block 05"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_03_host_read_60s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/host-read-60s/blocks",
+      "text": "It is early, so the safety rule still matters: always ready does not mean always recording. But the destination is clear.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Host Read 60s block 06"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_03_host_read_60s_block_07",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/host-read-60s/blocks",
+      "text": "Field Relay.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Host Read 60s block 07"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_03_host_read_60s_block_08",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/host-read-60s/blocks",
+      "text": "Your field computer, waiting for orders.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Host Read 60s block 08"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_03_host_read_60s_block_09",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/host-read-60s/blocks",
+      "text": "Part of the Continuum family.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Host Read 60s block 09"
+    },
+    {
+      "assetId": "field_relay_outdoor_work_pack_03_host_read_60s_block_10",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay-outdoor-work-pack/host-read-60s/blocks",
+      "text": "Go to fieldrelay.continuumkit.org.",
+      "voiceProfiles": [
+        "daniel_field"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/field-relay-outdoor-work-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Field Relay Outdoor Work Pack - Host Read 60s block 10"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_01_produced_15s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-15s/complete",
+      "text": "Customer calls back.\n\nYou know the job. You just cannot remember the detail.\n\nJobDone lets you speak the note, confirm it once, and recall the right job later from your own timeline.\n\nJobDone. Remember the job.\n\nPart of the Continuum family.\n\nGo to jobdone.continuumkit.org.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/01-produced-15s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "JobDone Recall Pack - Produced 15s"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_01_produced_15s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-15s/blocks",
+      "text": "Customer calls back.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 15s block 01"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_01_produced_15s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-15s/blocks",
+      "text": "You know the job. You just cannot remember the detail.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 15s block 02"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_01_produced_15s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-15s/blocks",
+      "text": "JobDone lets you speak the note, confirm it once, and recall the right job later from your own timeline.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 15s block 03"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_01_produced_15s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-15s/blocks",
+      "text": "JobDone. Remember the job.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 15s block 04"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_01_produced_15s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-15s/blocks",
+      "text": "Part of the Continuum family.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 15s block 05"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_01_produced_15s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-15s/blocks",
+      "text": "Go to jobdone.continuumkit.org.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 15s block 06"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_02_produced_30s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-30s/complete",
+      "text": "At the end of a job, you do remember the important bit.\n\nThe stiff valve. The spare part. The awkward access. The dog called Charlie.\n\nThe problem is remembering it two months later.\n\nJobDone is a phone-first voice log for tradespeople. Speak what happened, review the transcript, confirm the contact and location, and keep it in a timeline you can ask later.\n\nBuilt for job memory, not office admin.\n\nJust job memory when the callback comes.\n\nJobDone. Remember the job.\n\nPart of the Continuum family.\n\nGo to jobdone.continuumkit.org.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/02-produced-30s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "JobDone Recall Pack - Produced 30s"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_02_produced_30s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-30s/blocks",
+      "text": "At the end of a job, you do remember the important bit.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 30s block 01"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_02_produced_30s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-30s/blocks",
+      "text": "The stiff valve. The spare part. The awkward access. The dog called Charlie.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 30s block 02"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_02_produced_30s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-30s/blocks",
+      "text": "The problem is remembering it two months later.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 30s block 03"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_02_produced_30s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-30s/blocks",
+      "text": "JobDone is a phone-first voice log for tradespeople. Speak what happened, review the transcript, confirm the contact and location, and keep it in a timeline you can ask later.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 30s block 04"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_02_produced_30s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-30s/blocks",
+      "text": "Built for job memory, not office admin.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 30s block 05"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_02_produced_30s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-30s/blocks",
+      "text": "Just job memory when the callback comes.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 30s block 06"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_02_produced_30s_block_07",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-30s/blocks",
+      "text": "JobDone. Remember the job.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 30s block 07"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_02_produced_30s_block_08",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-30s/blocks",
+      "text": "Part of the Continuum family.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 30s block 08"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_02_produced_30s_block_09",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/produced-30s/blocks",
+      "text": "Go to jobdone.continuumkit.org.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Produced 30s block 09"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_03_host_read_60s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/host-read-60s/complete",
+      "text": "Most tradespeople do not have a memory problem. They have an admin timing problem.\n\nWhen you are leaving the job, you know exactly what happened. But you are also loading the van, answering the phone, getting to the next place, and trying not to spend your evening typing notes into a system you hate.\n\nJobDone is built around that moment.\n\nYou capture what happened on the phone: voice note, text note, photo, link, or shared contact. Then you review it, confirm the contact and location, and the confirmed Entry becomes part of your timeline.\n\nLater, when someone asks, \"What did you do at Mrs Jones last time?\", Recall is designed to work from those source Entries instead of giving you an ungrounded answer.\n\nIt is not finished accounting or a big office system. It is job memory with a confirmation step.\n\nJobDone. Remember the job.\n\nPart of the Continuum family.\n\nGo to jobdone.continuumkit.org.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/03-host-read-60s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "JobDone Recall Pack - Host Read 60s"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_03_host_read_60s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/host-read-60s/blocks",
+      "text": "Most tradespeople do not have a memory problem. They have an admin timing problem.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Host Read 60s block 01"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_03_host_read_60s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/host-read-60s/blocks",
+      "text": "When you are leaving the job, you know exactly what happened. But you are also loading the van, answering the phone, getting to the next place, and trying not to spend your evening typing notes into a system you hate.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Host Read 60s block 02"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_03_host_read_60s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/host-read-60s/blocks",
+      "text": "JobDone is built around that moment.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Host Read 60s block 03"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_03_host_read_60s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/host-read-60s/blocks",
+      "text": "You capture what happened on the phone: voice note, text note, photo, link, or shared contact. Then you review it, confirm the contact and location, and the confirmed Entry becomes part of your timeline.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Host Read 60s block 04"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_03_host_read_60s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/host-read-60s/blocks",
+      "text": "Later, when someone asks, \"What did you do at Mrs Jones last time?\", Recall is designed to work from those source Entries instead of giving you an ungrounded answer.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Host Read 60s block 05"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_03_host_read_60s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/host-read-60s/blocks",
+      "text": "It is not finished accounting or a big office system. It is job memory with a confirmation step.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Host Read 60s block 06"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_03_host_read_60s_block_07",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/host-read-60s/blocks",
+      "text": "JobDone. Remember the job.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Host Read 60s block 07"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_03_host_read_60s_block_08",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/host-read-60s/blocks",
+      "text": "Part of the Continuum family.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Host Read 60s block 08"
+    },
+    {
+      "assetId": "jobdone_tradesperson_recall_pack_03_host_read_60s_block_09",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/jobdone-tradesperson-recall-pack/host-read-60s/blocks",
+      "text": "Go to jobdone.continuumkit.org.",
+      "voiceProfiles": [
+        "yorkshire_david"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/jobdone-tradesperson-recall-pack/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "JobDone Recall Pack - Host Read 60s block 09"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_01_produced_15s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-15s/complete",
+      "text": "If meditation apps never quite worked for you, try learning with a real person.\n\nA private weekend at Still Ground in North Norfolk.\n\nOne guest. One teacher. No doctrine, no dogma.\n\nLeave with a practice that fits your actual life.\n\nGo to stillground.co.uk.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/01-produced-15s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Learn To Meditate - Produced 15s"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_01_produced_15s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-15s/blocks",
+      "text": "If meditation apps never quite worked for you, try learning with a real person.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Produced 15s block 01"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_01_produced_15s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-15s/blocks",
+      "text": "A private weekend at Still Ground in North Norfolk.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Produced 15s block 02"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_01_produced_15s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-15s/blocks",
+      "text": "One guest. One teacher. No doctrine, no dogma.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Produced 15s block 03"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_01_produced_15s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-15s/blocks",
+      "text": "Leave with a practice that fits your actual life.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Produced 15s block 04"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_01_produced_15s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-15s/blocks",
+      "text": "Go to stillground.co.uk.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Produced 15s block 05"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_02_produced_30s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-30s/complete",
+      "text": "You do not need to perform calm in a room full of strangers.\n\nAt Still Ground in North Norfolk, Jane offers a private weekend introduction to meditation for one guest at a time.\n\nBuddhist-informed, but without doctrine or dogma. No beliefs required. No previous experience necessary.\n\nThree one-to-one teaching sessions, guided sits, vegan gluten-free meals, and a practice summary to take home.\n\nLearn to meditate in a weekend.\n\nStill Ground. Begin properly.\n\nGo to stillground.co.uk.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/02-produced-30s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Learn To Meditate - Produced 30s"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_02_produced_30s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-30s/blocks",
+      "text": "You do not need to perform calm in a room full of strangers.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Produced 30s block 01"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_02_produced_30s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-30s/blocks",
+      "text": "At Still Ground in North Norfolk, Jane offers a private weekend introduction to meditation for one guest at a time.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Produced 30s block 02"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_02_produced_30s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-30s/blocks",
+      "text": "Buddhist-informed, but without doctrine or dogma. No beliefs required. No previous experience necessary.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Produced 30s block 03"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_02_produced_30s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-30s/blocks",
+      "text": "Three one-to-one teaching sessions, guided sits, vegan gluten-free meals, and a practice summary to take home.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Produced 30s block 04"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_02_produced_30s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-30s/blocks",
+      "text": "Learn to meditate in a weekend.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Produced 30s block 05"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_02_produced_30s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-30s/blocks",
+      "text": "Still Ground. Begin properly.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Produced 30s block 06"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_02_produced_30s_block_07",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/produced-30s/blocks",
+      "text": "Go to stillground.co.uk.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Produced 30s block 07"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_03_host_read_60s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/host-read-60s/complete",
+      "text": "If you have always meant to learn meditation, but apps felt thin and group classes felt awkward, Still Ground has a gentler way in.\n\nJane offers a private weekend introduction to meditation at her home in North Norfolk. It is one guest, one teacher, and an unhurried weekend built around you.\n\nThe teaching is Buddhist-informed, but there is no doctrine, no dogma, and no belief system to adopt. Complete beginners are welcome.\n\nAcross the weekend you get three one-to-one teaching sessions, guided sits morning and evening, nourishing vegan and gluten-free meals, time to rest and walk, a written summary of your personal practice, and a follow-up conversation two weeks later.\n\nAsk Jane about a free introductory call.\n\nGo to stillground.co.uk.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/03-host-read-60s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "Learn To Meditate - Host Read 60s"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_03_host_read_60s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/host-read-60s/blocks",
+      "text": "If you have always meant to learn meditation, but apps felt thin and group classes felt awkward, Still Ground has a gentler way in.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Host Read 60s block 01"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_03_host_read_60s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/host-read-60s/blocks",
+      "text": "Jane offers a private weekend introduction to meditation at her home in North Norfolk. It is one guest, one teacher, and an unhurried weekend built around you.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Host Read 60s block 02"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_03_host_read_60s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/host-read-60s/blocks",
+      "text": "The teaching is Buddhist-informed, but there is no doctrine, no dogma, and no belief system to adopt. Complete beginners are welcome.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Host Read 60s block 03"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_03_host_read_60s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/host-read-60s/blocks",
+      "text": "Across the weekend you get three one-to-one teaching sessions, guided sits morning and evening, nourishing vegan and gluten-free meals, time to rest and walk, a written summary of your personal practice, and a follow-up conversation two weeks later.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Host Read 60s block 04"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_03_host_read_60s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/host-read-60s/blocks",
+      "text": "Ask Jane about a free introductory call.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Host Read 60s block 05"
+    },
+    {
+      "assetId": "still_ground_learn_to_meditate_03_host_read_60s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-learn-to-meditate/host-read-60s/blocks",
+      "text": "Go to stillground.co.uk.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-learn-to-meditate/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "Learn To Meditate - Host Read 60s block 06"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_01_produced_15s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/produced-15s/complete",
+      "text": "No WiFi. No television. Just one tiny private cabin in rural Norfolk, for a solo retreat of five to twenty-eight nights.\n\nThe Retreat at Still Ground.\n\nA space that holds you.\n\nGo to stillground.co.uk.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/01-produced-15s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "The Retreat - Produced 15s"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_01_produced_15s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/produced-15s/blocks",
+      "text": "No WiFi. No television. Just one tiny private cabin in rural Norfolk, for a solo retreat of five to twenty-eight nights.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Produced 15s block 01"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_01_produced_15s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/produced-15s/blocks",
+      "text": "The Retreat at Still Ground.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Produced 15s block 02"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_01_produced_15s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/produced-15s/blocks",
+      "text": "A space that holds you.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Produced 15s block 03"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_01_produced_15s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/produced-15s/blocks",
+      "text": "Go to stillground.co.uk.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/01-produced-15s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Produced 15s block 04"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_02_produced_30s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/produced-30s/complete",
+      "text": "Some places are not trying to entertain you.\n\nThe Retreat is a tiny private cabin in rural Norfolk, for one guest at a time.\n\nNo WiFi. No television. Limited phone signal. A half-acre garden, farmland, birds, and quiet.\n\nStay five to twenty-eight nights. Sit, write, rest, practise, or do absolutely nothing.\n\nThe Retreat at Still Ground.\n\nA space that holds you.\n\nGo to stillground.co.uk.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/02-produced-30s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "The Retreat - Produced 30s"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_02_produced_30s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/produced-30s/blocks",
+      "text": "Some places are not trying to entertain you.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Produced 30s block 01"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_02_produced_30s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/produced-30s/blocks",
+      "text": "The Retreat is a tiny private cabin in rural Norfolk, for one guest at a time.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Produced 30s block 02"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_02_produced_30s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/produced-30s/blocks",
+      "text": "No WiFi. No television. Limited phone signal. A half-acre garden, farmland, birds, and quiet.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Produced 30s block 03"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_02_produced_30s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/produced-30s/blocks",
+      "text": "Stay five to twenty-eight nights. Sit, write, rest, practise, or do absolutely nothing.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Produced 30s block 04"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_02_produced_30s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/produced-30s/blocks",
+      "text": "The Retreat at Still Ground.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Produced 30s block 05"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_02_produced_30s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/produced-30s/blocks",
+      "text": "A space that holds you.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Produced 30s block 06"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_02_produced_30s_block_07",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/produced-30s/blocks",
+      "text": "Go to stillground.co.uk.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/02-produced-30s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Produced 30s block 07"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_03_host_read_60s_full",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/host-read-60s/complete",
+      "text": "If you have been craving real quiet, Still Ground has a place that is very deliberately not trying to distract you.\n\nThe Retreat is a tiny private cabin in rural Norfolk. One guest. Five to twenty-eight nights. No WiFi. No television. Limited phone signal.\n\nIt is self-catering, simple, and intentionally small. There is room to sit, to write, to walk in the garden, to practise, to sleep, or to stop performing for a while.\n\nThis is not the right place if you want a luxury break or a base for constant day trips. It is for someone who wants quiet, privacy, and a contained space for retreat.\n\nRead the practical details before you enquire.\n\nGo to stillground.co.uk.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/03-host-read-60s.md",
+      "assetKind": "complete_advert_preview",
+      "title": "The Retreat - Host Read 60s"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_03_host_read_60s_block_01",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/host-read-60s/blocks",
+      "text": "If you have been craving real quiet, Still Ground has a place that is very deliberately not trying to distract you.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Host Read 60s block 01"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_03_host_read_60s_block_02",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/host-read-60s/blocks",
+      "text": "The Retreat is a tiny private cabin in rural Norfolk. One guest. Five to twenty-eight nights. No WiFi. No television. Limited phone signal.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Host Read 60s block 02"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_03_host_read_60s_block_03",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/host-read-60s/blocks",
+      "text": "It is self-catering, simple, and intentionally small. There is room to sit, to write, to walk in the garden, to practise, to sleep, or to stop performing for a while.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Host Read 60s block 03"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_03_host_read_60s_block_04",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/host-read-60s/blocks",
+      "text": "This is not the right place if you want a luxury break or a base for constant day trips. It is for someone who wants quiet, privacy, and a contained space for retreat.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Host Read 60s block 04"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_03_host_read_60s_block_05",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/host-read-60s/blocks",
+      "text": "Read the practical details before you enquire.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Host Read 60s block 05"
+    },
+    {
+      "assetId": "still_ground_retreat_cabin_03_host_read_60s_block_06",
+      "takeSlug": "reusable_block",
+      "speaker": "advert_voice",
+      "folder": "voice/still-ground-retreat-cabin/host-read-60s/blocks",
+      "text": "Go to stillground.co.uk.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/script-drafts/still-ground-retreat-cabin/03-host-read-60s.md",
+      "assetKind": "reusable_script_block",
+      "title": "The Retreat - Host Read 60s block 06"
+    }
+  ],
+  "estimatedCharacters": 22838,
+  "notes": [
+    "Complete spot reads are for breakfast listening and sharing.",
+    "Reusable blocks are for later assembly, timing, CTA swaps, and Render/Reaper edits.",
+    "Generated text intentionally avoids provider/internal implementation wording in spoken copy."
+  ]
+}

@@ -122,13 +122,13 @@ Current decision:
 
 Current product URL map:
 
-- Still Ground Retreat Cabin: `https://retreat.stillground.co.uk`
-- Still Ground Learn To Meditate: `https://meditate.stillground.co.uk`
+- Still Ground Retreat Cabin: `https://stillground.co.uk`
+- Still Ground Learn To Meditate: `https://stillground.co.uk`
 - Checkdam / Living Water visit videos: `https://checkdam.org`
 - Continuum: `https://continuumkit.org`
 - JobDone: `https://jobdone.continuumkit.org`
 - AdLib: `https://adlib.continuumkit.org`
-- Windstats / Downwind production: `https://windstats.continuumkit.org`
+- Windstats / Downwind production: `https://downwind.continuumkit.org`
 - Field Relay: `https://fieldrelay.continuumkit.org`
 
 ## Professional Disregard Filter

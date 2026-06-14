@@ -22,7 +22,7 @@ can ask later.
 
 Built for job memory, not office admin.
 
-Just confirmed job memory when the callback comes.
+Just job memory when the callback comes.
 
 JobDone. Remember the job.
 

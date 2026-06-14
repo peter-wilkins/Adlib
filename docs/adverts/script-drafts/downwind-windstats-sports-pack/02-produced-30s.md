@@ -6,7 +6,7 @@ Audience: technical watersports viewers, riders, coaches, gear nerds
 Goal: explain the video-production format
 Claim posture: current truth for public-source wind checks; vision trailer for synced telemetry
 Source: `/home/peter/windstats/AGENT-HANDOFF.md`
-URL: https://windstats.continuumkit.org
+URL: https://downwind.continuumkit.org
 
 ## Script
 
@@ -28,9 +28,9 @@ Laugh at the splash.
 
 Let's downwind.
 
-Windstats. Part of the Continuum family.
+Part of the Continuum family.
 
-Go to windstats.continuumkit.org.
+Go to downwind.continuumkit.org.
 
 ## Notes
 

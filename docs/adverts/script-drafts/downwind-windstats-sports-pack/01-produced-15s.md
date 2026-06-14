@@ -6,7 +6,7 @@ Audience: wingfoil/downwind viewers and technical sports creators
 Goal: opener sting for session videos
 Claim posture: current truth for wind report direction; vision trailer for full live overlay production
 Source: `/home/peter/windstats/AGENT-HANDOFF.md`
-URL: https://windstats.continuumkit.org
+URL: https://downwind.continuumkit.org
 
 ## Script
 
@@ -20,9 +20,9 @@ It's gripped.
 
 Let's downwind.
 
-Windstats. Part of the Continuum family.
+Part of the Continuum family.
 
-Go to windstats.continuumkit.org.
+Go to downwind.continuumkit.org.
 
 ## Notes
 

@@ -198,6 +198,25 @@ review ladder. Avoid instant qualification, guaranteed outcomes, or AI signoff.
 7. Generate Field Relay command feedback sounds.
 8. Generate blog intro/outro and post trailer lines.
 
+## Automation Lessons From The Living Water Repair Pass
+
+Details:
+`docs/adverts/podcast-ad-script-automation-research-2026-06-14.md`
+
+- Generate scripts from structured briefs, not blank prompts.
+- Keep produced spots modular: hooks, proof lines, CTAs, disclaimers, stings.
+- Keep host-read output as talking points unless mandatory copy must be read
+  verbatim.
+- Send exact spoken words to ElevenLabs for critical repair lines. Long
+  pronunciation instructions can be spoken out loud.
+- The `Pond Challenge` repair showed why punctuation hacks are fragile:
+  `Pond. Challenge` passed transcription but created a bad gap, while
+  `Pond Challenge` sounded tighter but was heard as `Pawn Challenge`.
+- Add pronunciation dictionary support before doing lots of proper-name or
+  technical-term assets.
+- Rendered advert review should happen after timing, mix, and background audio
+  are assembled. Raw voice clips are not enough for paid feedback.
+
 ## Approval Rule
 
 Prepare manifests first. Generate only after Peter approves exact text, voice,

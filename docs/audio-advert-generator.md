@@ -26,6 +26,41 @@ campaigns, voices, tags, costs, and test results.
 - Make variants cheap: same script, many voices; same voice, many emotional directions.
 - Treat voice choice as a marketing test, not personal taste.
 
+## Podcast Advert Script Automation
+
+Research note:
+`docs/adverts/podcast-ad-script-automation-research-2026-06-14.md`
+
+Current rule: generate scripts from a structured advert brief, not a blank
+prompt. The minimum useful brief is:
+
+```text
+Product Truth + audience + advert format + single job + mandatory claims + CTA
+```
+
+AdLib should support at least four script outputs:
+
+- `produced_spot_15s`
+- `produced_spot_30s`
+- `host_read_talking_points_60s`
+- `host_read_verbatim_30s`
+
+Script generation should happen before audio generation and should have its own
+gate:
+
+- one advert has one job
+- first three seconds are concrete
+- CTA is singular and hearable
+- mandatory copy is separated from optional host talking points
+- every claim maps back to Product Truth
+- vision trailer claims are labelled as vision, not current truth
+
+The searched public skills ecosystem did not show a strong podcast-ad-specific
+skill. Generic copywriting skills exist, but AdLib's useful edge is local and
+domain-specific: Product Truth constraints, reusable audio assets, transcript
+gates, render timing, and searchable metadata. Prefer creating a local
+`adlib-podcast-ad-writer` skill once the script gate stabilises.
+
 ## ElevenLabs Notes
 
 Checked on 2026-05-22:
@@ -44,6 +79,19 @@ ElevenLabs TTS supports lifelike audio with nuance, pacing, emotional awareness,
 Every change to text, voice settings, or parameters can create a new paid generation. Save exact inputs and settings before generation.
 
 Terms note that, as between user and ElevenLabs, the user retains rights in output, but ElevenLabs receives broad licences to content for service provision/improvement. Avoid uploading Peter's own voice until comfortable with those terms.
+
+Session update from 2026-06-14:
+
+- Do not put long pronunciation instructions in the TTS text for critical
+  repair lines. ElevenLabs may speak the instruction out loud.
+- Exact spoken text is safest for technical preflight.
+- Bracketed Eleven v3 audio tags can help performance, but are risky until the
+  transcription gate proves they did not leak into speech.
+- Punctuation can fix pronunciation but create bad timing gaps.
+- The `Pond Challenge` case proved that the correct long-term fix is
+  ElevenLabs pronunciation dictionary support, not punctuation hacks.
+- The gate now treats `frogspawn` and `frog spawn` as equivalent, because
+  Whisper may split the same ecological term in otherwise acceptable speech.
 
 Updated API workflow research on 2026-06-02:
 

@@ -3,9 +3,10 @@
 Project: Checkdam / Living Water visit videos  
 Format: produced spot, 15 seconds  
 Audience: land stewards, restoration supporters, video viewers  
-Goal: channel identity and repeatable opener  
-Claim posture: current truth for field visits; no design advice claim  
+Goal: channel identity and repeatable opener
+Claim posture: current truth for field visits; no design advice claim
 Sources: `/home/peter/checkdam.github.io/Services.md`, `docs/product-truths/2026-06-02-regenerative-ai-water-broadcast.md`
+URL: https://checkdam.org
 
 ## Script
 
@@ -17,8 +18,9 @@ Field notes, not final design advice.
 
 Restore the water. Restore the land.
 
+Go to checkdam.org.
+
 ## Notes
 
 - Use as a video opener before site footage.
 - Add lower-third: `Field notes, not final design advice.`
-

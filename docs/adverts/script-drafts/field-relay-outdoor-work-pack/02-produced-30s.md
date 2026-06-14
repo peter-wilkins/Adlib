@@ -1,28 +1,35 @@
 # Field Relay Outdoor Work Pack - Produced 30s
 
-Project: Field Relay  
-Format: produced spot, 30 seconds  
-Audience: field operators, outdoor builders, restoration workers, Peter dogfood  
-Goal: sell the V1 loop and future tone  
-Claim posture: current truth plus vision trailer  
+Project: Field Relay
+Format: produced spot, 30 seconds
+Audience: field operators, outdoor builders, restoration workers, Peter dogfood
+Goal: sell the V1 loop and future tone
+Claim posture: current truth plus vision trailer
 Source: `/home/peter/field-relay/docs/strategy.md`
+URL: https://fieldrelay.continuumkit.org
 
 ## Script
 
-The best field app is not a dashboard you have to babysit.
+Some work does not happen at a desk.
 
-Field Relay starts as a simple conversation surface for outdoor work: pinned
-safe commands, dot-command control, local unsent message preservation, and a
-path toward reliable capture when you cannot stop and type.
+Your hands are busy. Your eyes are busy. You still need notes, commands,
+measurements, reminders, and tools.
 
-It is not a permanent hot mic. It is not trying to replace your phone.
+Field Relay is a default assistant for field work: part notebook, part command
+surface, part tricorder you can talk to.
 
-It is a command home that respects field reality: save first, recover cleanly,
-and only add hands-free behaviour when the loop proves itself.
+It is designed to be extended. Bring your own agent. Add your own commands.
+Build tools for the work you actually do.
 
-Field Relay. Ready when the work is moving.
+Field Relay.
+
+Your field computer, waiting for orders.
+
+Part of the Continuum family.
+
+Go to fieldrelay.continuumkit.org.
 
 ## Notes
 
-- "Path toward" keeps the hands-free claim honest.
-
+- This is more aspirational than the current V1 copy.
+- Do not promise always-on listening or finished hands-free capture.

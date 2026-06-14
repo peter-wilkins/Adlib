@@ -3,9 +3,10 @@
 Project: Still Ground / Learn to meditate in a weekend  
 Format: host-read talking points, around 60 seconds  
 Audience: people curious about meditation but wary of groups or apps  
-Goal: warm enquiry for a private weekend  
-Claim posture: current truth from Still Ground website  
+Goal: warm enquiry for a private weekend
+Claim posture: current truth from Still Ground website
 Source: https://stillground.co.uk/learn-to-meditate/
+URL: https://meditate.stillground.co.uk
 
 ## Host Frame
 
@@ -38,6 +39,6 @@ morning and evening, nourishing vegan and gluten-free meals, time to rest and
 walk, a written summary of your personal practice, and a follow-up conversation
 two weeks later.
 
-Search Still Ground, learn to meditate in a weekend, and ask Jane about a free
-introductory call.
+Ask Jane about a free introductory call.
 
+Go to meditate.stillground.co.uk.

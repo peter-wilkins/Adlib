@@ -78,20 +78,80 @@ Sources:
 2. **Audience first.** The hook should use the listener's problem language, not
    internal product language.
 3. **Make the first three seconds concrete.** A real moment beats a vague claim.
-4. **Use Product Truth as the claim boundary.** Vision trailer claims must be
+4. **Professional disregard.** Do not slam competitors, mock users, insult
+   whole categories, or use contempt phrases like "AI sludge" in public copy.
+   Sell the positive job and outcome instead.
+5. **No implementation leakage.** Public copy should not name internal providers
+   or tools unless that provider is the product being sold. Keep generation
+   vendors, APIs, manifests, local paths, and preflight mechanics in notes.
+6. **Audio needs a memory hook.** A listener cannot click the audio, so every
+   script needs a searchable phrase, URL, or family-brand line.
+7. **Use Product Truth as the claim boundary.** Vision trailer claims must be
    labelled; do not let them masquerade as shipped product claims.
-5. **Write for the ear.** Short sentences, one idea per breath, no visual-only
+8. **Write for the ear.** Short sentences, one idea per breath, no visual-only
    logic, no dense feature lists.
-6. **Give host-read variants talking points, not a stiff script.** Keep
+9. **Give host-read variants talking points, not a stiff script.** Keep
    mandatory legal/truth lines explicit and short.
-7. **Make produced spots modular.** Generate reusable hooks, product lines,
+10. **Make produced spots modular.** Generate reusable hooks, product lines,
    proof lines, CTAs, stings, and disclaimers separately.
-8. **Gate before taste.** First prove the words match. Then judge whether it
+11. **Gate before taste.** First prove the words match. Then judge whether it
    sounds credible.
-9. **Render before paid feedback.** PickFu or similar review should see complete
+12. **Render before paid feedback.** PickFu or similar review should see complete
    adverts with timing, bed, mix, and CTA, not raw line assets.
-10. **Every asset must be searchable.** Rejected attempts are still useful
+13. **Every asset must be searchable.** Rejected attempts are still useful
     evidence if labelled correctly.
+
+## Audio Recall Hooks
+
+For audio-only adverts, assume the listener is walking, driving, cooking, or
+working. The CTA must be memorable without a clickable link.
+
+Options:
+
+- searchable phrase: "Search AdLib Continuum"
+- spoken URL: "adlib.continuumkit.org"
+- brand family line: "Part of the Continuum family"
+- short product mnemonic: "Docs to audio advert"
+
+Current decision:
+
+- Use `Part of the Continuum family` for Peter's internal products and tools.
+- Use product-specific branding for Still Ground and Checkdam; do not add the
+  Continuum family line there.
+- For AdLib, prefer both `Docs to audio advert` and `adlib.continuumkit.org`.
+
+Current product URL map:
+
+- Still Ground Retreat Cabin: `https://retreat.stillground.co.uk`
+- Still Ground Learn To Meditate: `https://meditate.stillground.co.uk`
+- Checkdam / Living Water visit videos: `https://checkdam.org`
+- Continuum: `https://continuumkit.org`
+- JobDone: `https://jobdone.continuumkit.org`
+- AdLib: `https://adlib.continuumkit.org`
+- Windstats / Downwind production: `https://windstats.continuumkit.org`
+- Field Relay: `https://fieldrelay.continuumkit.org`
+
+## Professional Disregard Filter
+
+Run this filter before a script is promoted to manifest generation.
+
+Reject or rewrite public copy if it:
+
+- slams the competition or an adjacent category,
+- names another product or provider when it is only an implementation detail,
+- uses contempt language such as "sludge", "garbage", "stupid", or "magic" to
+  position the product,
+- makes the audience feel foolish for using current tools,
+- says "not X" repeatedly instead of making a positive promise,
+- explains internal workflow mechanics that the listener does not need.
+
+Preferred rewrites:
+
+- "cheap AI ads" -> "quick enough to test the message"
+- "AI sludge" -> "generic-sounding copy"
+- "ElevenLabs generation" -> "voice assets"
+- "preflight checks" -> "checks the words before you spend time polishing"
+- "not a CRM" -> "built for job memory, not office admin"
 
 ## Skills Search
 

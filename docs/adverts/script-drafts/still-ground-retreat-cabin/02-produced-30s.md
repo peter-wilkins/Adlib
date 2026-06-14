@@ -3,9 +3,10 @@
 Project: Still Ground / The Retreat  
 Format: produced spot, 30 seconds  
 Audience: people who need silence, digital detox, writing time, or solo practice  
-Goal: qualified enquiry, not mass tourism  
-Claim posture: current truth from Still Ground website  
+Goal: qualified enquiry, not mass tourism
+Claim posture: current truth from Still Ground website
 Source: https://stillground.co.uk/retreatcottage/
+URL: https://retreat.stillground.co.uk
 
 ## Script
 
@@ -24,8 +25,9 @@ The Retreat at Still Ground.
 
 A space that holds you.
 
+Go to retreat.stillground.co.uk.
+
 ## Notes
 
 - A small ambient bed of wind, birds, and room tone would fit.
 - The ad should filter out people who want luxury or constant internet.
-

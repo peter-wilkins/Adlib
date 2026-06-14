@@ -54,6 +54,13 @@ gate:
 - mandatory copy is separated from optional host talking points
 - every claim maps back to Product Truth
 - vision trailer claims are labelled as vision, not current truth
+- professional disregard filter passes: no competitor slams, contempt phrases,
+  or making the audience feel foolish
+- no implementation leakage: do not name internal providers, APIs, manifests,
+  local paths, or preflight mechanics in public copy unless that is the product
+  being sold
+- audio recall hook exists: a searchable phrase, spoken URL, or brand-family
+  line that helps listeners find the product after hearing the advert
 
 The searched public skills ecosystem did not show a strong podcast-ad-specific
 skill. Generic copywriting skills exist, but AdLib's useful edge is local and

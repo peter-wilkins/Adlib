@@ -1,11 +1,12 @@
 # JobDone Recall Pack - Produced 15s
 
-Project: JobDone  
-Format: produced spot, 15 seconds  
-Audience: self-employed tradespeople  
-Goal: pain recognition and product recall  
-Claim posture: current truth / MVP direction  
+Project: JobDone
+Format: produced spot, 15 seconds
+Audience: self-employed tradespeople
+Goal: pain recognition and product recall
+Claim posture: current truth / MVP direction
 Source: `docs/product-truths/2026-06-02-jobdone.md`
+URL: https://jobdone.continuumkit.org
 
 ## Script
 
@@ -18,8 +19,11 @@ later from your own timeline.
 
 JobDone. Remember the job.
 
+Part of the Continuum family.
+
+Go to jobdone.continuumkit.org.
+
 ## Notes
 
 - Best with a phone-record beep and a small callback gag.
-- Avoid claiming invoicing, CRM, or magic AI certainty.
-
+- Avoid claiming invoicing, office software replacement, or automatic certainty.

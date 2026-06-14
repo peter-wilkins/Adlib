@@ -3,9 +3,10 @@
 Project: Still Ground / The Retreat  
 Format: host-read talking points, around 60 seconds  
 Audience: contemplative, creative, burnout-recovery, and slow-living listeners  
-Goal: warm qualified enquiry  
-Claim posture: current truth from Still Ground website  
+Goal: warm qualified enquiry
+Claim posture: current truth from Still Ground website
 Source: https://stillground.co.uk/retreatcottage/
+URL: https://retreat.stillground.co.uk
 
 ## Host Frame
 
@@ -36,6 +37,6 @@ This is not the right place if you want a luxury break or a base for constant
 day trips. It is for someone who wants quiet, privacy, and a contained space for
 retreat.
 
-Search Still Ground, The Retreat, and read the practical details before you
-enquire.
+Read the practical details before you enquire.
 
+Go to retreat.stillground.co.uk.

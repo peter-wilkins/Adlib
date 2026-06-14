@@ -1,39 +1,45 @@
 # AdLib Product Service Pack - Host Read 60s
 
-Project: AdLib  
-Format: host-read talking points, around 60 seconds  
-Audience: AI builders, founders, indie software people, agencies  
-Goal: explain the workflow and why it prevents cheap AI ads  
-Claim posture: current truth for local workflow; vision trailer for later service  
+Project: AdLib
+Format: host-read talking points, around 60 seconds
+Audience: builders, founders, indie software people, agencies
+Goal: explain the workflow and invite mailing-list signups
+Claim posture: current truth for local workflow; vision trailer for later service
 Source: `docs/product-truths/2026-06-02-audio-advert-generator.md`
+URL: https://adlib.continuumkit.org
 
 ## Mandatory Copy Points
 
 - AdLib starts with Product Truth.
-- Paid generation happens from approved manifests.
+- It turns docs into audio advert drafts.
 - Generated assets get metadata and searchable catalogue entries.
-- Technical preflight checks spoken words against the approved script.
+- It checks the words before time is spent polishing.
 - It is not a finished hosted ad platform.
+- Family line: `Part of the Continuum family.`
+- URL and CTA: `adlib.continuumkit.org`.
 
 ## Read
 
-AdLib is for the moment when you know your product needs adverts, but you do not
-want the usual AI sludge.
+AdLib is for the moment when the product is real enough to explain, but not
+polished enough to justify a whole studio process.
 
-The workflow starts with Product Truth: what is real, what is aspirational, what
-is private, and what must not be claimed.
+You already have the raw material: docs, notes, product truths, half-written
+pitches, and a sense of who the thing is for.
 
-From there, AdLib drafts scripts, prepares approved ElevenLabs manifests,
-generates small reusable voice assets, and records the metadata: script, voice,
-settings, local path, provider details, and test status.
+AdLib turns that into audio advert drafts: short scripts, host-read versions,
+small reusable voice assets, rough renders, and a searchable record of what was
+made.
 
-Then the gate checks whether the spoken words actually match the approved
-script. Extra words, missing lines, and provider hallucinations get caught
-before the clip becomes a reusable asset.
+The selling point is speed and cost. Not final-agency polish on day one. Good
+enough to hear the message, spot what is weak, make another version, and keep
+the useful pieces for later.
 
-The current version is local-first and CLI-first, not a finished hosted
-platform. But the shape is already valuable: Product Truth to playable advert
-assets, with enough evidence to find, reuse, and improve the work.
+It also keeps the boring evidence: what script was used, what voice asset was
+made, what passed, what failed, and where to find it again.
 
-AdLib. Make the advert from the truth.
+AdLib. Docs to audio advert.
 
+AdLib is part of the Continuum family.
+
+If you would be interested in this kind of product, join the mailing list at
+adlib.continuumkit.org.

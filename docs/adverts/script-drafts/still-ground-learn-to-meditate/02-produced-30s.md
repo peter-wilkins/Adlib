@@ -3,9 +3,10 @@
 Project: Still Ground / Learn to meditate in a weekend  
 Format: produced spot, 30 seconds  
 Audience: meditation beginners, stressed professionals, people in transition  
-Goal: enquiry for private teaching weekend  
-Claim posture: current truth from Still Ground website  
+Goal: enquiry for private teaching weekend
+Claim posture: current truth from Still Ground website
 Source: https://stillground.co.uk/learn-to-meditate/
+URL: https://meditate.stillground.co.uk
 
 ## Script
 
@@ -24,7 +25,8 @@ Learn to meditate in a weekend.
 
 Still Ground. Begin properly.
 
+Go to meditate.stillground.co.uk.
+
 ## Notes
 
 - The "begin properly" line is a positioning phrase, not a guarantee.
-

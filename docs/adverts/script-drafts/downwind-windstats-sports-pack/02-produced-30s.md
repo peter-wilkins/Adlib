@@ -1,29 +1,40 @@
 # Downwind Windstats Sports Pack - Produced 30s
 
-Project: Downwind / Windstats sports production  
-Format: produced spot, 30 seconds  
-Audience: technical watersports viewers, riders, coaches, gear nerds  
-Goal: explain the video-production format  
-Claim posture: current truth for public-source wind checks; vision trailer for synced telemetry  
+Project: Downwind / Windstats sports production
+Format: produced spot, 30 seconds
+Audience: technical watersports viewers, riders, coaches, gear nerds
+Goal: explain the video-production format
+Claim posture: current truth for public-source wind checks; vision trailer for synced telemetry
 Source: `/home/peter/windstats/AGENT-HANDOFF.md`
+URL: https://windstats.continuumkit.org
 
 ## Script
 
-A good downwind session is not just speed.
+Oil for the foil.
 
-It is the wind window, the gust line, the tide, the route choice, the foil-up
-moment, the missed chance, and the decision to turn back before it gets stupid.
+Grip it and rip it.
 
-This production pack turns raw water footage into a technical story: wind
-checks, session context, speed runs, replay moments, and clean overlays that
-help viewers understand what happened.
+Send the harbour.
 
-Not hero edits. Not fake certainty.
+Foil up.
 
-Downwind data, made watchable.
+Run the line.
+
+Stack the speed.
+
+Replay the wobble.
+
+Laugh at the splash.
+
+Let's downwind.
+
+Windstats. Part of the Continuum family.
+
+Go to windstats.continuumkit.org.
 
 ## Notes
 
 - Avoid claiming live synced telemetry until it exists.
-- Use "wind checks" and "overlays" as current/near-term language.
-
+- This is a sting bank, not an explainy advert.
+- Possible extras: "It's gripped", "hold the handle", "foil brain engaged",
+  "wind's up, excuses down".

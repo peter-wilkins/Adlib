@@ -3,9 +3,10 @@
 Project: Checkdam / Living Water visit videos  
 Format: host-read / video narration, around 60 seconds  
 Audience: land stewards, restoration-curious viewers, AI builders funding repair  
-Goal: frame a site visit without overclaiming  
-Claim posture: current truth with labelled vision  
+Goal: frame a site visit without overclaiming
+Claim posture: current truth with labelled vision
 Sources: `/home/peter/checkdam.github.io/Services.md`, `docs/product-truths/2026-06-02-regenerative-ai-water-broadcast.md`
+URL: https://checkdam.org
 
 ## Mandatory Copy Points
 
@@ -38,3 +39,4 @@ we are willing to show.
 
 Checkdam. Restore the water. Restore the land.
 
+Go to checkdam.org.

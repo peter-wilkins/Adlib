@@ -1,40 +1,47 @@
 # Field Relay Outdoor Work Pack - Host Read 60s
 
-Project: Field Relay  
-Format: host-read / product explanation, around 60 seconds  
-Audience: field workers, AI tool builders, outdoor operators  
-Goal: explain why Field Relay starts small  
-Claim posture: current truth / MVP direction  
+Project: Field Relay
+Format: host-read / product explanation, around 60 seconds
+Audience: field workers, AI tool builders, outdoor operators
+Goal: sell the aspirational shape while preserving safety boundaries
+Claim posture: vision trailer built from current MVP direction
 Source: `/home/peter/field-relay/docs/strategy.md`
+URL: https://fieldrelay.continuumkit.org
 
 ## Mandatory Copy Points
 
 - Field Relay is always ready, not always recording.
-- V1 starts with a conversation surface, pinned safe/read-only commands, dot
-  commands, and no silent loss for unsent messages.
-- Hands-free capture is later and must prove reliability before becoming core.
-- Local save and recovery matter.
+- It is for people whose hands and eyes are busy.
+- It is a command surface for notes, tools, and agent actions.
+- It should be extendable: agents can add their own tools and commands.
+- Do not claim always-on listening is finished.
+- Family line: `Part of the Continuum family.`
+- URL: `fieldrelay.continuumkit.org`.
 
 ## Read
 
-Field Relay is built around a very practical outdoor problem.
+Field Relay is for people whose hands and eyes are busy.
 
-When you are in the field, the work is moving. Your hands are wet, muddy, cold,
-or busy. You need to capture what happened, issue a command, or leave a note
-without turning the whole job into screen time.
+Field workers, boat people, land people, repair people, restoration people:
+anyone who needs the computer, but cannot stop the work to babysit a screen.
 
-The tempting version is a sci-fi always-listening assistant. Field Relay is more
-careful than that.
+The shape is simple: a default assistant for the real world. A field notebook, a
+command line, and a tricorder you can talk to.
 
-The V1 direction is always ready, not always recording: a conversation surface,
-pinned safe commands, dot commands, local unsent message preservation, and clear
-recovery when the backend is not available.
+Ask it to save the note. Run the checklist. Start the capture. Log the place.
+Call the tool. Hand the job to your own agent.
 
-Hands-free capture can come later, but only after the save, stop, timeout,
-feedback, and transcription loops prove they can be trusted.
+The important bit is extensibility. Field Relay should not only run Peter's
+commands. Anyone with an AI agent should be able to create the tools and command
+words that fit their own work.
 
-The promise is not magic. It is field discipline: save first, recover cleanly,
-and grow into the no-hands loop without losing data.
+It is early, so the safety rule still matters: always ready does not mean always
+recording. But the destination is clear.
 
-Field Relay. Ready when the work is moving.
+Field Relay.
 
+Your field computer, waiting for orders.
+
+Part of the Continuum family.
+
+Go to fieldrelay.continuumkit.org.

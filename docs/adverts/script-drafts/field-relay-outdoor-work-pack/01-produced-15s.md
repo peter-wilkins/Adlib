@@ -1,24 +1,26 @@
 # Field Relay Outdoor Work Pack - Produced 15s
 
-Project: Field Relay  
-Format: produced spot, 15 seconds  
-Audience: people doing field work who need low-friction notes and commands  
-Goal: explain current direction without hot-mic overclaim  
-Claim posture: current truth / MVP direction  
+Project: Field Relay
+Format: produced spot, 15 seconds
+Audience: people doing field work who need low-friction notes and commands
+Goal: explain current direction without hot-mic overclaim
+Claim posture: current truth / MVP direction
 Source: `/home/peter/field-relay/docs/strategy.md`
+URL: https://fieldrelay.continuumkit.org
 
 ## Script
 
-Field work does not wait for a tidy desk.
+Your hands are busy. Your eyes are busy.
 
-Field Relay is a command home for outdoor work: text, dot commands, local save,
-and recovery when the backend is not there.
+Field Relay is the default assistant for people working outside: a talkable
+tricorder for notes, commands, and tools.
 
-Not always listening.
+Extend it. Command it. Take it into the field.
 
-Always ready.
+Part of the Continuum family.
+
+Go to fieldrelay.continuumkit.org.
 
 ## Notes
 
-- Avoid saying hands-free capture is finished.
-
+- Aspirational, but avoid claiming always-on capture is finished.

@@ -1,28 +1,31 @@
 # AdLib Product Service Pack - Produced 30s
 
-Project: AdLib  
-Format: produced spot, 30 seconds  
-Audience: solo founders, makers, product-led agencies  
-Goal: sell the workflow as a useful service/product  
-Claim posture: current truth for local workflow; no self-serve platform claim  
+Project: AdLib
+Format: produced spot, 30 seconds
+Audience: solo founders, makers, product-led agencies
+Goal: sell the workflow as a useful service/product
+Claim posture: current truth for local workflow; no self-serve platform claim
 Source: `docs/product-truths/2026-06-02-audio-advert-generator.md`
+URL: https://adlib.continuumkit.org
 
 ## Script
 
-Most AI adverts fail before the voice is generated.
+You do not need a full studio day to find out whether the message works.
 
-The claim is vague. The script outruns the product. The clip gets lost. Nobody
-knows which version passed.
+AdLib turns docs into audio advert drafts: fast scripts, reusable voice assets,
+simple checks, and a searchable library of what was made.
 
-AdLib starts with Product Truth. Then it drafts scripts, creates approved
-ElevenLabs manifests, generates reusable line assets, checks the transcript,
-and saves searchable metadata so you can find the good take later.
+The point is not perfect polish on the first pass. It is getting the message
+clear enough to hear, share, revise, and test without wasting a production
+budget.
 
-It is local-first, script-first, and evidence-led.
+AdLib. Docs to audio advert.
 
-AdLib. Product Truth to playable advert assets.
+Part of the Continuum family.
+
+Join the mailing list at adlib.continuumkit.org.
 
 ## Notes
 
 - Do not say "fully automated platform" yet.
-
+- Do not name implementation details in public copy.

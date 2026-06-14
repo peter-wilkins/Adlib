@@ -1,11 +1,12 @@
 # Continuum Brand Trailer - Produced 30s
 
-Project: Continuum  
-Format: produced spot, 30 seconds  
-Audience: developers, researchers, founders, ADHD/overloaded thinkers  
-Goal: explain the core problem and promise  
-Claim posture: current truth for direction; vision trailer for final experience  
+Project: Continuum
+Format: produced spot, 30 seconds
+Audience: developers, researchers, founders, ADHD/overloaded thinkers
+Goal: explain the core problem and promise
+Claim posture: current truth for direction; vision trailer for final experience
 Sources: `/home/peter/continuum/README.md`, `/home/peter/continuum/docs/MARKETING_NOTES.md`
+URL: https://continuumkit.org
 
 ## Script
 
@@ -25,7 +26,8 @@ A memory surface for work that keeps coming back.
 
 Continuum. Preserve the thread.
 
+Go to continuumkit.org.
+
 ## Notes
 
 - "Built around" keeps this claim honest while implementation matures.
-

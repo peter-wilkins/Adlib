@@ -1,39 +1,52 @@
 # Downwind Windstats Sports Pack - Host Read 60s
 
-Project: Downwind / Windstats sports production  
-Format: host-read / episode intro, around 60 seconds  
-Audience: downwind riders, wingfoil viewers, technical sports fans  
-Goal: establish a repeatable episode structure  
-Claim posture: current truth plus vision trailer  
+Project: Downwind / Windstats sports production
+Format: episode sting bank / host read, around 60 seconds
+Audience: downwind riders, wingfoil viewers, technical sports fans
+Goal: create repeatable phrases for extreme-sports edits
+Claim posture: current truth plus vision trailer
 Source: `/home/peter/windstats/AGENT-HANDOFF.md`
+URL: https://windstats.continuumkit.org
 
 ## Mandatory Copy Points
 
 - Use wind reports as context, not safety guarantees.
 - Validate conditions before critical decisions.
-- Current Windstats direction is about portable wind reporting and source
-  comparison.
+- Current Windstats direction is about portable wind reporting and source comparison.
 - Live synced telemetry is vision language until proven.
+- Family line: `Windstats. Part of the Continuum family.`
+- URL: `windstats.continuumkit.org`.
 
-## Read
+## Sting Bank
 
-This episode is not just a ride edit.
+- Wind's on.
+- Let's downwind.
+- Oil for the foil.
+- It's gripped.
+- Foil up.
+- Run the line.
+- Send the harbour.
+- Speed run.
+- Wobble replay.
+- Splash tax.
+- Gust check.
+- Route replay.
+- Technical breakdown.
+- Wind's up, excuses down.
+- Foil brain engaged.
+- Same rider. Worse idea.
 
-We are going to look at the wind window, the gusts, the route choice, and the
-moments where the session either opened up or started closing down.
+## Short Host Read
 
-The Windstats direction is simple: take public and local wind information, make
-the uncertainty visible, and use it as context for better technical storytelling.
+This is the downwind cut: wind check, course line, speed run, wobble replay, and
+whatever excuse we invent after the splash.
 
-That means the overlay is not there to decorate the footage. It is there to
-explain what the rider was feeling: pressure building, speed changing, line
-choice narrowing, or a safety decision becoming obvious.
+Use the wind numbers as context, not permission. Check the real conditions.
 
-For now, treat every wind report as context, not a guarantee. Check real
-conditions before you make real decisions.
+Then foil up.
 
-But as a production language, this is the goal: turn water, wind, speed, and
-judgement into a story the viewer can actually read.
+Let's downwind.
 
-Downwind data, made watchable.
+Windstats. Part of the Continuum family.
 
+Go to windstats.continuumkit.org.

@@ -3,9 +3,10 @@
 Project: Checkdam / Living Water visit videos  
 Format: produced spot, 30 seconds  
 Audience: farmers, landowners, restoration viewers, AI/water collaborators  
-Goal: explain the field-video series  
-Claim posture: current truth plus careful vision language  
+Goal: explain the field-video series
+Claim posture: current truth plus careful vision language
 Sources: `/home/peter/checkdam.github.io/Services.md`, `/home/peter/checkdam.github.io/Mission.md`
+URL: https://checkdam.org
 
 ## Script
 
@@ -23,8 +24,9 @@ Just practical attention to water, land, and what might help them heal.
 
 Checkdam. Restore the water. Restore the land.
 
+Go to checkdam.org.
+
 ## Notes
 
 - Good bed: boots, wind, water trickle, distant birds.
 - Keep "not final design advice" audible.
-

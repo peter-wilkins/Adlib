@@ -1,6 +1,7 @@
 # JobDone Reusable Recall Voice Assets
 
-Status: draft manifest only. Not approved for paid generation.
+Status: one approved test line generated locally; the eight-line batch remains
+unapproved for paid generation.
 
 Purpose: prepare small reusable JobDone voice assets from Product Truth so Peter
 can approve exact copy and spend before the remaining ElevenLabs subscription
@@ -21,6 +22,24 @@ docs/product-truths/2026-06-02-jobdone.md
 - Uses concrete tradesperson memory moments rather than generic SaaS claims.
 
 ## Review
+
+## Generated Test
+
+Peter approved one exact test line on 2026-06-14:
+
+```text
+What did I do at Mrs Jones last time?
+```
+
+Manifest:
+
+```text
+docs/adverts/jobdone-reusable-recall/elevenlabs-david-recall-test-v1.json
+```
+
+The generated MP3 and metadata are ignored local state. Regenerate the audio
+asset search workbench to find it by campaign, script text, voice, provider,
+request ID, hash, or path.
 
 List planned generations without credits:
 

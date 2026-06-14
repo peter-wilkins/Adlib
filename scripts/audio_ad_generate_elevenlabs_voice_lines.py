@@ -15,14 +15,14 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from audio_ad_generate_elevenlabs_dialogue import load_env_files, output_suffix, sha256_bytes
+try:
+    from audio_ad_generate_elevenlabs_dialogue import load_env_files, output_suffix, sha256_bytes
+except ModuleNotFoundError:
+    from scripts.audio_ad_generate_elevenlabs_dialogue import load_env_files, output_suffix, sha256_bytes
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_MANIFEST = ROOT / "docs" / "adverts" / "jobdone-dog-callback" / "elevenlabs-voice-lines-v1.json"
-DEFAULT_AUDIO_DIR = ROOT / "data" / "raw" / "audio-ads" / "jobdone-dog-callback" / "elevenlabs" / "voice-lines"
-DEFAULT_META_DIR = ROOT / "data" / "processed" / "audio-ads" / "jobdone-dog-callback" / "elevenlabs" / "voice-lines"
-DEFAULT_REAPER_ASSET_DIR = ROOT / "local" / "audio-adverts" / "jobdone-dog-callback" / "assets"
 ENV_PATHS = (
     ROOT / "local" / "audio-assets" / ".env",
     ROOT / "local" / "elevenlabs" / ".env",
@@ -35,18 +35,12 @@ class GenerationError(RuntimeError):
 
 def main() -> int:
     args = parse_args()
-    load_env_files(ENV_PATHS)
     manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
-    if not manifest.get("approvedForPaidGeneration"):
-        raise SystemExit("manifest is not approved for paid generation")
     if args.audition_text:
         manifest["_auditionText"] = args.audition_text
         manifest["_auditionId"] = args.audition_id
         manifest["_auditionSlug"] = args.audition_slug
         manifest["_auditionFolder"] = args.audition_folder
-    api_key = os.environ.get("ELEVENLABS_API_KEY")
-    if not api_key:
-        raise SystemExit("missing ELEVENLABS_API_KEY in local/audio-assets/.env or shell environment")
 
     tasks = expand_tasks(manifest)
     if args.asset_id:
@@ -63,12 +57,19 @@ def main() -> int:
 
     if not tasks:
         raise SystemExit("no matching voice-line tasks")
+    if not manifest.get("approvedForPaidGeneration"):
+        raise SystemExit("manifest is not approved for paid generation")
+    load_env_files(ENV_PATHS)
+    api_key = os.environ.get("ELEVENLABS_API_KEY")
+    if not api_key:
+        raise SystemExit("missing ELEVENLABS_API_KEY in local/audio-assets/.env or shell environment")
 
+    audio_dir, meta_dir, reaper_asset_dir = resolve_output_dirs(args, manifest)
     written = []
     for task in tasks:
         print(f"generating {task_name(task)}", flush=True)
         audio, headers = call_tts(api_key, manifest, task)
-        written.append(write_outputs(manifest, task, audio, headers, args.audio_dir, args.meta_dir, args.reaper_asset_dir))
+        written.append(write_outputs(manifest, task, audio, headers, audio_dir, meta_dir, reaper_asset_dir))
 
     print()
     print(f"generated {len(written)} voice assets")
@@ -80,9 +81,9 @@ def main() -> int:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
-    parser.add_argument("--audio-dir", type=Path, default=DEFAULT_AUDIO_DIR)
-    parser.add_argument("--meta-dir", type=Path, default=DEFAULT_META_DIR)
-    parser.add_argument("--reaper-asset-dir", type=Path, default=DEFAULT_REAPER_ASSET_DIR)
+    parser.add_argument("--audio-dir", type=Path)
+    parser.add_argument("--meta-dir", type=Path)
+    parser.add_argument("--reaper-asset-dir", type=Path)
     parser.add_argument("--asset-id", action="append", help="Only generate this asset id; may be repeated.")
     parser.add_argument("--voice-profile", action="append", help="Only generate this voice profile; may be repeated.")
     parser.add_argument("--limit", type=int, help="Generate only the first N matching tasks.")
@@ -92,6 +93,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--audition-slug", default="same_text", help="Take slug to use with --audition-text.")
     parser.add_argument("--audition-folder", default="voice/auditions", help="REAPER asset folder to use with --audition-text.")
     return parser.parse_args()
+
+
+def resolve_output_dirs(args: argparse.Namespace, manifest: dict[str, Any]) -> tuple[Path, Path, Path]:
+    campaign = str(manifest.get("campaign") or "jobdone-dog-callback")
+    audio_dir = args.audio_dir or ROOT / "data" / "raw" / "audio-ads" / campaign / "elevenlabs" / "voice-lines"
+    meta_dir = args.meta_dir or ROOT / "data" / "processed" / "audio-ads" / campaign / "elevenlabs" / "voice-lines"
+    reaper_asset_dir = args.reaper_asset_dir or ROOT / "local" / "audio-adverts" / campaign / "assets"
+    return audio_dir, meta_dir, reaper_asset_dir
 
 
 def expand_tasks(manifest: dict[str, Any]) -> list[dict[str, Any]]:

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "JD_reusable_recall",
+  "scriptVersion": "david-recall-lines-v1",
+  "campaign": "jobdone-reusable-recall",
+  "productTruth": "docs/product-truths/2026-06-02-jobdone.md",
+  "approvedForPaidGeneration": false,
+  "approvalNote": "Draft prepared on 2026-06-14 for Peter review. Do not generate until Peter approves the exact text, David voice direction, and ElevenLabs spend.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "estimatedCharacterCount": 309,
+  "voiceProfiles": {
+    "david_practical_recall": {
+      "voiceId": "8KgifH3usc0tJtr7QzP4",
+      "voiceName": "David - Yorkshire Warm, Trustworthy",
+      "role": "Selected JobDone tradesperson; grounded practical recall lines",
+      "defaultSettings": {
+        "stability": 0.44,
+        "similarity_boost": 0.84,
+        "style": 0.22,
+        "use_speaker_boost": true
+      }
+    },
+    "david_quiet_capture": {
+      "voiceId": "8KgifH3usc0tJtr7QzP4",
+      "voiceName": "David - Yorkshire Warm, Trustworthy",
+      "role": "Selected JobDone tradesperson; quiet capture and confirmation lines",
+      "defaultSettings": {
+        "stability": 0.62,
+        "similarity_boost": 0.88,
+        "style": 0.08,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "recall_query",
+      "takeSlug": "mrs_jones_last_time",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/reusable-recall",
+      "text": "What did I do at Mrs Jones last time?",
+      "voiceProfiles": ["david_practical_recall"]
+    },
+    {
+      "assetId": "recall_query",
+      "takeSlug": "boiler_parts_followup",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/reusable-recall",
+      "text": "What did I promise to bring back for that boiler job?",
+      "voiceProfiles": ["david_practical_recall"]
+    },
+    {
+      "assetId": "capture_command",
+      "takeSlug": "add_to_jobdone_note",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/reusable-recall",
+      "text": "Add that to the JobDone note.",
+      "voiceProfiles": ["david_quiet_capture"]
+    },
+    {
+      "assetId": "confirmation",
+      "takeSlug": "confirmed_into_timeline",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/reusable-recall",
+      "text": "Confirmed? Good. That's in the timeline.",
+      "voiceProfiles": ["david_quiet_capture"]
+    },
+    {
+      "assetId": "recall_request",
+      "takeSlug": "show_last_note_for_place",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/reusable-recall",
+      "text": "Show me the last note for this place.",
+      "voiceProfiles": ["david_practical_recall"]
+    },
+    {
+      "assetId": "recall_reaction",
+      "takeSlug": "would_not_have_remembered",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/reusable-recall",
+      "text": "I would not have remembered that.",
+      "voiceProfiles": ["david_practical_recall"]
+    },
+    {
+      "assetId": "memory_habit",
+      "takeSlug": "write_it_while_there",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/reusable-recall",
+      "text": "That's why I write it down while I'm there.",
+      "voiceProfiles": ["david_quiet_capture"]
+    },
+    {
+      "assetId": "recall_reaction",
+      "takeSlug": "right_detail",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/reusable-recall",
+      "text": "There it is. Right job, right detail.",
+      "voiceProfiles": ["david_practical_recall"]
+    }
+  ]
+}

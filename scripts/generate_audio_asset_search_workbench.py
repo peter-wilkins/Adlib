@@ -984,10 +984,14 @@ applyFilters();
 
 
 def register_on_shelf() -> None:
+    shelf_script = ROOT / "scripts" / "lab_shelf.py"
+    if not shelf_script.exists():
+        print(f"shelf: skipped missing {shelf_script}")
+        return
     subprocess.run(
         [
             "python3",
-            str(ROOT / "scripts" / "lab_shelf.py"),
+            str(shelf_script),
             "add",
             str(OUT_DIR),
             "--title",

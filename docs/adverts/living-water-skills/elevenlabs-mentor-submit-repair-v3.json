@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "LWS_ad01_pond_challenge",
+  "scriptVersion": "mentor-submit-repair-v3",
+  "campaign": "living-water-skills-pond-challenge",
+  "productTruth": "docs/product-truths/2026-06-02-living-water-skills.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter requested Pond not Pawn. This submit-only repair uses punctuation to force the final d without adding spoken instruction text.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "mentor_river_steward": {
+      "voiceId": "SAz9YHcvj6GT2YYXdXww",
+      "voiceName": "River - Relaxed, Neutral, Informative",
+      "role": "Selected app mentor voice submit repair; punctuation-for-pronunciation take",
+      "defaultSettings": {
+        "stability": 0.8,
+        "similarity_boost": 0.82,
+        "style": 0.02,
+        "speed": 0.92,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "mentor_submit",
+      "takeSlug": "repair_pond_pause",
+      "speaker": "app_mentor",
+      "folder": "voice/mentor/repairs",
+      "text": "Exactly. I think you're ready to submit your Level 2 Pond. Challenge now.",
+      "voiceProfiles": ["mentor_river_steward"]
+    }
+  ]
+}

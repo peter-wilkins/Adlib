@@ -31,6 +31,7 @@ CANONICAL_TOKEN_PHRASES = {
     ("ad", "lib"): "adlib",
     ("check", "dam"): "checkdam",
     ("eleven", "labs"): "elevenlabs",
+    ("frog", "spawn"): "frogspawn",
     ("job", "done"): "jobdone",
     ("missus",): "mrs",
     ("wind", "stats"): "windstats",

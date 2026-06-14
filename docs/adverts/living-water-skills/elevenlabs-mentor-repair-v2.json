@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "LWS_ad01_pond_challenge",
+  "scriptVersion": "mentor-repair-v2",
+  "campaign": "living-water-skills-pond-challenge",
+  "productTruth": "docs/product-truths/2026-06-02-living-water-skills.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter requested a repaired River mentor guidance line on 2026-06-14. V1 repair was rejected because ElevenLabs spoke direction text; V2 sends exact spoken words only.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "mentor_river_steward": {
+      "voiceId": "SAz9YHcvj6GT2YYXdXww",
+      "voiceName": "River - Relaxed, Neutral, Informative",
+      "role": "Selected app mentor voice repair; exact spoken text only",
+      "defaultSettings": {
+        "stability": 0.76,
+        "similarity_boost": 0.82,
+        "style": 0.04,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "mentor_guidance",
+      "takeSlug": "repair_exact_nice_work",
+      "speaker": "app_mentor",
+      "folder": "voice/mentor/repairs",
+      "text": "Nice work. Add native pond plants, make a shallow edge, and leave some messy shelter nearby. Don't collect frogs or frogspawn from the wild. If the habitat is right, the right creatures will find it.",
+      "voiceProfiles": ["mentor_river_steward"]
+    }
+  ]
+}

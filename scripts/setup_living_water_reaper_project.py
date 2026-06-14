@@ -54,9 +54,21 @@ COPIED_AMBIENCE = (
     ),
 )
 
+MENTOR_GUIDANCE_PHONE = ASSET_DIR / (
+    "voice/mentor/selected/phone-processed/"
+    "mentor_guidance__selected_river_guidance__mentor_river_steward__phone_speaker.mp3"
+)
+MENTOR_GUIDANCE_REPAIR_PHONE = ASSET_DIR / (
+    "voice/mentor/repairs/phone-processed/"
+    "mentor_guidance__repair_exact_nice_work__mentor_river_steward__phone_speaker.mp3"
+)
 MENTOR_SUBMIT_PHONE = ASSET_DIR / (
     "voice/mentor/selected/phone-processed/"
     "mentor_submit__selected_river_submit__mentor_river_steward__phone_speaker.mp3"
+)
+MENTOR_SUBMIT_REPAIR_PHONE = ASSET_DIR / (
+    "voice/mentor/repairs/phone-processed/"
+    "mentor_submit__repair_pond_pause__mentor_river_steward__phone_speaker.mp3"
 )
 MENTOR_SUBMIT_TRIMMED = ASSET_DIR / (
     "repairs/technical-preflight/"
@@ -183,7 +195,7 @@ def build_events() -> list[Event]:
         Event(
             "Voice - App Mentor Phone",
             "Nice work. Add native pond plants...",
-            ASSET_DIR / "voice/mentor/selected/phone-processed/mentor_guidance__selected_river_guidance__mentor_river_steward__phone_speaker.mp3",
+            preferred_mentor_guidance_phone(),
             9.1,
             volume_db=-2,
         ),
@@ -217,9 +229,17 @@ def build_events() -> list[Event]:
 
 
 def preferred_mentor_submit_phone() -> Path:
+    if MENTOR_SUBMIT_REPAIR_PHONE.exists():
+        return MENTOR_SUBMIT_REPAIR_PHONE
     if MENTOR_SUBMIT_TRIMMED.exists():
         return MENTOR_SUBMIT_TRIMMED
     return MENTOR_SUBMIT_PHONE
+
+
+def preferred_mentor_guidance_phone() -> Path:
+    if MENTOR_GUIDANCE_REPAIR_PHONE.exists():
+        return MENTOR_GUIDANCE_REPAIR_PHONE
+    return MENTOR_GUIDANCE_PHONE
 
 
 def write_reaper_project(events: list[Event]) -> None:
@@ -417,15 +437,16 @@ The first rough layout uses:
 
 - original Maya learner clips
 - River mentor clips with phone-speaker processing
-- the clipped submit-line repair candidate when present
+- gate-approved mentor repair clips when present
 - Lily narrator tagline
 - copied garden-bird ambience from the JobDone project
 - generated pond-water placeholders
 
-Gate repair note:
+Gate repair notes:
 
-- `{MENTOR_SUBMIT_TRIMMED.relative_to(PROJECT_DIR)}` removes the leading "And" from the second mentor line when present.
-- The current gate still marks that candidate as not quality-approved because a verification transcription hears "Pond" as "Pawn". Use this rough assembly for timing/audition only.
+- `{MENTOR_GUIDANCE_REPAIR_PHONE.relative_to(PROJECT_DIR)}` restores the missing "Nice work" opening when present.
+- `{MENTOR_SUBMIT_REPAIR_PHONE.relative_to(PROJECT_DIR)}` uses a small punctuation pause so "Pond Challenge" does not become "Pawn Challenge" when present.
+- `{MENTOR_SUBMIT_TRIMMED.relative_to(PROJECT_DIR)}` is the older clipped fallback that only removes the leading "And".
 
 Copied ambience:
 

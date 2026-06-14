@@ -74,6 +74,15 @@ class AudioAssetQualityGateTest(unittest.TestCase):
         self.assertEqual(result.status, "exact_match")
         self.assertEqual(result.gate_status, "pass")
 
+    def test_frogspawn_spelling_variants_do_not_create_drift(self):
+        result = classify_script_drift(
+            "Don't collect frogs or frogspawn from the wild.",
+            "Don't collect frogs or frog spawn from the wild.",
+        )
+
+        self.assertEqual(result.status, "exact_match")
+        self.assertEqual(result.gate_status, "pass")
+
     def test_spoken_mrs_variant_does_not_create_drift(self):
         result = classify_script_drift(
             "What did I do at Mrs Jones last time?",

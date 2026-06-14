@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "JD_ad02_dog_callback",
+  "scriptVersion": "time-bridge-v1",
+  "campaign": "jobdone-dog-callback",
+  "productTruth": "docs/product-truths/2026-06-02-jobdone.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter decided the second half needs an explicit time bridge. Avoid the earlier doodle-doo gag; generate a clean narrator line.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "lily_warm_time_bridge": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Warm narrator time bridge",
+      "defaultSettings": {
+        "stability": 0.42,
+        "similarity_boost": 0.82,
+        "style": 0.28,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "time_bridge",
+      "takeSlug": "v1_three_months_later",
+      "speaker": "narrator",
+      "folder": "voice/narrator/directed-v2",
+      "text": "[warm, clear, lightly amused, understated narrator] Three months later.",
+      "voiceProfiles": ["lily_warm_time_bridge"]
+    }
+  ]
+}

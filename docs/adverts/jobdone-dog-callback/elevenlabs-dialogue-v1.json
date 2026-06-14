@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-dialogue.v1",
+  "scriptId": "JD_ad02_dog_callback",
+  "scriptVersion": "v1",
+  "campaign": "jobdone-first-audio-test",
+  "productTruth": "docs/product-truths/2026-06-02-jobdone.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter authorised a real bounded ElevenLabs spend experiment on 2026-06-02.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-dialogue/with-timestamps",
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "seed": 260602,
+  "targetAudience": "Tradespeople who remember the job but forget the weird site details until too late.",
+  "intent": "Test whether ElevenLabs can produce a whole multi-speaker advert with dialogue timing and dog callback beats in one request.",
+  "tone": "Humble site comedy. JobDone helps you remember the practical details, but life stays messy, funny, and human.",
+  "speakers": {
+    "tradesperson": {
+      "role": "Cheerful British tradesperson using JobDone",
+      "voiceDescription": "Happy chappy, warm, upbeat, 'alright governor' energy, extra relaxed because JobDone is helping him remember the job details. Natural and grounded, not a comedy caricature.",
+      "voiceIdEnv": "ELEVENLABS_VOICE_TRADESPERSON",
+      "voiceSearchTerms": ["british", "male", "cheerful", "conversational", "warm", "natural"]
+    },
+    "app_voice": {
+      "role": "Calm JobDone app voice",
+      "voiceDescription": "Clear calm assistant voice, neutral British delivery, concise and useful, not robotic.",
+      "voiceIdEnv": "ELEVENLABS_VOICE_APP",
+      "voiceSearchTerms": ["british", "female", "calm", "assistant", "clear"]
+    },
+    "narrator": {
+      "role": "Calm English actress narrator",
+      "voiceDescription": "Choose the voice most likely to work in a sales advert. Preferred flavour: very calm English actress voice, warm, understated, elegant, a bit sexy in a subtle grown-up way, grounded, no hype, not breathy or cheesy.",
+      "voiceSelectionPriority": "Commercial/sales effectiveness first; calm English actress flavour second.",
+      "voiceIdEnv": "ELEVENLABS_VOICE_NARRATOR",
+      "voiceSearchTerms": ["sales", "commercial", "advert", "persuasive", "trustworthy", "british", "female", "calm", "actress", "warm", "subtle", "sensual", "narrator"]
+    }
+  },
+  "inputs": [
+    {
+      "lineId": "l001",
+      "speaker": "tradesperson",
+      "text": "[cheerful, calling back through a doorway, relaxed and upbeat] Alright then, Mrs Jones. Bye. [front door shuts]"
+    },
+    {
+      "lineId": "l002",
+      "speaker": "tradesperson",
+      "text": "[small friendly device beep: recording starts] [happy chappy, into phone, pleased with himself] Replaced the kitchen sink washer. Isolation valve is stiff here. [small friendly device beep: note saved]"
+    },
+    {
+      "lineId": "l003",
+      "speaker": "tradesperson",
+      "text": "[small dog bark behind the closed door] [remembering one more useful detail] Oh, and Charlie the dog bites ankles."
+    },
+    {
+      "lineId": "l004_timejump",
+      "speaker": "narrator",
+      "text": "[calm English actress narrator, subtly sensual, dreamy retro TV time-jump sting, playful but original] Doodle doo doo. Doodle doo doo. Doodle doo doo. Three months later..."
+    },
+    {
+      "lineId": "l006",
+      "speaker": "app_voice",
+      "text": "[footsteps approach the same front door, then a doorbell rings] Results for Mrs Jones. Kitchen sink washer replaced. Isolation valve stiff. Charlie the dog bites ankles. [small clean device beep: result found]"
+    },
+    {
+      "lineId": "l006_reaction",
+      "speaker": "tradesperson",
+      "text": "[hushed, relaxed, confident, almost to himself] Hmph, Charlie."
+    },
+    {
+      "lineId": "l007",
+      "speaker": "narrator",
+      "text": "[calm English actress narrator, subtly warm] JobDone. Remember the job."
+    },
+    {
+      "lineId": "l008",
+      "speaker": "tradesperson",
+      "text": "[in the distance, one eager dog bark, footsteps scramble, a small kerfuffle as Charlie steals something] [calling back as the kerfuffle trails off] Oi, Charlie! Come back with that."
+    }
+  ],
+  "truthChecks": [
+    "Demonstrates Capture -> Confirmation -> Timeline -> Recall.",
+    "Does not claim invoicing, accounting, CRM replacement, or always-correct AI.",
+    "The dog detail is captured as ordinary job context, not magic inference.",
+    "The ending stays humble: JobDone remembers the job, then life carries on with Charlie.",
+    "The one-shot generation is an experiment; editable production assets may still be needed."
+  ]
+}

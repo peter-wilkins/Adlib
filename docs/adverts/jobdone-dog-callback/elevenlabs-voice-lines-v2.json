@@ -1,0 +1,204 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "JD_ad02_dog_callback",
+  "scriptVersion": "voice-lines-v2-regional",
+  "campaign": "jobdone-dog-callback",
+  "productTruth": "docs/product-truths/2026-06-02-jobdone.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter rejected the first premade/polished voice batch and requested regional UK/Ireland voice auditions on 2026-06-02. After auditioning, Peter selected yorkshire_david over scottish_chris because Chris sounded too tired and world weary.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "yorkshire_david": {
+      "voiceId": "8KgifH3usc0tJtr7QzP4",
+      "voiceName": "David - Yorkshire Warm, Trustworthy",
+      "role": "Yorkshire male tradesperson candidate",
+      "defaultSettings": {
+        "stability": 0.32,
+        "similarity_boost": 0.82,
+        "style": 0.48,
+        "use_speaker_boost": true
+      }
+    },
+    "yorkshire_paul": {
+      "voiceId": "oCXdm5WkYoKVEdlbPLev",
+      "voiceName": "Paul - Deep & Warm - Yorkshire",
+      "role": "Deeper Yorkshire male tradesperson candidate",
+      "defaultSettings": {
+        "stability": 0.32,
+        "similarity_boost": 0.82,
+        "style": 0.45,
+        "use_speaker_boost": true
+      }
+    },
+    "yorkshire_noah": {
+      "voiceId": "poHOO1m3tBNm4Ywmzcaq",
+      "voiceName": "Noah - Friendly, Natural and Yorkshire",
+      "role": "Younger Yorkshire tradesperson candidate",
+      "defaultSettings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.52,
+        "use_speaker_boost": true
+      }
+    },
+    "geordie_andy": {
+      "voiceId": "lfPTQbwnu1oXQ9g6V0r4",
+      "voiceName": "Andy - Geordie Calm Storyteller",
+      "role": "Geordie male tradesperson candidate",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.82,
+        "style": 0.42,
+        "use_speaker_boost": true
+      }
+    },
+    "northern_mike": {
+      "voiceId": "S1GxattMxHrXozy2QM7J",
+      "voiceName": "Mike - Northern English",
+      "role": "Robust Northern English tradesperson candidate",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.82,
+        "style": 0.42,
+        "use_speaker_boost": true
+      }
+    },
+    "scottish_chris": {
+      "voiceId": "csXxiUN2BUFflsCaDxPM",
+      "voiceName": "Chris - Scottish Casual",
+      "role": "Casual Scottish tradesperson candidate",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.82,
+        "style": 0.44,
+        "use_speaker_boost": true
+      }
+    },
+    "scouse_husky": {
+      "voiceId": "QskpmzLHRFPTEOkFlnAI",
+      "voiceName": "Husky - Calm, Warm, Friendly",
+      "role": "Liverpool / Scouse tradesperson candidate",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.82,
+        "style": 0.44,
+        "use_speaker_boost": true
+      }
+    },
+    "irish_stephen": {
+      "voiceId": "huSf6WJX1X9lGY6I9CfQ",
+      "voiceName": "Stephen - Irish Narration Voice",
+      "role": "Irish tradesperson candidate",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.82,
+        "style": 0.44,
+        "use_speaker_boost": true
+      }
+    },
+    "narrator_lily": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Kept narrator voice for short sales line only",
+      "defaultSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.82,
+        "style": 0.18,
+        "use_speaker_boost": true
+      }
+    },
+    "app_maya": {
+      "voiceId": "x4UhiuorV3bFSbPFPR8Z",
+      "voiceName": "Maya - Friendly, Capable, Conversational",
+      "role": "Generic British assistant/app voice candidate",
+      "defaultSettings": {
+        "stability": 0.68,
+        "similarity_boost": 0.82,
+        "style": 0.08,
+        "use_speaker_boost": true
+      }
+    },
+    "app_katie": {
+      "voiceId": "MzqUf1HbJ8UmQ0wUsx2p",
+      "voiceName": "Katie X - Clear British Customer Support",
+      "role": "Clear British app voice candidate",
+      "defaultSettings": {
+        "stability": 0.72,
+        "similarity_boost": 0.84,
+        "style": 0.06,
+        "use_speaker_boost": true
+      }
+    },
+    "app_clarice": {
+      "voiceId": "MWUpoNpAY0rOQGP294mF",
+      "voiceName": "Clarice - Natural & Calm British Voice",
+      "role": "Calm polished British app voice candidate",
+      "defaultSettings": {
+        "stability": 0.7,
+        "similarity_boost": 0.84,
+        "style": 0.06,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "plumber_exit",
+      "takeSlug": "regional_goodbye",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson",
+      "text": "Alright then, Mrs Jones. Bye.",
+      "voiceProfiles": ["yorkshire_david", "yorkshire_paul", "yorkshire_noah", "geordie_andy", "northern_mike", "scottish_chris", "scouse_husky", "irish_stephen"]
+    },
+    {
+      "assetId": "plumber_capture",
+      "takeSlug": "regional_job_note",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson",
+      "text": "Replaced the kitchen sink washer. Isolation valve is stiff here.",
+      "voiceProfiles": ["yorkshire_david", "yorkshire_paul", "yorkshire_noah", "geordie_andy", "northern_mike", "scottish_chris", "scouse_husky", "irish_stephen"]
+    },
+    {
+      "assetId": "plumber_charlie_note",
+      "takeSlug": "selected_david_afterthought",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson",
+      "text": "Oh, and Charlie the dog bites ankles.",
+      "voiceProfiles": ["yorkshire_david"]
+    },
+    {
+      "assetId": "plumber_reaction",
+      "takeSlug": "selected_david_hushed_hmph",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson",
+      "text": "Hmph, Charlie.",
+      "voiceProfiles": ["yorkshire_david"]
+    },
+    {
+      "assetId": "plumber_final",
+      "takeSlug": "regional_charlie_chase",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson",
+      "text": "Oi, Charlie! Come back with that.",
+      "voiceProfiles": ["yorkshire_david", "yorkshire_paul", "yorkshire_noah", "geordie_andy", "northern_mike", "scottish_chris", "scouse_husky", "irish_stephen"]
+    },
+    {
+      "assetId": "tagline",
+      "takeSlug": "lily_understated_sales",
+      "speaker": "narrator",
+      "folder": "voice/narrator",
+      "text": "JobDone. Remember the job.",
+      "voiceProfiles": ["narrator_lily"]
+    },
+    {
+      "assetId": "app_results",
+      "takeSlug": "assistant_recall_result",
+      "speaker": "app_voice",
+      "folder": "voice/app",
+      "text": "Results for Mrs Jones. Kitchen sink washer replaced. Isolation valve stiff. Charlie the dog bites ankles.",
+      "voiceProfiles": ["app_maya", "app_katie", "app_clarice"]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "JD_ad02_dog_callback",
+  "scriptVersion": "david-directed-v1",
+  "campaign": "jobdone-dog-callback",
+  "productTruth": "docs/product-truths/2026-06-02-jobdone.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter said the Eleven v3 prompt variants changed David too much, almost like a different person. This manifest returns to Eleven Multilingual v2 and generates targeted David candidates using text, punctuation, and restrained voice settings.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "david_chirpy_friendly": {
+      "voiceId": "8KgifH3usc0tJtr7QzP4",
+      "voiceName": "David - Yorkshire Warm, Trustworthy",
+      "role": "Selected JobDone tradesperson, chirpy friendly goodbye",
+      "defaultSettings": {
+        "stability": 0.3,
+        "similarity_boost": 0.84,
+        "style": 0.5,
+        "use_speaker_boost": true
+      }
+    },
+    "david_machine_note": {
+      "voiceId": "8KgifH3usc0tJtr7QzP4",
+      "voiceName": "David - Yorkshire Warm, Trustworthy",
+      "role": "Selected JobDone tradesperson, passive machine-note delivery",
+      "defaultSettings": {
+        "stability": 0.64,
+        "similarity_boost": 0.88,
+        "style": 0.08,
+        "use_speaker_boost": true
+      }
+    },
+    "david_dog_command": {
+      "voiceId": "8KgifH3usc0tJtr7QzP4",
+      "voiceName": "David - Yorkshire Warm, Trustworthy",
+      "role": "Selected JobDone tradesperson, emphatic dog command without anger",
+      "defaultSettings": {
+        "stability": 0.36,
+        "similarity_boost": 0.84,
+        "style": 0.52,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "plumber_exit",
+      "takeSlug": "v2_take_care_chirpy",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/directed-v2",
+      "text": "Alright, Mrs Jones. Take care.",
+      "voiceProfiles": ["david_chirpy_friendly"]
+    },
+    {
+      "assetId": "plumber_capture",
+      "takeSlug": "v2_machine_note_passive",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/directed-v2",
+      "text": "Kitchen sink washer replaced. Isolation valve stiff.",
+      "voiceProfiles": ["david_machine_note"]
+    },
+    {
+      "assetId": "plumber_final",
+      "takeSlug": "v2_oi_charlie_emphatic",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/directed-v2",
+      "text": "Oi, Charlie! Come back with that!",
+      "voiceProfiles": ["david_dog_command"]
+    },
+    {
+      "assetId": "plumber_final",
+      "takeSlug": "v2_oi_charlie_less_angry",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/directed-v2",
+      "text": "Oi, Charlie! Come back with that.",
+      "voiceProfiles": ["david_dog_command"]
+    }
+  ]
+}

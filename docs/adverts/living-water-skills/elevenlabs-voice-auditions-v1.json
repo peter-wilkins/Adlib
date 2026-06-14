@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "LWS_ad01_pond_challenge",
+  "scriptVersion": "voice-auditions-v1",
+  "campaign": "living-water-skills-pond-challenge",
+  "productTruth": "docs/product-truths/2026-06-02-living-water-skills.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter approved voice auditions for the Living Water Skills Pond Challenge advert on 2026-06-03: young teen learner, warm human mentor processed as phone audio, and Lily narrator.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "learner_maya": {
+      "voiceId": "x4UhiuorV3bFSbPFPR8Z",
+      "voiceName": "Maya - Friendly, Capable, Conversational",
+      "role": "Young learner candidate; youthful, excited, natural",
+      "defaultSettings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.62,
+        "use_speaker_boost": true
+      }
+    },
+    "learner_noah": {
+      "voiceId": "poHOO1m3tBNm4Ywmzcaq",
+      "voiceName": "Noah - Friendly, Natural and Yorkshire",
+      "role": "Young learner candidate; young male, natural, UK",
+      "defaultSettings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.58,
+        "use_speaker_boost": true
+      }
+    },
+    "learner_jessica": {
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "role": "Young learner candidate; bright and enthusiastic",
+      "defaultSettings": {
+        "stability": 0.28,
+        "similarity_boost": 0.78,
+        "style": 0.68,
+        "use_speaker_boost": true
+      }
+    },
+    "mentor_maya": {
+      "voiceId": "x4UhiuorV3bFSbPFPR8Z",
+      "voiceName": "Maya - Friendly, Capable, Conversational",
+      "role": "Warm human mentor candidate; friendly and practical",
+      "defaultSettings": {
+        "stability": 0.58,
+        "similarity_boost": 0.84,
+        "style": 0.16,
+        "use_speaker_boost": true
+      }
+    },
+    "mentor_alice": {
+      "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
+      "voiceName": "Alice - Clear, Engaging Educator",
+      "role": "Warm human mentor candidate; educator, clear, calm",
+      "defaultSettings": {
+        "stability": 0.62,
+        "similarity_boost": 0.82,
+        "style": 0.12,
+        "use_speaker_boost": true
+      }
+    },
+    "mentor_clarice": {
+      "voiceId": "MWUpoNpAY0rOQGP294mF",
+      "voiceName": "Clarice - Natural & Calm British Voice",
+      "role": "Warm human mentor candidate; calm British guide",
+      "defaultSettings": {
+        "stability": 0.64,
+        "similarity_boost": 0.84,
+        "style": 0.1,
+        "use_speaker_boost": true
+      }
+    },
+    "narrator_lily": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Narrator candidate; cool, hopeful, lightly aspirational",
+      "defaultSettings": {
+        "stability": 0.44,
+        "similarity_boost": 0.82,
+        "style": 0.28,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "learner_discovery",
+      "takeSlug": "audition_excited_pond",
+      "speaker": "young_learner",
+      "folder": "voice/learner/auditions",
+      "text": "It's working! My pond's holding water now. What can I do to attract nature? Especially frogs.",
+      "voiceProfiles": ["learner_maya", "learner_noah", "learner_jessica"]
+    },
+    {
+      "assetId": "mentor_guidance",
+      "takeSlug": "audition_warm_phone",
+      "speaker": "app_mentor",
+      "folder": "voice/mentor/auditions",
+      "text": "Nice work. Add native pond plants, make a shallow edge, and leave some messy shelter nearby. Don't collect frogs or frogspawn from the wild.",
+      "voiceProfiles": ["mentor_maya", "mentor_alice", "mentor_clarice"]
+    },
+    {
+      "assetId": "narrator_tagline",
+      "takeSlug": "audition_lily",
+      "speaker": "narrator",
+      "folder": "voice/narrator/auditions",
+      "text": "Living Water Skills. Learn outside. Capture the proof. Grow from curious to capable.",
+      "voiceProfiles": ["narrator_lily"]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "JD_ad02_dog_callback",
+  "scriptVersion": "app-phone-v2",
+  "campaign": "jobdone-dog-callback",
+  "productTruth": "docs/product-truths/2026-06-02-jobdone.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter requested a faster app recall line with fewer gaps: 'Here are your search results...' The final phone-speaker/tinny placement is handled in the Reaper rough assembly.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "lily_fast_phone_app": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Fast, quiet, slightly tinny phone assistant voice",
+      "defaultSettings": {
+        "stability": 0.82,
+        "similarity_boost": 0.82,
+        "style": 0.02,
+        "speed": 1.12,
+        "use_speaker_boost": false
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "app_search_results",
+      "takeSlug": "v2_fast_phone",
+      "speaker": "app_voice",
+      "folder": "voice/app/directed-v2",
+      "text": "[fast, crisp, quiet phone speaker, slightly tinny, minimal pauses, neutral assistant voice] Here are your search results: kitchen sink washer replaced, isolation valve stiff, Charlie the dog bites ankles.",
+      "voiceProfiles": ["lily_fast_phone_app"]
+    }
+  ]
+}

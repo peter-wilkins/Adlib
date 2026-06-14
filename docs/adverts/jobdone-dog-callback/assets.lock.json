@@ -1,0 +1,57 @@
+{
+  "schema": "workflow-manager.audio-assets-lock.v1",
+  "render_plan_id": "JD_ad02_dog_callback_sfx_guess_20260602",
+  "created_at": "2026-06-02",
+  "assets": [
+    {
+      "asset_id": "voice_jobdone_dog_callback_v0",
+      "asset_kind": "voice_track",
+      "role": "primary_voice",
+      "local_path": "data/raw/audio-ads/jobdone-dog-callback/voice.wav",
+      "status": "placeholder_missing",
+      "source_provider": "pending",
+      "source_url": "",
+      "license": "pending",
+      "file_sha256": "",
+      "notes": "Voice track not generated yet. This is the main spoken advert bed."
+    },
+    {
+      "asset_id": "sfx_charlie_first_bite_freesound_630648",
+      "asset_kind": "external_sfx",
+      "role": "charlie_first_bite_primary",
+      "local_path": "data/raw/audio-ads/external-sfx/dog-bark/haulaway-630648-single-bark-small-to-medium-dog.mp3",
+      "status": "selected_not_downloaded",
+      "source_provider": "freesound",
+      "source_id": 630648,
+      "source_title": "single bark - small to medium dog",
+      "source_url": "https://freesound.org/people/haulaway/sounds/630648/",
+      "preview_url": "https://cdn.freesound.org/previews/630/630648_7228277-hq.mp3",
+      "creator": "haulaway",
+      "license": "Creative Commons 0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration_seconds": 1.43964,
+      "expected_preview_sha256": "b96d8cc6c8a3636ad0e8f27238ae604688a1c4d3e05dd8366f7804ab895711f0",
+      "file_sha256": "b96d8cc6c8a3636ad0e8f27238ae604688a1c4d3e05dd8366f7804ab895711f0",
+      "notes": "First guess for the opening Charlie ankle-bite gag. Preview file is local-only and can be recreated with fetch_sfx_previews.sh."
+    },
+    {
+      "asset_id": "sfx_charlie_callback_warning_freesound_502655",
+      "asset_kind": "external_sfx",
+      "role": "charlie_callback_warning_primary",
+      "local_path": "data/raw/audio-ads/external-sfx/dog-bark/joviansounds-502655-single-dog-bark-king-charles-spaniel.mp3",
+      "status": "selected_not_downloaded",
+      "source_provider": "freesound",
+      "source_id": 502655,
+      "source_title": "Single Dog Bark (King Charles Spaniel)",
+      "source_url": "https://freesound.org/people/JovianSounds/sounds/502655/",
+      "preview_url": "https://cdn.freesound.org/previews/502/502655_9561949-hq.mp3",
+      "creator": "JovianSounds",
+      "license": "Creative Commons 0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "duration_seconds": 0.476009,
+      "expected_preview_sha256": "784a9ba51453d30f0ea9fc52bbf15f0444a53a96f27fc3d4e05648f4bc3410b9",
+      "file_sha256": "784a9ba51453d30f0ea9fc52bbf15f0444a53a96f27fc3d4e05648f4bc3410b9",
+      "notes": "First guess for the Charlie callback warning bark. Preview file is local-only and can be recreated with fetch_sfx_previews.sh."
+    }
+  ]
+}

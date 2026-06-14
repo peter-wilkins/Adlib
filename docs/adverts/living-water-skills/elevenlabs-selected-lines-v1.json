@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "LWS_ad01_pond_challenge",
+  "scriptVersion": "selected-lines-v1",
+  "campaign": "living-water-skills-pond-challenge",
+  "productTruth": "docs/product-truths/2026-06-02-living-water-skills.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter selected Maya for the young learner, River through a phone-speaker treatment for the app mentor, and Lily for narration on 2026-06-03. The tagline uses 'earn your levels' rather than 'get qualified' until formal accreditation is real.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "learner_maya_younger": {
+      "voiceId": "x4UhiuorV3bFSbPFPR8Z",
+      "voiceName": "Maya - Friendly, Capable, Conversational",
+      "role": "Selected young learner voice; Maya with a younger, excited outdoor delivery",
+      "defaultSettings": {
+        "stability": 0.3,
+        "similarity_boost": 0.78,
+        "style": 0.68,
+        "speed": 1.04,
+        "use_speaker_boost": true
+      }
+    },
+    "mentor_river_steward": {
+      "voiceId": "SAz9YHcvj6GT2YYXdXww",
+      "voiceName": "River - Relaxed, Neutral, Informative",
+      "role": "Selected app mentor voice; rendered raw first, then processed as phone-speaker output",
+      "defaultSettings": {
+        "stability": 0.7,
+        "similarity_boost": 0.82,
+        "style": 0.1,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    },
+    "narrator_lily": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Selected narrator voice; cool, hopeful, lightly aspirational",
+      "defaultSettings": {
+        "stability": 0.44,
+        "similarity_boost": 0.82,
+        "style": 0.28,
+        "speed": 0.98,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "learner_discovery",
+      "takeSlug": "selected_maya_opening",
+      "speaker": "young_learner",
+      "folder": "voice/learner/selected",
+      "text": "[young teenager, excited, outdoors, natural, breathless but clear] It's working! My pond's holding water now. What can I do to attract nature? Especially frogs.",
+      "voiceProfiles": ["learner_maya_younger"]
+    },
+    {
+      "assetId": "learner_patience",
+      "takeSlug": "selected_maya_patient",
+      "speaker": "young_learner",
+      "folder": "voice/learner/selected",
+      "text": "[young teenager, curious, beginning to understand] So basically make it a good home and be patient?",
+      "voiceProfiles": ["learner_maya_younger"]
+    },
+    {
+      "assetId": "mentor_guidance",
+      "takeSlug": "selected_river_guidance",
+      "speaker": "app_mentor",
+      "folder": "voice/mentor/selected",
+      "text": "[warm, wise, grounded land-and-water mentor, gentle, practical, no caricature] Nice work. Add native pond plants, make a shallow edge, and leave some messy shelter nearby. Don't collect frogs or frogspawn from the wild. If the habitat is right, the right creatures will find it.",
+      "voiceProfiles": ["mentor_river_steward"]
+    },
+    {
+      "assetId": "mentor_submit",
+      "takeSlug": "selected_river_submit",
+      "speaker": "app_mentor",
+      "folder": "voice/mentor/selected",
+      "text": "[warm, encouraging, grounded land-and-water mentor, gentle, practical] Exactly. I think you're ready to submit your Level 2 Pond Challenge now.",
+      "voiceProfiles": ["mentor_river_steward"]
+    },
+    {
+      "assetId": "narrator_tagline",
+      "takeSlug": "selected_lily_earn_levels",
+      "speaker": "narrator",
+      "folder": "voice/narrator/selected",
+      "text": "[cool, hopeful, lightly aspirational, clear narrator] Living Water Skills. Learn outside. Capture the evidence. Earn your levels. Grow from curious to capable.",
+      "voiceProfiles": ["narrator_lily"]
+    }
+  ]
+}

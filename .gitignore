@@ -1,0 +1,27 @@
+# Local secrets and generated/private assets.
+local/
+data/raw/
+data/processed/
+
+# Runtime noise.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.env
+.env.*
+!.env.example
+
+# Frontend/build/package outputs if AdLib grows a UI.
+node_modules/
+dist/
+build/
+coverage/
+
+# Reaper/runtime media noise.
+*.reapeaks
+*.rpp-bak
+

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "LWS_ad01_pond_challenge",
+  "scriptVersion": "selected-learner-original-maya-v1",
+  "campaign": "living-water-skills-pond-challenge",
+  "productTruth": "docs/product-truths/2026-06-02-living-water-skills.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter clarified on 2026-06-03 that the learner should use the original Maya audition voice, not the younger V2 Maya prompt. This manifest preserves the V1 Maya model/settings for the learner lines only.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "learner_maya": {
+      "voiceId": "x4UhiuorV3bFSbPFPR8Z",
+      "voiceName": "Maya - Friendly, Capable, Conversational",
+      "role": "Selected young learner voice; original Maya audition direction",
+      "defaultSettings": {
+        "stability": 0.3,
+        "similarity_boost": 0.8,
+        "style": 0.62,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "learner_discovery",
+      "takeSlug": "selected_original_maya_opening",
+      "speaker": "young_learner",
+      "folder": "voice/learner/selected",
+      "text": "It's working! My pond's holding water now. What can I do to attract nature? Especially frogs.",
+      "voiceProfiles": ["learner_maya"]
+    },
+    {
+      "assetId": "learner_patience",
+      "takeSlug": "selected_original_maya_patient",
+      "speaker": "young_learner",
+      "folder": "voice/learner/selected",
+      "text": "So basically make it a good home and be patient?",
+      "voiceProfiles": ["learner_maya"]
+    }
+  ]
+}

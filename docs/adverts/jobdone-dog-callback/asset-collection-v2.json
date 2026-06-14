@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.asset-collection.v1",
+  "scriptId": "JD_ad02_dog_callback",
+  "version": "v2",
+  "status": "planning",
+  "decision": "Do not use ElevenLabs Text to Dialogue as the production path. Generate or source small assets, then edit the advert by hand first.",
+  "reason": "The one-shot take did not separate voices correctly, missed SFX cues, had a sterile tradesperson voice, and ran too long.",
+  "editorRecommendation": {
+    "primary": "REAPER",
+    "why": "Local multitrack editor with Media Explorer for folder browsing, previewing many candidate sounds, and dragging the chosen asset onto the timeline.",
+    "secondary": "Audacity",
+    "secondaryWhy": "Good simple local editor, but weaker for browsing and auditioning asset folders inside the creative workflow.",
+    "avoidForNow": "Do not start by building an internal timeline UI. First learn the editing job by doing one advert manually."
+  },
+  "assetLibraryRequirement": {
+    "goal": "Peter should open the editor, see sensible asset folders, audition candidates in place, then drag the chosen clip into the timeline.",
+    "mustHave": [
+      "folder based asset library",
+      "preview or autoplay files before adding them",
+      "drag chosen file or selected portion into the timeline",
+      "no repeated manual import dialog work",
+      "one folder per asset class, such as dog-barks, door, doorbell, beeps, tradesperson-voice, narrator-voice, app-voice"
+    ],
+    "firstFolderLayout": [
+      "voice/tradesperson",
+      "voice/narrator",
+      "voice/app",
+      "sfx/beeps",
+      "sfx/dog-barks",
+      "sfx/doors",
+      "sfx/doorbells",
+      "sfx/footsteps",
+      "sfx/kerfuffle",
+      "renders"
+    ]
+  },
+  "voiceReferences": {
+    "tradesperson": {
+      "goal": "Cheerful real UK tradesperson. Warm, practical, relaxed, not sterile, not actorly.",
+      "referenceSearches": [
+        "Plumberparts James Lawrence conversational plumbing videos",
+        "M J Tiff Plumbing tradesman chat in the van",
+        "Skill Builder plumbing chat UK tradesperson"
+      ],
+      "rule": "Use public videos as vibe references only. Do not clone or imitate a real person's voice without rights and consent."
+    },
+    "narrator": {
+      "goal": "Voice most likely to work in a sales advert. Preferred flavour: calm English actress, understated, warm, subtly grown-up.",
+      "rule": "Commercial effectiveness first; aesthetic preference second."
+    },
+    "appVoice": {
+      "goal": "Separate from narrator. Calm, clean, neutral, useful, lightly synthetic if needed.",
+      "rule": "Should sound like JobDone returning a result, not like the advert narrator."
+    }
+  },
+  "assets": [
+    {
+      "assetId": "plumber_exit",
+      "kind": "voice_line",
+      "speaker": "tradesperson",
+      "text": "Alright then, Mrs Jones. Bye.",
+      "target": "Cheerful goodbye through doorway.",
+      "status": "needed"
+    },
+    {
+      "assetId": "door_close",
+      "kind": "sfx",
+      "text": "front door shuts",
+      "target": "Ordinary house front door, short and clean.",
+      "status": "needed"
+    },
+    {
+      "assetId": "capture_start_beep",
+      "kind": "sfx",
+      "text": "friendly device beep, recording starts",
+      "target": "Tiny gadget cue; tells listener this is being captured.",
+      "status": "needed"
+    },
+    {
+      "assetId": "plumber_capture",
+      "kind": "voice_line",
+      "speaker": "tradesperson",
+      "text": "Replaced the kitchen sink washer. Isolation valve is stiff here.",
+      "target": "Happy chappy talking into phone, pleased with himself.",
+      "status": "needed"
+    },
+    {
+      "assetId": "capture_saved_beep",
+      "kind": "sfx",
+      "text": "friendly device beep, note saved",
+      "target": "Can reuse capture_start_beep if distinct beeps are too fussy.",
+      "status": "needed"
+    },
+    {
+      "assetId": "dog_behind_door",
+      "kind": "sfx",
+      "text": "small dog bark behind closed door",
+      "target": "Comic but believable.",
+      "status": "needed"
+    },
+    {
+      "assetId": "plumber_charlie_note",
+      "kind": "voice_line",
+      "speaker": "tradesperson",
+      "text": "Oh, and Charlie the dog bites ankles.",
+      "target": "Casual useful afterthought.",
+      "status": "needed"
+    },
+    {
+      "assetId": "time_jump",
+      "kind": "voice_or_sfx",
+      "speaker": "narrator",
+      "text": "Doodle doo doo. Doodle doo doo. Doodle doo doo. Three months later...",
+      "target": "Playful original time-jump transition; do not copy a specific copyrighted sting.",
+      "status": "needed"
+    },
+    {
+      "assetId": "return_footsteps",
+      "kind": "sfx",
+      "text": "footsteps approach front door",
+      "target": "Brief return-to-site cue.",
+      "status": "needed"
+    },
+    {
+      "assetId": "doorbell",
+      "kind": "sfx",
+      "text": "ordinary house doorbell",
+      "target": "Short and recognisable.",
+      "status": "needed"
+    },
+    {
+      "assetId": "app_results",
+      "kind": "voice_line",
+      "speaker": "app_voice",
+      "text": "Results for Mrs Jones. Kitchen sink washer replaced. Isolation valve stiff. Charlie the dog bites ankles.",
+      "target": "Clean recall result; distinct from narrator.",
+      "status": "needed"
+    },
+    {
+      "assetId": "result_found_beep",
+      "kind": "sfx",
+      "text": "small clean device beep, result found",
+      "target": "Tiny confirmation cue after result.",
+      "status": "needed"
+    },
+    {
+      "assetId": "plumber_reaction",
+      "kind": "voice_line",
+      "speaker": "tradesperson",
+      "text": "Hmph, Charlie.",
+      "target": "Hushed, relaxed, confident, almost not a word.",
+      "status": "needed"
+    },
+    {
+      "assetId": "tagline",
+      "kind": "voice_line",
+      "speaker": "narrator",
+      "text": "JobDone. Remember the job.",
+      "target": "Calm, sales-effective, understated.",
+      "status": "needed"
+    },
+    {
+      "assetId": "charlie_kerfuffle",
+      "kind": "sfx",
+      "text": "small dog bark, footsteps scramble, small kerfuffle as dog steals something",
+      "target": "Funny fade-out movement, not too busy.",
+      "status": "needed"
+    },
+    {
+      "assetId": "plumber_final",
+      "kind": "voice_line",
+      "speaker": "tradesperson",
+      "text": "Oi, Charlie! Come back with that.",
+      "target": "Cheerful exasperation trailing off.",
+      "status": "needed"
+    }
+  ]
+}

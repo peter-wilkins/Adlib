@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "JD_ad02_dog_callback",
+  "scriptVersion": "voice-lines-v1",
+  "campaign": "jobdone-dog-callback",
+  "productTruth": "docs/product-truths/2026-06-02-jobdone.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter authorised generating separate ElevenLabs voice assets for REAPER auditioning on 2026-06-02.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "george": {
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "voiceName": "George - Warm, Captivating Storyteller",
+      "role": "British male warm tradesperson candidate",
+      "defaultSettings": {
+        "stability": 0.36,
+        "similarity_boost": 0.82,
+        "style": 0.38,
+        "use_speaker_boost": true
+      }
+    },
+    "daniel": {
+      "voiceId": "onwK4e9ZLuTAKqWW03F9",
+      "voiceName": "Daniel - Steady Broadcaster",
+      "role": "British male clear tradesperson control",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.8,
+        "style": 0.42,
+        "use_speaker_boost": true
+      }
+    },
+    "chris": {
+      "voiceId": "iP95p4xoKVk53GoZ742B",
+      "voiceName": "Chris - Charming, Down-to-Earth",
+      "role": "Natural down-to-earth control voice",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.78,
+        "style": 0.42,
+        "use_speaker_boost": true
+      }
+    },
+    "lily": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Calm British narrator candidate",
+      "defaultSettings": {
+        "stability": 0.48,
+        "similarity_boost": 0.82,
+        "style": 0.22,
+        "use_speaker_boost": true
+      }
+    },
+    "alice": {
+      "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
+      "voiceName": "Alice - Clear, Engaging Educator",
+      "role": "British female clear narrator/app candidate",
+      "defaultSettings": {
+        "stability": 0.58,
+        "similarity_boost": 0.82,
+        "style": 0.12,
+        "use_speaker_boost": true
+      }
+    },
+    "river": {
+      "voiceId": "SAz9YHcvj6GT2YYXdXww",
+      "voiceName": "River - Relaxed, Neutral, Informative",
+      "role": "Neutral app voice control",
+      "defaultSettings": {
+        "stability": 0.68,
+        "similarity_boost": 0.8,
+        "style": 0.08,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "plumber_exit",
+      "takeSlug": "warm_goodbye",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson",
+      "text": "Alright then, Mrs Jones. Bye.",
+      "voiceProfiles": ["george", "daniel"]
+    },
+    {
+      "assetId": "plumber_capture",
+      "takeSlug": "job_note",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson",
+      "text": "Replaced the kitchen sink washer. Isolation valve is stiff here.",
+      "voiceProfiles": ["george", "daniel", "chris"]
+    },
+    {
+      "assetId": "plumber_charlie_note",
+      "takeSlug": "casual_afterthought",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson",
+      "text": "Oh, and Charlie the dog bites ankles.",
+      "voiceProfiles": ["george", "daniel", "chris"]
+    },
+    {
+      "assetId": "plumber_reaction",
+      "takeSlug": "hushed_hmph",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson",
+      "text": "Hmph, Charlie.",
+      "voiceProfiles": ["george", "daniel"]
+    },
+    {
+      "assetId": "plumber_final",
+      "takeSlug": "cheerful_chase",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson",
+      "text": "Oi, Charlie! Come back with that.",
+      "voiceProfiles": ["george", "daniel", "chris"]
+    },
+    {
+      "assetId": "time_jump",
+      "takeSlug": "playful_time_jump",
+      "speaker": "narrator",
+      "folder": "voice/narrator",
+      "text": "Doodle doo doo. Doodle doo doo. Doodle doo doo. Three months later...",
+      "voiceProfiles": ["lily", "alice"]
+    },
+    {
+      "assetId": "tagline",
+      "takeSlug": "understated_sales",
+      "speaker": "narrator",
+      "folder": "voice/narrator",
+      "text": "JobDone. Remember the job.",
+      "voiceProfiles": ["lily", "alice"]
+    },
+    {
+      "assetId": "app_results",
+      "takeSlug": "recall_result",
+      "speaker": "app_voice",
+      "folder": "voice/app",
+      "text": "Results for Mrs Jones. Kitchen sink washer replaced. Isolation valve stiff. Charlie the dog bites ankles.",
+      "voiceProfiles": ["alice", "river"]
+    }
+  ]
+}

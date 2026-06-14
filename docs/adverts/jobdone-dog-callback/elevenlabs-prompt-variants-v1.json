@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "JD_ad02_dog_callback",
+  "scriptVersion": "prompt-variants-v1",
+  "campaign": "jobdone-dog-callback",
+  "productTruth": "docs/product-truths/2026-06-02-jobdone.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter asked to test whether Lily can be both narrator and app voice with different prompts, and whether David can become more jolly, professional, or chirpy. This manifest uses Eleven v3 audio tags as prompt variants.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "david_jolly": {
+      "voiceId": "8KgifH3usc0tJtr7QzP4",
+      "voiceName": "David - Yorkshire Warm, Trustworthy",
+      "role": "Selected JobDone tradesperson, jolly prompt variant",
+      "defaultSettings": {
+        "stability": 0.28,
+        "similarity_boost": 0.78,
+        "style": 0.62,
+        "speed": 1.02,
+        "use_speaker_boost": true
+      }
+    },
+    "david_professional": {
+      "voiceId": "8KgifH3usc0tJtr7QzP4",
+      "voiceName": "David - Yorkshire Warm, Trustworthy",
+      "role": "Selected JobDone tradesperson, professional prompt variant",
+      "defaultSettings": {
+        "stability": 0.58,
+        "similarity_boost": 0.86,
+        "style": 0.18,
+        "speed": 0.98,
+        "use_speaker_boost": true
+      }
+    },
+    "david_chirpy": {
+      "voiceId": "8KgifH3usc0tJtr7QzP4",
+      "voiceName": "David - Yorkshire Warm, Trustworthy",
+      "role": "Selected JobDone tradesperson, chirpy prompt variant",
+      "defaultSettings": {
+        "stability": 0.24,
+        "similarity_boost": 0.76,
+        "style": 0.72,
+        "speed": 1.06,
+        "use_speaker_boost": true
+      }
+    },
+    "lily_warm_narrator": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Warm, intimate narrator prompt variant",
+      "defaultSettings": {
+        "stability": 0.38,
+        "similarity_boost": 0.82,
+        "style": 0.4,
+        "speed": 0.94,
+        "use_speaker_boost": true
+      }
+    },
+    "lily_polished_narrator": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Polished sales narrator prompt variant",
+      "defaultSettings": {
+        "stability": 0.52,
+        "similarity_boost": 0.84,
+        "style": 0.24,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    },
+    "lily_soft_robot_app": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Soft robot app voice prompt variant",
+      "defaultSettings": {
+        "stability": 0.74,
+        "similarity_boost": 0.82,
+        "style": 0.02,
+        "speed": 1.02,
+        "use_speaker_boost": true
+      }
+    },
+    "lily_crisp_robot_app": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Crisp robot app voice prompt variant",
+      "defaultSettings": {
+        "stability": 0.86,
+        "similarity_boost": 0.84,
+        "style": 0,
+        "speed": 1.06,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "plumber_capture",
+      "takeSlug": "v3_jolly",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/prompt-variants",
+      "text": "[cheerful, upbeat, proud of a neat job] Replaced the kitchen sink washer. Isolation valve is stiff here.",
+      "voiceProfiles": ["david_jolly"]
+    },
+    {
+      "assetId": "plumber_capture",
+      "takeSlug": "v3_professional",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/prompt-variants",
+      "text": "[professional, clear, calm, trustworthy] Replaced the kitchen sink washer. Isolation valve is stiff here.",
+      "voiceProfiles": ["david_professional"]
+    },
+    {
+      "assetId": "plumber_capture",
+      "takeSlug": "v3_chirpy",
+      "speaker": "tradesperson",
+      "folder": "voice/tradesperson/prompt-variants",
+      "text": "[chirpy, friendly, lightly amused] Replaced the kitchen sink washer. Isolation valve is stiff here.",
+      "voiceProfiles": ["david_chirpy"]
+    },
+    {
+      "assetId": "tagline",
+      "takeSlug": "v3_warm_intimate",
+      "speaker": "narrator",
+      "folder": "voice/narrator/prompt-variants",
+      "text": "[warm, intimate, understated, quietly seductive] JobDone. Remember the job.",
+      "voiceProfiles": ["lily_warm_narrator"]
+    },
+    {
+      "assetId": "tagline",
+      "takeSlug": "v3_polished_sales",
+      "speaker": "narrator",
+      "folder": "voice/narrator/prompt-variants",
+      "text": "[elegant, confident, lightly playful] JobDone. Remember the job.",
+      "voiceProfiles": ["lily_polished_narrator"]
+    },
+    {
+      "assetId": "app_results",
+      "takeSlug": "v3_soft_robot",
+      "speaker": "app_voice",
+      "folder": "voice/app/prompt-variants",
+      "text": "[calm, precise, lightly robotic assistant voice] Results for Mrs Jones. Kitchen sink washer replaced. Isolation valve stiff. Charlie the dog bites ankles.",
+      "voiceProfiles": ["lily_soft_robot_app"]
+    },
+    {
+      "assetId": "app_results",
+      "takeSlug": "v3_crisp_robot",
+      "speaker": "app_voice",
+      "folder": "voice/app/prompt-variants",
+      "text": "[neutral assistant voice, crisp, slightly synthetic] Results for Mrs Jones. Kitchen sink washer replaced. Isolation valve stiff. Charlie the dog bites ankles.",
+      "voiceProfiles": ["lily_crisp_robot_app"]
+    }
+  ]
+}

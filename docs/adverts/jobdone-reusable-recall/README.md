@@ -1,7 +1,9 @@
 # JobDone Reusable Recall Voice Assets
 
-Status: one approved test line generated locally; the eight-line batch remains
-unapproved for paid generation.
+Status: all eight approved David recall lines generated locally. The original
+eight-line planning manifest remains unapproved to avoid accidental duplicate
+generation; generation happened through the one-line test manifest and the
+remaining-seven manifest.
 
 Purpose: prepare small reusable JobDone voice assets from Product Truth so Peter
 can approve exact copy and spend before the remaining ElevenLabs subscription
@@ -23,7 +25,7 @@ docs/product-truths/2026-06-02-jobdone.md
 
 ## Review
 
-## Generated Test
+## Generated Assets
 
 Peter approved one exact test line on 2026-06-14:
 
@@ -31,10 +33,23 @@ Peter approved one exact test line on 2026-06-14:
 What did I do at Mrs Jones last time?
 ```
 
-Manifest:
+After auditioning that clip, Peter approved the remaining seven lines:
+
+```text
+What did I promise to bring back for that boiler job?
+Add that to the JobDone note.
+Confirmed? Good. That's in the timeline.
+Show me the last note for this place.
+I would not have remembered that.
+That's why I write it down while I'm there.
+There it is. Right job, right detail.
+```
+
+Generation manifests:
 
 ```text
 docs/adverts/jobdone-reusable-recall/elevenlabs-david-recall-test-v1.json
+docs/adverts/jobdone-reusable-recall/elevenlabs-david-recall-remaining-v1.json
 ```
 
 The generated MP3 and metadata are ignored local state. Regenerate the audio

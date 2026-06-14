@@ -54,6 +54,15 @@ COPIED_AMBIENCE = (
     ),
 )
 
+MENTOR_SUBMIT_PHONE = ASSET_DIR / (
+    "voice/mentor/selected/phone-processed/"
+    "mentor_submit__selected_river_submit__mentor_river_steward__phone_speaker.mp3"
+)
+MENTOR_SUBMIT_TRIMMED = ASSET_DIR / (
+    "repairs/technical-preflight/"
+    "mentor_submit__selected_river_submit__mentor_river_steward__phone_speaker__trim-leading-340ms__f1e97f5caf.mp3"
+)
+
 
 def main() -> int:
     PROJECT_DIR.mkdir(parents=True, exist_ok=True)
@@ -188,15 +197,15 @@ def build_events() -> list[Event]:
         Event(
             "Voice - App Mentor Phone",
             "Ready to submit Level 2 Pond Challenge.",
-            ASSET_DIR / "voice/mentor/selected/phone-processed/mentor_submit__selected_river_submit__mentor_river_steward__phone_speaker.mp3",
-            25.4,
+            preferred_mentor_submit_phone(),
+            25.25,
             volume_db=-2,
         ),
         Event(
             "Voice - Narrator",
             "Living Water Skills tagline.",
             ASSET_DIR / "voice/narrator/selected/narrator_tagline__selected_lily_earn_levels__narrator_lily.mp3",
-            31.4,
+            30.85,
             volume_db=-1,
             fade_out=0.35,
         ),
@@ -205,6 +214,12 @@ def build_events() -> list[Event]:
         if not event.path.exists():
             raise FileNotFoundError(event.path)
     return events
+
+
+def preferred_mentor_submit_phone() -> Path:
+    if MENTOR_SUBMIT_TRIMMED.exists():
+        return MENTOR_SUBMIT_TRIMMED
+    return MENTOR_SUBMIT_PHONE
 
 
 def write_reaper_project(events: list[Event]) -> None:
@@ -256,8 +271,8 @@ def write_reaper_project(events: list[Event]) -> None:
   MARKER 1 1 "Learner asks about pond" 0 0 1 B {{{guid('marker:learner')}}} 0 2
   MARKER 2 9.1 "Phone mentor guidance" 0 0 1 B {{{guid('marker:mentor-guidance')}}} 0 2
   MARKER 3 22 "Learner understands patience" 0 0 1 B {{{guid('marker:learner-patience')}}} 0 2
-  MARKER 4 25.4 "Ready to submit Level 2" 0 0 1 B {{{guid('marker:level-2')}}} 0 2
-  MARKER 5 31.4 "Narrator tagline" 0 0 1 B {{{guid('marker:tagline')}}} 0 2
+  MARKER 4 25.25 "Ready to submit Level 2" 0 0 1 B {{{guid('marker:level-2')}}} 0 2
+  MARKER 5 30.85 "Narrator tagline" 0 0 1 B {{{guid('marker:tagline')}}} 0 2
 {track_blocks}
 >
 """,
@@ -402,9 +417,15 @@ The first rough layout uses:
 
 - original Maya learner clips
 - River mentor clips with phone-speaker processing
+- the clipped submit-line repair candidate when present
 - Lily narrator tagline
 - copied garden-bird ambience from the JobDone project
 - generated pond-water placeholders
+
+Gate repair note:
+
+- `{MENTOR_SUBMIT_TRIMMED.relative_to(PROJECT_DIR)}` removes the leading "And" from the second mentor line when present.
+- The current gate still marks that candidate as not quality-approved because a verification transcription hears "Pond" as "Pawn". Use this rough assembly for timing/audition only.
 
 Copied ambience:
 

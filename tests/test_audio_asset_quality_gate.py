@@ -4,8 +4,11 @@ from scripts.audio_asset_quality_gate import (
     QualityGateError,
     classify_script_drift,
     spoken_script_text,
+    timed_tokens_from_words,
+    trim_start_for_repair,
     validate_transcriber,
     word_tokens,
+    words_url_for,
 )
 
 
@@ -111,6 +114,47 @@ class AudioAssetQualityGateTest(unittest.TestCase):
             {"backend": {"provider": "openai", "processorId": "whisper-1"}},
             "whisper-1",
         )
+
+    def test_words_url_is_derived_from_transcription_url(self):
+        self.assertEqual(
+            words_url_for("http://127.0.0.1:8788/v1/transcribe?language=en"),
+            "http://127.0.0.1:8788/v1/transcribe/words",
+        )
+
+    def test_timed_tokens_canonicalize_multi_word_project_names(self):
+        tokens = timed_tokens_from_words(
+            [
+                {"word": "job", "startSeconds": 0.0, "endSeconds": 0.1},
+                {"word": "done", "startSeconds": 0.1, "endSeconds": 0.3},
+                {"word": "note", "startSeconds": 0.3, "endSeconds": 0.5},
+            ]
+        )
+
+        self.assertEqual([token.token for token in tokens], ["jobdone", "note"])
+        self.assertEqual(tokens[0].start_seconds, 0.0)
+        self.assertEqual(tokens[0].end_seconds, 0.3)
+
+    def test_trim_start_for_repair_uses_first_approved_word_timestamp(self):
+        drift = classify_script_drift(
+            "[warm, practical] Exactly. I think you're ready.",
+            "And exactly. I think you're ready.",
+        )
+
+        trim_start = trim_start_for_repair(
+            drift,
+            {
+                "words": [
+                    {"word": "And", "startSeconds": 0.0, "endSeconds": 0.34},
+                    {"word": "exactly", "startSeconds": 0.34, "endSeconds": 1.0},
+                    {"word": "I", "startSeconds": 1.5, "endSeconds": 1.68},
+                    {"word": "think", "startSeconds": 1.68, "endSeconds": 1.8},
+                    {"word": "you're", "startSeconds": 1.8, "endSeconds": 1.96},
+                    {"word": "ready", "startSeconds": 1.96, "endSeconds": 2.2},
+                ]
+            },
+        )
+
+        self.assertEqual(trim_start, 0.34)
 
 
 if __name__ == "__main__":

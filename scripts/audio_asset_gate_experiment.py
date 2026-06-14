@@ -7,6 +7,8 @@ import argparse
 import json
 import math
 import os
+import re
+import shutil
 import subprocess
 import sys
 import threading
@@ -22,6 +24,7 @@ DEFAULT_OUT_ROOT = ROOT / "local" / "reports" / "gate-experiments" / "audio-asse
 DEFAULT_REAL_TRANSCRIPTION_URL = "http://127.0.0.1:8789/v1/transcribe"
 GATE_SCRIPT = ROOT / "scripts" / "audio_asset_quality_gate.py"
 SCHEMA = "adlib.audio-asset-gate-experiment.v1"
+WORD_RE = re.compile(r"[A-Za-z0-9]+(?:'[A-Za-z0-9]+)?")
 
 
 CONTROLLED_CASES = [
@@ -132,10 +135,29 @@ class FakeTranscriptionServer:
             def do_POST(self) -> None:  # noqa: N802 - BaseHTTPRequestHandler API
                 length = int(self.headers.get("Content-Length") or "0")
                 body = self.rfile.read(length)
-                filename = self.headers.get("X-Filename", "")
+                filename = self.filename_from_request(body)
                 transcript = transcripts_by_filename.get(filename)
+                if transcript is None and "__trim-leading" in filename:
+                    transcript = repaired_transcript(filename, transcripts_by_filename)
                 if transcript is None:
                     self.send_error(404, f"no fixture transcript for {filename}")
+                    return
+                if self.path.startswith("/v1/transcribe/words"):
+                    self.write_json(
+                        {
+                            "schema": "fake.transcription-api.v1",
+                            "filename": filename,
+                            "contentType": self.headers.get("Content-Type"),
+                            "byteLength": len(body),
+                            "language": "en",
+                            "text": transcript,
+                            "words": fake_words(transcript),
+                            "backend": {
+                                "provider": "openai",
+                                "processorId": "whisper-1",
+                            },
+                        }
+                    )
                     return
                 self.write_json(
                     {
@@ -152,6 +174,19 @@ class FakeTranscriptionServer:
                         },
                     }
                 )
+
+            def filename_from_request(self, body: bytes) -> str:
+                header_filename = self.headers.get("X-Filename")
+                if header_filename:
+                    return header_filename
+                match = re.search(
+                    rb'Content-Disposition:[^\r\n]+filename="([^"]+)"',
+                    body[:500],
+                    flags=re.IGNORECASE,
+                )
+                if match:
+                    return match.group(1).decode("utf-8", errors="replace")
+                return ""
 
             def log_message(self, format: str, *args: object) -> None:
                 return
@@ -186,8 +221,10 @@ def main() -> int:
             run_dir,
             transcription_url=args.real_transcription_url,
             required_transcriber=args.required_transcriber,
+            word_transcription_url=args.word_transcription_url,
         )
 
+    attach_report_media(report, run_dir)
     report_path = run_dir / "report.json"
     report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     latest_path = args.out_root / "latest-report.json"
@@ -215,6 +252,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--real-transcription-url",
         default=os.environ.get("ADLIB_TRANSCRIPTION_API_URL", DEFAULT_REAL_TRANSCRIPTION_URL),
+    )
+    parser.add_argument(
+        "--word-transcription-url",
+        default=os.environ.get("ADLIB_WORD_TRANSCRIPTION_API_URL"),
     )
     parser.add_argument(
         "--required-transcriber",
@@ -258,6 +299,7 @@ def run_living_water_cases(
     *,
     transcription_url: str,
     required_transcriber: str,
+    word_transcription_url: str | None,
 ) -> list[dict[str, Any]]:
     case_dir = run_dir / "living-water"
     meta_dir = case_dir / "metadata"
@@ -288,7 +330,12 @@ def run_living_water_cases(
         cases.append({"caseId": case["caseId"], "metadataPath": str(metadata_path)})
 
     if metadata_paths:
-        run_gate(metadata_paths, transcription_url, required_transcriber=required_transcriber)
+        run_gate(
+            metadata_paths,
+            transcription_url,
+            required_transcriber=required_transcriber,
+            word_transcription_url=word_transcription_url,
+        )
 
     results_by_path = {
         str(meta_dir / f"{case['caseId']}.json"): living_water_result(
@@ -306,17 +353,21 @@ def run_gate(
     transcription_url: str,
     *,
     required_transcriber: str,
+    word_transcription_url: str | None = None,
 ) -> None:
     command = [
         sys.executable,
         str(GATE_SCRIPT),
         "--force",
         "--keep-going",
+        "--repair-leading-words",
         "--transcription-url",
         transcription_url,
         "--required-transcriber",
         required_transcriber,
     ]
+    if word_transcription_url:
+        command.extend(["--word-transcription-url", word_transcription_url])
     for path in metadata_paths:
         command.extend(["--metadata", str(path)])
     subprocess.run(command, cwd=ROOT, check=True)
@@ -366,6 +417,31 @@ def write_fixture_audio(path: Path, *, frequency: int) -> None:
             handle.writeframesraw(value.to_bytes(2, byteorder="little", signed=True))
 
 
+def fake_words(transcript: str) -> list[dict[str, float | str]]:
+    words = WORD_RE.findall(transcript)
+    return [
+        {
+            "word": word,
+            "startSeconds": round(index * 0.34, 4),
+            "endSeconds": round((index + 1) * 0.34, 4),
+        }
+        for index, word in enumerate(words)
+    ]
+
+
+def repaired_transcript(filename: str, transcripts_by_filename: dict[str, str]) -> str | None:
+    source_stem = filename.split("__trim-leading", 1)[0]
+    suffix = Path(filename).suffix
+    source_name = f"{source_stem}{suffix}"
+    transcript = transcripts_by_filename.get(source_name)
+    if not transcript:
+        return None
+    words = WORD_RE.findall(transcript)
+    if not words:
+        return transcript
+    return transcript.split(words[0], 1)[-1].lstrip(" .,!?:;-")
+
+
 def case_result(case: dict[str, Any], metadata_path: Path) -> dict[str, Any]:
     metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
     preflight = metadata["qualityGate"]["technicalPreflight"]
@@ -381,6 +457,13 @@ def case_result(case: dict[str, Any], metadata_path: Path) -> dict[str, Any]:
         "actualTestStatus": metadata["testStatus"],
         "repairPlan": preflight.get("assetRepair"),
     }
+    repair = result["repairPlan"] if isinstance(result["repairPlan"], dict) else {}
+    candidate_path = repair.get("candidatePath")
+    result["repairCandidateExists"] = bool(candidate_path and Path(str(candidate_path)).exists())
+    verification = repair.get("candidateVerification") if isinstance(repair, dict) else {}
+    result["repairCandidateVerification"] = (
+        verification.get("status") if isinstance(verification, dict) else None
+    )
     result["passed"] = (
         result["expectedGateStatus"] == result["actualGateStatus"]
         and result["expectedDriftStatus"] == result["actualDriftStatus"]
@@ -394,6 +477,9 @@ def living_water_result(case_id: str, metadata_path: Path) -> dict[str, Any]:
     preflight = metadata["qualityGate"]["technicalPreflight"]
     drift = preflight["scriptDrift"]
     transcription = preflight["transcription"]
+    repair = preflight.get("assetRepair")
+    candidate_path = repair.get("candidatePath") if isinstance(repair, dict) else None
+    verification = repair.get("candidateVerification") if isinstance(repair, dict) else {}
     return {
         "caseId": case_id,
         "metadataPath": str(metadata_path),
@@ -404,7 +490,12 @@ def living_water_result(case_id: str, metadata_path: Path) -> dict[str, Any]:
         "extraLeadingWords": drift["extra_leading_words"],
         "approvedSpokenText": drift["approvedSpokenText"],
         "spokenText": drift["spokenText"],
-        "repairPlan": preflight.get("assetRepair"),
+        "repairPlan": repair,
+        "repairCandidatePath": candidate_path,
+        "repairCandidateExists": bool(candidate_path and Path(str(candidate_path)).exists()),
+        "repairCandidateVerification": (
+            verification.get("status") if isinstance(verification, dict) else None
+        ),
         "transcriber": transcription.get("backend", {}).get("processorId"),
     }
 
@@ -420,6 +511,46 @@ def summary_line(label: str, rows: list[dict[str, Any]]) -> str:
 
 def all_passed(rows: list[dict[str, Any]]) -> bool:
     return all(row.get("passed") is True for row in rows)
+
+
+def attach_report_media(report: dict[str, Any], run_dir: Path) -> None:
+    media_dir = run_dir / "media"
+    for section in ("controlled", "realLivingWater"):
+        for row in report.get(section) or []:
+            repair = row.get("repairPlan") if isinstance(row.get("repairPlan"), dict) else {}
+            candidate_path = repair.get("candidatePath") or row.get("repairCandidatePath")
+            if candidate_path:
+                media_url = copy_media_for_report(
+                    Path(str(candidate_path)),
+                    media_dir,
+                    f"{row.get('caseId', 'case')}__repair",
+                )
+                if media_url:
+                    row["repairCandidateMediaUrl"] = media_url
+            audio_path = row.get("audioPath")
+            if audio_path:
+                media_url = copy_media_for_report(
+                    Path(str(audio_path)),
+                    media_dir,
+                    f"{row.get('caseId', 'case')}__source",
+                )
+                if media_url:
+                    row["audioMediaUrl"] = media_url
+
+
+def copy_media_for_report(path: Path, media_dir: Path, stem: str) -> str | None:
+    if not path.exists() or not path.is_file():
+        return None
+    media_dir.mkdir(parents=True, exist_ok=True)
+    target = media_dir / f"{safe_media_stem(stem)}{path.suffix}"
+    if not target.exists() or target.stat().st_size != path.stat().st_size:
+        shutil.copy2(path, target)
+    return f"media/{target.name}"
+
+
+def safe_media_stem(value: object) -> str:
+    stem = re.sub(r"[^A-Za-z0-9_.-]+", "-", str(value or "media")).strip("-")
+    return stem or "media"
 
 
 def render_html_report(report: dict[str, Any]) -> str:
@@ -462,13 +593,16 @@ def render_controlled_table(rows: list[dict[str, Any]]) -> str:
         f"<td>{escape_html(row.get('actualDriftStatus'))}</td>"
         f"<td>{escape_html(row.get('actualTestStatus'))}</td>"
         f"<td>{'yes' if row.get('passed') else 'no'}</td>"
+        f"<td>{'yes' if row.get('repairCandidateExists') else ''}</td>"
+        f"<td>{escape_html(row.get('repairCandidateVerification'))}</td>"
+        f"<td>{audio_player(row.get('repairCandidateMediaUrl'))}</td>"
         f"<td><code>{escape_html(row.get('metadataPath'))}</code></td>"
         "</tr>"
         for row in rows
     )
     return (
         "<table><thead><tr><th>Case</th><th>Gate</th><th>Drift</th><th>Status</th>"
-        "<th>Expected?</th><th>Metadata</th></tr></thead><tbody>"
+        "<th>Expected?</th><th>Clip?</th><th>Clip verification</th><th>Repair audio</th><th>Metadata</th></tr></thead><tbody>"
         + body
         + "</tbody></table>"
     )
@@ -485,13 +619,15 @@ def render_real_table(rows: list[dict[str, Any]]) -> str:
         f"<td>{escape_html(' '.join(row.get('extraLeadingWords') or []))}</td>"
         f"<td>{escape_html(row.get('approvedSpokenText'))}</td>"
         f"<td>{escape_html(row.get('spokenText'))}</td>"
-        f"<td><code>{escape_html(row.get('audioPath'))}</code></td>"
+        f"<td>{escape_html(row.get('repairCandidateVerification'))}</td>"
+        f"<td>{audio_player(row.get('repairCandidateMediaUrl'))}<br><code>{escape_html(row.get('repairCandidatePath'))}</code></td>"
+        f"<td>{audio_player(row.get('audioMediaUrl'))}<br><code>{escape_html(row.get('audioPath'))}</code></td>"
         "</tr>"
         for row in rows
     )
     return (
         "<table><thead><tr><th>Case</th><th>Gate</th><th>Drift</th><th>Extra lead</th>"
-        "<th>Approved spoken text</th><th>Whisper text</th><th>Audio</th></tr></thead><tbody>"
+        "<th>Approved spoken text</th><th>Whisper text</th><th>Clip verification</th><th>Repair candidate</th><th>Audio</th></tr></thead><tbody>"
         + body
         + "</tbody></table>"
     )
@@ -501,6 +637,12 @@ def status_span(value: object) -> str:
     text = str(value or "")
     klass = "pass" if text == "pass" else "repair" if text == "repair_needed" else "fail"
     return f'<span class="{klass}">{escape_html(text)}</span>'
+
+
+def audio_player(media_url: object) -> str:
+    if not media_url:
+        return ""
+    return f'<audio controls preload="none" src="{escape_html(media_url)}"></audio>'
 
 
 def escape_html(value: object) -> str:

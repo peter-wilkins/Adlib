@@ -3,6 +3,7 @@ import unittest
 from scripts.audio_asset_quality_gate import (
     QualityGateError,
     classify_script_drift,
+    spoken_script_text,
     validate_transcriber,
     word_tokens,
 )
@@ -24,6 +25,31 @@ class AudioAssetQualityGateTest(unittest.TestCase):
         self.assertEqual(result.status, "exact_match")
         self.assertEqual(result.gate_status, "pass")
         self.assertEqual(result.test_status, "preflight_passed_needs_creative_critic")
+
+    def test_leading_performance_direction_is_not_spoken_script(self):
+        self.assertEqual(
+            spoken_script_text("[warm, practical] Exactly. I think you're ready."),
+            "Exactly. I think you're ready.",
+        )
+
+    def test_bracketed_direction_does_not_create_drift(self):
+        result = classify_script_drift(
+            "[warm, practical] Exactly. I think you're ready.",
+            "Exactly. I think you're ready.",
+        )
+
+        self.assertEqual(result.status, "exact_match")
+        self.assertEqual(result.gate_status, "pass")
+
+    def test_extra_leading_words_after_direction_are_repairable(self):
+        result = classify_script_drift(
+            "[warm, practical] Exactly. I think you're ready.",
+            "And exactly. I think you're ready.",
+        )
+
+        self.assertEqual(result.status, "extra_leading_words")
+        self.assertEqual(result.gate_status, "repair_needed")
+        self.assertEqual(result.extra_leading_words, ["and"])
 
     def test_extra_leading_words_are_repairable(self):
         result = classify_script_drift(

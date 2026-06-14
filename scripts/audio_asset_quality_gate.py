@@ -25,6 +25,7 @@ DEFAULT_PROCESSED_ROOT = ROOT / "data" / "processed" / "audio-ads"
 DEFAULT_TRANSCRIPTION_URL = "http://127.0.0.1:8788/v1/transcribe"
 GATE_SCHEMA = "adlib.audio-asset-quality-gate.v1"
 WORD_RE = re.compile(r"[a-z0-9]+(?:'[a-z0-9]+)?")
+BRACKET_DIRECTION_RE = re.compile(r"\[[^\]]+\]")
 CANONICAL_TOKEN_PHRASES = {
     ("ad", "lib"): "adlib",
     ("check", "dam"): "checkdam",
@@ -288,7 +289,8 @@ def with_query(url: str, extra: dict[str, str]) -> str:
 
 
 def classify_script_drift(approved_text: str, spoken_text: str) -> ScriptDriftResult:
-    approved_tokens = word_tokens(approved_text)
+    approved_spoken_text = spoken_script_text(approved_text)
+    approved_tokens = word_tokens(approved_spoken_text)
     spoken_tokens = word_tokens(spoken_text)
     similarity = sequence_similarity(approved_tokens, spoken_tokens)
 
@@ -417,6 +419,12 @@ def word_tokens(value: str) -> list[str]:
     return canonical_tokens(WORD_RE.findall(normalized))
 
 
+def spoken_script_text(value: str) -> str:
+    """Remove non-spoken performance directions from manifest script text."""
+    without_directions = BRACKET_DIRECTION_RE.sub(" ", value)
+    return re.sub(r"\s+", " ", without_directions).strip()
+
+
 def canonical_tokens(tokens: list[str]) -> list[str]:
     canonical: list[str] = []
     index = 0
@@ -491,8 +499,22 @@ def build_preflight(
         "scriptDrift": {
             **asdict(drift),
             "approvedText": data.get("scriptText"),
+            "approvedSpokenText": spoken_script_text(str(data.get("scriptText") or "")),
             "spokenText": transcript.get("postProcessedText") or transcript.get("text"),
         },
+        "assetRepair": repair_plan(audio_path, drift),
+    }
+
+
+def repair_plan(audio_path: Path, drift: ScriptDriftResult) -> dict[str, Any] | None:
+    if drift.status != "extra_leading_words":
+        return None
+    return {
+        "status": "candidate_not_applied",
+        "method": "trim_leading_words",
+        "reason": "Approved script is intact after leading words, but this gate needs word timestamps or manual editing before it can cut audio safely.",
+        "sourcePath": str(audio_path),
+        "extraLeadingWords": drift.extra_leading_words,
     }
 
 

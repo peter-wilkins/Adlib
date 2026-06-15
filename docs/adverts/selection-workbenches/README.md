@@ -24,3 +24,15 @@ batch needs to be shared.
   manifests.
 - `elevenlabs-continuum-selected-voice-v1.json`: Lily-only ElevenLabs manifest
   for the selected spoken advert and voice-sting candidates.
+
+## Media Generation
+
+Selected non-voice media assets are generated with:
+
+```bash
+python3 scripts/generate_selected_media_assets.py
+```
+
+That script reads the candidate and picks JSON, generates selected music and
+sound effects through ElevenLabs, renders animated logo MP4s locally with
+FFmpeg/Pillow, and writes a browsable workbench under `local/reports/`.

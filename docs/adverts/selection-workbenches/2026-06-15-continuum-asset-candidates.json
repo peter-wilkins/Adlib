@@ -90,8 +90,8 @@
       "voiceDirection": "Lily only. Straight narrator over ridiculous SFX.",
       "claimPosture": "comedy concept",
       "title": "Field Relay - Pirate Crew 20s",
-      "scriptText": "Captain, the mast is broken, the map is wet, and Brian has logged the treasure under miscellaneous again.\n\nField Relay is a talkable assistant for crews with busy hands and questionable systems.\n\nSave the note. Run the checklist. Find the thing before the ship sinks.\n\nPart of the Continuum family.\n\nGo to fieldrelay.continuumkit.org.",
-      "productionNotes": "Use creaking rope, splash, distant gull, tiny cannon pop. Lily stays dry and deadpan.",
+      "scriptText": "That captain is amazing.\n\nHe can remember where he has hidden his treasure, even though he has got two hooks and two eye patches.\n\nAye. That is because he uses Field Relay.\n\nThere she blows! Avast!\n\nField Relay: notes and commands for crews with busy hands.\n\nPart of the Continuum family.\n\nGo to fieldrelay.continuumkit.org.",
+      "productionNotes": "Use creaking rope, splash, distant gull, tiny cannon pop. Lily stays dry and deadpan. Later version can split the pirate lines into character voices if Lily-only is too flat.",
       "sourceTruths": [
         "docs/product-truths/2026-06-02-phone-control-surface.md"
       ]
@@ -144,7 +144,7 @@
       "voiceDirection": "Lily preferred. Clear, modern, not guru.",
       "claimPosture": "new product concept",
       "title": "AI Developer School - Founder 15s",
-      "scriptText": "AI is not one magic button. It is a workshop.\n\nEntrepreneurs AI Developer School is for founders who want to wrangle agents, build adverts, prototype products, and think like AI entrepreneurs.\n\nPart of the Continuum family.\n\nGo to school.continuumkit.org.",
+      "scriptText": "The new programming language is human language.\n\nEntrepreneurs AI Developer School is for founders who want to wrangle agents, build adverts, prototype products, and think like AI entrepreneurs.\n\nPart of the Continuum family.\n\nGo to school.continuumkit.org.",
       "productionNotes": "Good first audio test for this product. Keep it direct and practical."
     },
     {
@@ -159,7 +159,7 @@
       "voiceDirection": "Lily preferred. Encouraging, but not inspirational fluff.",
       "claimPosture": "new product concept",
       "title": "AI Developer School - Docs To Demo 30s",
-      "scriptText": "You do not need to become a traditional developer to start building with AI.\n\nYou do need taste, structure, feedback loops, and the nerve to make small useful things quickly.\n\nEntrepreneurs AI Developer School teaches the new practical stack: product truth, agent wrangling, advert writing, prototype loops, and shipping before the idea goes stale.\n\nBuild the thing. Explain the thing. Test the thing.\n\nPart of the Continuum family.\n\nGo to school.continuumkit.org.",
+      "scriptText": "The new programming language is human language.\n\nBut useful AI work still needs taste, structure, feedback loops, and the nerve to make small useful things quickly.\n\nEntrepreneurs AI Developer School teaches the practical stack: product truth, agent wrangling, advert writing, prototype loops, and shipping before the idea goes stale.\n\nBuild the thing. Explain the thing. Test the thing.\n\nPart of the Continuum family.\n\nGo to school.continuumkit.org.",
       "productionNotes": "This is the clearest offer. Could become the default 30 second advert."
     },
     {
@@ -174,7 +174,7 @@
       "voiceDirection": "Lily preferred. Confident teacher, not sales bro.",
       "claimPosture": "new product concept",
       "title": "AI Developer School - Agent Wrangler 60s",
-      "scriptText": "The next useful founder skill is not memorising every framework.\n\nIt is learning how to work with AI systems without being fooled by them.\n\nEntrepreneurs AI Developer School is a practical course for people who want to build products, adverts, workflows, and prototypes with AI agents.\n\nYou learn how to turn a messy idea into product truth. How to brief an agent. How to judge the work. How to make fast adverts. How to build feedback loops. How to ship a rough version before the energy disappears.\n\nThis is not about pretending AI is magic. It is about becoming the person who can point it at a real opportunity and keep it honest long enough to make something useful.\n\nEntrepreneurs AI Developer School.\n\nWrangle the agents. Build the business.\n\nPart of the Continuum family.\n\nGo to school.continuumkit.org.",
+      "scriptText": "The new programming language is human language.\n\nThat does not mean the work is easy. It means the founder skill has changed.\n\nEntrepreneurs AI Developer School is a practical course for people who want to build products, adverts, workflows, and prototypes with AI agents.\n\nYou learn how to turn a messy idea into product truth. How to brief an agent. How to judge the work. How to make fast adverts. How to build feedback loops. How to ship a rough version before the energy disappears.\n\nThis is not about pretending AI is magic. It is about becoming the person who can point it at a real opportunity and keep it honest long enough to make something useful.\n\nEntrepreneurs AI Developer School.\n\nWrangle the agents. Build the business.\n\nPart of the Continuum family.\n\nGo to school.continuumkit.org.",
       "productionNotes": "Use for the long host-read concept. May need trimming after first listen."
     },
     {
@@ -189,7 +189,7 @@
       "voiceDirection": "Lily preferred.",
       "claimPosture": "tagline",
       "title": "AI Developer School - Wrangle The Agents Sting",
-      "scriptText": "Wrangle the agents. Build the business.\n\nschool.continuumkit.org.",
+      "scriptText": "The new programming language is human language.\n\nWrangle the agents. Build the business.\n\nschool.continuumkit.org.",
       "productionNotes": "Useful as a podcast bumper or video end card."
     },
     {

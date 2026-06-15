@@ -19,3 +19,8 @@ batch needs to be shared.
   candidates, Entrepreneurs AI Developer School scripts, Continuum memory and
   context scripts, Jury Rigged music/sting briefs, and animated logo briefs for
   the main Continuum projects.
+- `2026-06-15-continuum-asset-picks.json`: Peter's exported selection from the
+  public tick-box page, stored as stable candidate IDs for follow-on generation
+  manifests.
+- `elevenlabs-continuum-selected-voice-v1.json`: Lily-only ElevenLabs manifest
+  for the selected spoken advert and voice-sting candidates.

@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "continuum_selected_assets",
+  "scriptVersion": "selected-voice-v1",
+  "campaign": "continuum-selected-assets-20260615",
+  "productTruth": [
+    "docs/product-truths/2026-06-02-phone-control-surface.md",
+    "docs/product-truths/2026-06-02-continuum-kit-sharing.md",
+    "docs/product-truths/2026-06-02-jury-rigged-video-creation.md"
+  ],
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter exported selected assets on 2026-06-15, asked to stick with Lily for Field Relay, supplied the AI Developer School line 'The new programming language is human language', and revised the Field Relay pirate concept. Previous instruction says not to worry about ElevenLabs credits because time is the enemy.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "narrator_lily": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Default proven narrator from existing AdLib adverts; calm, warm, lightly aspirational",
+      "defaultSettings": {
+        "stability": 0.44,
+        "similarity_boost": 0.82,
+        "style": 0.28,
+        "speed": 0.98,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "fieldrelay_lily_water_sports_15",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay/selected/complete",
+      "text": "Your hands are on the wing. Your head is in the wind.\n\nField Relay is a talkable assistant for session notes, kit checks, repairs, and ideas you do not want to lose.\n\nNot a safety system. A field computer for busy hands.\n\nPart of the Continuum family.\n\nGo to fieldrelay.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#fieldrelay-lily-water-sports-15",
+      "assetKind": "complete_advert_preview",
+      "title": "Field Relay - Water Sports 15s"
+    },
+    {
+      "assetId": "fieldrelay_lily_hands_free_30",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay/selected/complete",
+      "text": "Some jobs do not wait while you unlock a laptop.\n\nField Relay is for people whose hands and eyes are busy: a talkable notebook, checklist, command line, and tool launcher for the real world.\n\nSave the note. Start the capture. Run the checklist. Call the tool. Let your own agent pick up the work.\n\nField Relay.\n\nA tricorder you can talk to.\n\nPart of the Continuum family.\n\nGo to fieldrelay.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#fieldrelay-lily-hands-free-30",
+      "assetKind": "complete_advert_preview",
+      "title": "Field Relay - Hands Free 30s"
+    },
+    {
+      "assetId": "fieldrelay_lily_farmer_30",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay/selected/complete",
+      "text": "The best farm note is usually made nowhere near a desk.\n\nField Relay is a talkable assistant for land work: notes, reminders, checklists, photos, repairs, places, and jobs to send back to your agent.\n\nGate needs fixing. Pump sounded wrong. Move the trough. Check that field again on Thursday.\n\nSay it while the work is still in front of you.\n\nField Relay.\n\nPart of the Continuum family.\n\nGo to fieldrelay.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#fieldrelay-lily-farmer-30",
+      "assetKind": "complete_advert_preview",
+      "title": "Field Relay - Farmer's Assistant 30s"
+    },
+    {
+      "assetId": "fieldrelay_lily_pirates_20",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay/selected/complete",
+      "text": "That captain is amazing.\n\nHe can remember where he has hidden his treasure, even though he has got two hooks and two eye patches.\n\nAye. That is because he uses Field Relay.\n\nThere she blows! Avast!\n\nField Relay: notes and commands for crews with busy hands.\n\nPart of the Continuum family.\n\nGo to fieldrelay.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#fieldrelay-lily-pirates-20",
+      "assetKind": "complete_advert_preview",
+      "title": "Field Relay - Pirate Crew 20s"
+    },
+    {
+      "assetId": "fieldrelay_lily_mums_30",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/field-relay/selected/complete",
+      "text": "Some people call it multitasking. Some people call it Tuesday.\n\nPacked lunch. Wet kit. Lost form. Football boots. Dentist. Birthday present. That one thing you remembered in the car and lost by the time you got home.\n\nField Relay is a talkable assistant for busy hands, busy eyes, and brains already doing too much.\n\nSay it. Save it. Send it to the right list.\n\nPart of the Continuum family.\n\nGo to fieldrelay.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#fieldrelay-lily-mums-30",
+      "assetKind": "complete_advert_preview",
+      "title": "Field Relay - Mums 30s"
+    },
+    {
+      "assetId": "school_docs_to_demo_30",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/ai-developer-school/selected/complete",
+      "text": "The new programming language is human language.\n\nBut useful AI work still needs taste, structure, feedback loops, and the nerve to make small useful things quickly.\n\nEntrepreneurs AI Developer School teaches the practical stack: product truth, agent wrangling, advert writing, prototype loops, and shipping before the idea goes stale.\n\nBuild the thing. Explain the thing. Test the thing.\n\nPart of the Continuum family.\n\nGo to school.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#school-docs-to-demo-30",
+      "assetKind": "complete_advert_preview",
+      "title": "AI Developer School - Docs To Demo 30s"
+    },
+    {
+      "assetId": "school_agent_wrangler_60",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/ai-developer-school/selected/complete",
+      "text": "The new programming language is human language.\n\nThat does not mean the work is easy. It means the founder skill has changed.\n\nEntrepreneurs AI Developer School is a practical course for people who want to build products, adverts, workflows, and prototypes with AI agents.\n\nYou learn how to turn a messy idea into product truth. How to brief an agent. How to judge the work. How to make fast adverts. How to build feedback loops. How to ship a rough version before the energy disappears.\n\nThis is not about pretending AI is magic. It is about becoming the person who can point it at a real opportunity and keep it honest long enough to make something useful.\n\nEntrepreneurs AI Developer School.\n\nWrangle the agents. Build the business.\n\nPart of the Continuum family.\n\nGo to school.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#school-agent-wrangler-60",
+      "assetKind": "complete_advert_preview",
+      "title": "AI Developer School - Agent Wrangler 60s"
+    },
+    {
+      "assetId": "school_sting_wrangle_06",
+      "takeSlug": "voice_sting",
+      "speaker": "advert_voice",
+      "folder": "voice/ai-developer-school/selected/stings",
+      "text": "The new programming language is human language.\n\nWrangle the agents. Build the business.\n\nschool.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#school-sting-wrangle-06",
+      "assetKind": "voice_sting",
+      "title": "AI Developer School - Wrangle The Agents Sting"
+    },
+    {
+      "assetId": "school_sting_build_test_sell_08",
+      "takeSlug": "voice_sting",
+      "speaker": "advert_voice",
+      "folder": "voice/ai-developer-school/selected/stings",
+      "text": "Build it. Explain it. Test it. Sell it.\n\nEntrepreneurs AI Developer School.\n\nschool.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#school-sting-build-test-sell-08",
+      "assetKind": "voice_sting",
+      "title": "AI Developer School - Build Test Sell Sting"
+    },
+    {
+      "assetId": "continuum_brain_sieve_30",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-kit/selected/complete",
+      "text": "Some people do not have a lack of ideas. They have too many ideas arriving sideways.\n\nContinuum Kit is for builders with brilliant, leaky, high-speed brains: people who need a way to capture the thread, recover the context, and keep moving without turning life into admin.\n\nIt is not a finished one-click product yet. It is a practical workflow being extracted from real use.\n\nPart of the Continuum family.\n\nGo to continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#continuum-brain-sieve-30",
+      "assetKind": "complete_advert_preview",
+      "title": "Continuum - Brain Like A Sieve 30s"
+    },
+    {
+      "assetId": "continuum_genius_chaos_30",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-kit/selected/complete",
+      "text": "If your brain makes connections faster than your systems can hold them, you do not need another productivity religion.\n\nYou need a way back into the work.\n\nContinuum Kit is a public-safe path out of a private AI workflow: capture, context, agents, decisions, and next actions in language that belongs to you.\n\nFor people who think in storms and still need to ship.\n\nGo to continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#continuum-genius-chaos-30",
+      "assetKind": "complete_advert_preview",
+      "title": "Continuum - Genius Chaos 30s"
+    },
+    {
+      "assetId": "continuum_context_recovery_15",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/continuum-kit/selected/complete",
+      "text": "Context lost? Thread gone? Brain moved on?\n\nContinuum Kit is about building a workflow that helps you and your agents find the work again.\n\nCapture the thread. Recover the context. Keep moving.\n\nGo to continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#continuum-context-recovery-15",
+      "assetKind": "complete_advert_preview",
+      "title": "Continuum - Context Recovery 15s"
+    },
+    {
+      "assetId": "jury_rigged_show_trailer_30",
+      "takeSlug": "complete_spot",
+      "speaker": "advert_voice",
+      "folder": "voice/jury-rigged/selected/complete",
+      "text": "Teams. Puzzles. Questionable materials. A final race that should probably have had more planning.\n\nJury Rigged is a new challenge-show concept where crews earn advantages, find hidden parts, build ridiculous solutions, and try to get across the water with dignity mostly intact.\n\nIt is part game show, part boatyard experiment, part pirate homework.\n\nJury Rigged.\n\nPart of the Continuum family.\n\nGo to juryrigged.continuumkit.org.",
+      "voiceProfiles": [
+        "narrator_lily"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#jury-rigged-show-trailer-30",
+      "assetKind": "complete_advert_preview",
+      "title": "Jury Rigged - Show Trailer 30s"
+    }
+  ]
+}

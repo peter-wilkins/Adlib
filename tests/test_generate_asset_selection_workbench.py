@@ -51,6 +51,52 @@ class GenerateAssetSelectionWorkbenchTest(unittest.TestCase):
         self.assertIn("Field Relay - Hands Free 30s", page)
         self.assertIn("Downwind Logo - Breaking Wave Wipe", page)
 
+    def test_picks_reference_known_candidate_ids(self):
+        candidates = generate_asset_selection_workbench.load_workbench(
+            Path("docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json")
+        )
+        picks = json.loads(
+            Path("docs/adverts/selection-workbenches/2026-06-15-continuum-asset-picks.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        candidate_ids = {item["id"] for item in candidates["items"]}
+        selected_ids = set(picks["selectedIds"])
+        not_selected_ids = set(picks["notSelectedIds"])
+
+        self.assertEqual(picks["selectedCount"], len(picks["selectedIds"]))
+        self.assertFalse(selected_ids & not_selected_ids)
+        self.assertTrue(selected_ids <= candidate_ids)
+        self.assertTrue(not_selected_ids <= candidate_ids)
+        self.assertEqual(selected_ids | not_selected_ids, candidate_ids)
+
+    def test_selected_spoken_assets_are_in_lily_manifest(self):
+        candidates = generate_asset_selection_workbench.load_workbench(
+            Path("docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json")
+        )
+        picks = json.loads(
+            Path("docs/adverts/selection-workbenches/2026-06-15-continuum-asset-picks.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        manifest = json.loads(
+            Path("docs/adverts/selection-workbenches/elevenlabs-continuum-selected-voice-v1.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        selected_ids = set(picks["selectedIds"])
+        selected_spoken_ids = {
+            item["id"]
+            for item in candidates["items"]
+            if item["id"] in selected_ids and item["assetType"] in {"audio_ad_script", "audio_sting_script"}
+        }
+        manifest_source_ids = {take["sourceDraft"].split("#", 1)[1] for take in manifest["takes"]}
+
+        self.assertEqual(selected_spoken_ids, manifest_source_ids)
+        self.assertEqual(set(manifest["voiceProfiles"]), {"narrator_lily"})
+        for take in manifest["takes"]:
+            self.assertEqual(take["voiceProfiles"], ["narrator_lily"])
+
 
 if __name__ == "__main__":
     unittest.main()

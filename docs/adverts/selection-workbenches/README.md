@@ -1,0 +1,21 @@
+# Selection Workbenches
+
+Selection workbenches are public-safe candidate batches for choosing what to
+turn into real audio, video, or music assets.
+
+Each JSON file is source data. Generate the browsable tick-box page with:
+
+```bash
+python3 scripts/generate_asset_selection_workbench.py
+```
+
+The generated local page is written under `local/reports/` and should not be
+committed. Public copies can be placed on the Continuum workbench server when a
+batch needs to be shared.
+
+## Current Batches
+
+- `2026-06-15-continuum-asset-candidates.json`: Lily-only Field Relay redo
+  candidates, Entrepreneurs AI Developer School scripts, Continuum memory and
+  context scripts, Jury Rigged music/sting briefs, and animated logo briefs for
+  the main Continuum projects.

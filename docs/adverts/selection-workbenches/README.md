@@ -24,6 +24,9 @@ batch needs to be shared.
   manifests.
 - `elevenlabs-continuum-selected-voice-v1.json`: Lily-only ElevenLabs manifest
   for the selected spoken advert and voice-sting candidates.
+- `2026-06-16-movie-trailer-candidates.json`: longer protagonist/problem/
+  solution trailer scripts, written as rhymed poetic voiceovers for later
+  ElevenLabs narration and video generation.
 
 ## Media Generation
 

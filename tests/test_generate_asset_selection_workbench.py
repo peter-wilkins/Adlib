@@ -97,6 +97,20 @@ class GenerateAssetSelectionWorkbenchTest(unittest.TestCase):
         for take in manifest["takes"]:
             self.assertEqual(take["voiceProfiles"], ["narrator_lily"])
 
+    def test_movie_trailer_batch_contains_jobdone_gary_story(self):
+        trailers = generate_asset_selection_workbench.load_workbench(
+            Path("docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json")
+        )
+        items = trailers["items"]
+        gary = next(item for item in items if item["id"] == "jobdone-gary-great-leak-trailer-150")
+
+        self.assertEqual(len(items), 7)
+        self.assertEqual(gary["assetType"], "movie_trailer_script")
+        self.assertIn("great leak", gary["title"].lower())
+        self.assertIn("Poor Gary", gary["scriptText"])
+        self.assertIn("Timeline", gary["scriptText"])
+        self.assertIn("jobdone.continuumkit.org", gary["scriptText"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,143 @@
+{
+  "schema": "adlib.asset-selection-workbench.v1",
+  "batchId": "movie-trailer-candidates-20260616",
+  "title": "Long Movie Trailer Script Candidates",
+  "createdAt": "2026-06-16",
+  "summary": "Long poetic trailer scripts for turning product problems into protagonist stories before later video generation.",
+  "selectionNote": "These are script assets first. They are written as rhymed heroic-couplet style voiceovers with iambic-pentameter-ish flow, so they can become longer ElevenLabs reads now and video trailers later.",
+  "items": [
+    {
+      "id": "jobdone-gary-great-leak-trailer-150",
+      "project": "JobDone",
+      "assetType": "movie_trailer_script",
+      "priority": "high",
+      "duration": "150s",
+      "audience": "tradespeople and small operators",
+      "angle": "Gary survives the great leak by turning memory into confirmed job recall",
+      "domain": "jobdone.continuumkit.org",
+      "voiceDirection": "Lily for warm storybook trailer, or Yorkshire David for comic tradesperson trailer.",
+      "claimPosture": "comic fiction built on JobDone Product Truth",
+      "title": "JobDone - Gary And The Great Leak",
+      "scriptText": "In dawn's cold hush, when pipes began to cry,\nbrave Gary raised his wrench against the sky.\n\nThe street below lay shining, wide, and wet;\nthe tenants watched with faces full of fret.\n\nHe found the valve, he stemmed the silver flood,\nthen patched the joint with tape and honest mud.\n\nThe boiler sighed, the cupboard ceased to rain,\nand all the flats were peaceful once again.\n\nThey cheered his name from stair and kitchen door;\nno plumber there had seemed so wise before.\n\nBut time, that thief, came creeping through the lane,\nand brought the selfsame leak to life again.\n\nPoor Gary stared where once his triumph stood;\nhe knew he fixed it, but not how he could.\n\nWas that the bend behind the second wall?\nWas Mrs Green the tenant he should call?\n\nWhich part had split? Which washer had he used?\nWhich stopcock stuck? Which note had he refused?\n\nHis photos slept in chats from long ago;\nhis voice notes mumbled things he could not know.\n\nHis memory, once mighty, brave, and bright,\nwent clanking down the drain that rainy night.\n\nThen, from the phone that shivered in his hand,\na hum arose, as calm as solid land.\n\nJobDone appeared: not magic, smoke, or flame,\nbut one clear place to keep the job by name.\n\nHe spoke the facts while boots were still on floor;\nwhat failed, what changed, who owned the cellar door.\n\nHe checked the words, confirmed the proper place,\nand sealed the entry in its rightful space.\n\nThe Timeline held what Gary could not hold;\nthe Contact, Location, date, and story told.\n\nNext time the leak returned with wicked grin,\nour Gary tapped Recall, and looked within.\n\nThe source came back, not guesswork in disguise:\nthe fitting size, the note, the warning signs.\n\nHe walked in sure, with history in his hand,\nand made the water bend to his command.\n\nNo invoice spell, no chatbot dressed as law;\njust grounded memory for the jobs he saw.\n\nCapture the work, confirm the truth you know,\nthen ask the past which way the pipes should go.\n\nSo Gary smiled, his boots no longer blue;\nhe fixed the leak, and knew what he must do.\n\nJobDone remembers what the work has shown.\nGo to jobdone.continuumkit.org.",
+      "productionNotes": "Use storm drain, pipe hiss, heroic orchestral rise, phone confirmation chime, and a final practical stamp. This can be read as a 2 to 2.5 minute trailer with long pauses and scene beats.",
+      "meterNotes": "Rhymed couplets with approximate iambic pentameter. Keep performance poetic and clear rather than forcing exact scansion.",
+      "sourceTruths": [
+        "docs/product-truths/2026-06-02-jobdone.md"
+      ]
+    },
+    {
+      "id": "fieldrelay-mara-busy-hands-trailer-150",
+      "project": "Field Relay",
+      "assetType": "movie_trailer_script",
+      "priority": "high",
+      "duration": "150s",
+      "audience": "field workers, sailors, land workers, busy-hands people",
+      "angle": "Mara cannot use a screen while the real world keeps moving",
+      "domain": "fieldrelay.continuumkit.org",
+      "voiceDirection": "Lily only. Warm, capable, slightly cinematic.",
+      "claimPosture": "aspirational prototype with safety boundary",
+      "title": "Field Relay - Mara And The Busy Hands",
+      "scriptText": "Where signal fades and weather writes the day,\nyoung Mara worked where screens got in the way.\n\nHer gloves were wet, her notebook blown and torn;\nher list was gone before the second horn.\n\nThe gate was loose, the pump had coughed at three,\nthe cracked old fitting hid behind a tree.\n\nA sailor called, a farmer waved her near,\na warning note dissolved before her ear.\n\nShe had two hands, but five small fires to tend;\nshe had one phone, but could not stop and bend.\n\nThe world kept asking, now, before, and next;\nher thumbs were cold, her tired eyes were vexed.\n\nAt dusk she found, beneath a dripping coat,\nthe ghost of every half-remembered note.\n\nWhat field was that? Which tool was left behind?\nWhich job belonged to which half-busy mind?\n\nThen Field Relay came softly through the rain,\na field computer fitted for the plain.\n\nNot always hearing, not a hidden spy;\njust ready when a busy voice says why.\n\nShe spoke the note while holding fast the gate;\nshe logged the place before the thought was late.\n\nShe called the checklist, marked the broken part,\nand sent the job toward her waiting chart.\n\nA tricorder, but built for mud and rope;\na command line dressed in weatherproof hope.\n\nBring your own agent, teach your own command;\nbuild tools that fit the work beneath your hand.\n\nThe pump was fixed, the field report was clear;\nthe sailor found the kit she left last year.\n\nThe phone became no tyrant in her palm,\nbut one small relay, useful, quick, and calm.\n\nFor eyes on work and hands that cannot pause,\nfor muddy boots and practical causes:\n\nField Relay waits where ordinary screens\ncannot keep up with what the fieldwork means.\n\nPart of the Continuum family.\nGo to fieldrelay.continuumkit.org.",
+      "productionNotes": "Use rain, gate latch, rope, distant radio, boot steps, and restrained heroic rise. Avoid claiming always-on capture or a finished public product.",
+      "meterNotes": "Rhymed couplets with approximate iambic-pentameter cadence.",
+      "sourceTruths": [
+        "docs/product-truths/2026-06-02-phone-control-surface.md"
+      ]
+    },
+    {
+      "id": "ai-school-ava-human-language-trailer-150",
+      "project": "Entrepreneurs AI Developer School",
+      "assetType": "movie_trailer_script",
+      "priority": "high",
+      "duration": "150s",
+      "audience": "founders, solo builders, AI-curious entrepreneurs",
+      "angle": "Ava stops waiting for a technical cofounder and learns to wrangle agents",
+      "domain": "school.continuumkit.org",
+      "voiceDirection": "Lily. Confident teacher, not guru.",
+      "claimPosture": "new course concept",
+      "title": "AI Developer School - Ava Learns The New Language",
+      "scriptText": "Ava had plans that filled a bedroom wall;\nbright cards and arrows, stacked above them all.\n\nShe knew the buyer, pain, and price by heart,\nyet every build attempt fell apart.\n\nThe code looked strange, the tools changed every day;\nthe demos died in tabs along the way.\n\nShe asked a model, watched it nod and spin,\nthen lost the thread before the work began.\n\nThe dream was clear; the method would not land.\nShe needed more than wishes in her hand.\n\nThen one line struck like morning through the glass:\nthe new programming language is human language.\n\nNot vague desire, not prompts that beg and plead;\nbut sharp intent, good taste, and tested need.\n\nShe learned to name the truth before the sell,\nto brief the agent, then inspect it well.\n\nShe made small loops where feedback could reply,\nand killed weak claims before they learned to fly.\n\nShe wrote the advert, built the rough first screen,\nthen asked what proof would make the meaning clean.\n\nNo magic throne, no genius in a jar;\njust better steering by a clearer star.\n\nThe agents worked when Ava set the frame;\nthe product found a shape, a price, a name.\n\nHer first rough demo limped, but it was real;\nher first crude advert showed what people feel.\n\nShe shipped before the energy was gone,\nthen shaped the next attempt from what was shown.\n\nFor founders lost between idea and code,\nfor clever minds that need a shorter road:\n\nLearn product truth, learn prompts that hold their spine;\nlearn when to trust, and when to draw the line.\n\nWrangle the agents. Build the business.\nPart of the Continuum family.\nGo to school.continuumkit.org.",
+      "productionNotes": "Use typing, whiteboard markers, small synth pulse, and rising educational trailer music. Good candidate for a long flagship read.",
+      "meterNotes": "Rhymed couplets with poetic cadence. The key line intentionally breaks meter slightly for memorability.",
+      "sourceTruths": [
+        "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#school-docs-to-demo-30"
+      ]
+    },
+    {
+      "id": "continuum-nora-brain-sieve-trailer-150",
+      "project": "Continuum Kit",
+      "assetType": "movie_trailer_script",
+      "priority": "high",
+      "duration": "150s",
+      "audience": "neurodiverse builders, idea-heavy people, AI-heavy solo operators",
+      "angle": "Nora's ideas arrive faster than systems can hold them",
+      "domain": "continuumkit.org",
+      "voiceDirection": "Lily. Kind, precise, not medical, not patronising.",
+      "claimPosture": "aspirational extraction from private workflow",
+      "title": "Continuum - Nora Finds The Thread",
+      "scriptText": "Nora could see ten bridges in one spark;\nthen lose the map by morning in the dark.\n\nHer mind made storms where other minds made lists;\nbright links appeared, then vanished into mist.\n\nA note began; another stole the page.\nA thought grew wings before it found a cage.\n\nThe inbox filled with fragments, names, and starts;\nher greatest plans were scattered into parts.\n\nThey called it chaos. She called it a day.\nThe thread was there, then always slipped away.\n\nShe did not need a louder self-help bell,\nor one more box where good intentions fell.\n\nShe needed paths from capture back to why,\na way to tell the work: you did not die.\n\nThen Continuum came quiet, spare, and plain;\nnot one more brain, but rails to find the train.\n\nA private loop, made public-safe with care,\nwhere agents find the context waiting there.\n\nThe capture held the spark that crossed her mind;\nthe status showed what mattered, not the grind.\n\nDecisions sat where future work could see;\nnext actions stopped pretending to be free.\n\nThe storm still came; no system made it small.\nBut now the thread could answer when she'd call.\n\nNo finished kit in one triumphant click;\nreal workflows grow from what is true and thick.\n\nFor people rich in thought and poor in shelves,\nwho need a way to work with future selves:\n\nCapture the thread. Recover the context.\nKeep moving when the old trail is lost.\n\nContinuum Kit.\nGo to continuumkit.org.",
+      "productionNotes": "Use sparse piano, soft ticks, thread/loom motif, and a warm resolved final note. Keep product status honest.",
+      "meterNotes": "Rhymed couplets with approximate iambic-pentameter cadence; final tag deliberately becomes spoken slogan.",
+      "sourceTruths": [
+        "docs/product-truths/2026-06-02-continuum-kit-sharing.md"
+      ]
+    },
+    {
+      "id": "jury-rigged-barnaby-boat-trailer-150",
+      "project": "Jury Rigged",
+      "assetType": "movie_trailer_script",
+      "priority": "medium",
+      "duration": "150s",
+      "audience": "challenge-show viewers and creators",
+      "angle": "Barnaby turns chaotic boatyard nonsense into a filmable challenge",
+      "domain": "juryrigged.continuumkit.org",
+      "voiceDirection": "Lily deadpan over pirate/hornpipe music, or later a comic host voice.",
+      "claimPosture": "clearly labelled concept",
+      "title": "Jury Rigged - Barnaby And The Questionable Boat",
+      "scriptText": "Barnaby dreamed of glory on the tide;\nhis crew brought tape, a bucket, and their pride.\n\nThe task was clear: cross water, ring the bell.\nThe plan, however, did not age so well.\n\nOne team found rope beneath a picnic chair;\none swapped a sail for half a garden stair.\n\nThe clever parts were hidden in plain sight;\nthe rules were fair, the methods less polite.\n\nA head start waited where the puzzles lay;\na pulley prize could change the final day.\n\nBut chaos hates a camera with a plan;\nit eats the shot before the shot began.\n\nWho has the score? Which team may take the mast?\nWhat safety line was checked before they passed?\n\nThen Jury Rigged appeared beside the quay,\na concept built for making mayhem see.\n\nIt shaped the game before the shouting rose:\nthe run sheet, scoring, limits, shots, and close.\n\nIt marked the beats a later edit needs,\nthe hidden tools, the wins, the almost-deeds.\n\nNo promise here of magic finished shows;\njust planned disorder, tied with better bows.\n\nThe final race began with fiddle fire;\nthe bucket sank, the staircase drifted higher.\n\nBarnaby laughed, then found the winning clue:\nthe boring checklist saved the daft canoe.\n\nThe bell was rung, the splash was seen again;\nthe story held the shape inside the rain.\n\nFor creators chasing glorious mistakes,\nfor games where every plank and pulley shakes:\n\nDesign the puzzle. Capture the best moments.\nMake the mayhem watchable.\n\nJury Rigged.\nPart of the Continuum family.\nGo to juryrigged.continuumkit.org.",
+      "productionNotes": "Use hornpipe theme, flag snap, rope creak, cheering, comic splash, and bold trailer drums. Must remain 'concept', not shipped software.",
+      "meterNotes": "Rhymed couplets with comic trailer cadence; some slogans at end break meter on purpose.",
+      "sourceTruths": [
+        "docs/product-truths/2026-06-02-jury-rigged-video-creation.md"
+      ]
+    },
+    {
+      "id": "adlib-sam-empty-docs-trailer-150",
+      "project": "AdLib",
+      "assetType": "movie_trailer_script",
+      "priority": "medium",
+      "duration": "150s",
+      "audience": "small brands, podcasters, product builders",
+      "angle": "Sam has product notes but no advert people can remember",
+      "domain": "adlib.continuumkit.org",
+      "voiceDirection": "Lily. Warm, sales-aware, not over-polished.",
+      "claimPosture": "dogfood product/service pitch",
+      "title": "AdLib - Sam And The Silent Product",
+      "scriptText": "Sam built a thing with purpose, care, and proof;\nthe docs were sound, the pitch stayed on the roof.\n\nThe homepage sighed. The bullet points were dry.\nThe product lived, but no one knew quite why.\n\nHe tried a slogan, polished it with fear;\nit sounded grand, and meant less every year.\n\nHe tried a studio quote beyond his means;\nhe tried to edit words between machines.\n\nThe message hid beneath the clever clay;\nthe buyer shrugged and slowly clicked away.\n\nThen AdLib opened, practical and small,\nand asked what truth must stand before them all.\n\nNo claims that run ahead of what is built;\nno golden fog, no borrowed pools of guilt.\n\nThe docs became a script that he could hear;\nthe weak line cracked, the strong line sounded clear.\n\nA rough voice read the offer back in time;\na second take made tangled meaning rhyme.\n\nThe clips were saved with titles, tags, and source;\nso later work could find the proper course.\n\nNot final gloss, not studio-perfect art;\nbut fast enough to test the buyer's heart.\n\nThe advert spoke. The silence lost its throne.\nSam heard the message working on its own.\n\nFor builders rich in notes and short on sound,\nfor products waiting still to be found:\n\nTurn docs to audio advert. Share the draft.\nHear what lands, then sharpen up the craft.\n\nAdLib.\nDocs to audio advert.\nPart of the Continuum family.\nGo to adlib.continuumkit.org.",
+      "productionNotes": "Use paper, typing, waveform, short room-tone bed, and a warm end-card hit. This is a strong dogfood trailer.",
+      "meterNotes": "Rhymed couplets with approximate iambic-pentameter cadence.",
+      "sourceTruths": [
+        "docs/product-truths/2026-06-02-audio-advert-generator.md"
+      ]
+    },
+    {
+      "id": "downwind-tom-gust-trailer-150",
+      "project": "Downwind",
+      "assetType": "movie_trailer_script",
+      "priority": "medium",
+      "duration": "150s",
+      "audience": "water-sports video viewers and expedition followers",
+      "angle": "Tom turns a chaotic downwind run into a watchable technical sports story",
+      "domain": "downwind.continuumkit.org",
+      "voiceDirection": "Use sparingly. This may work better as narration plus stings, not pure advert.",
+      "claimPosture": "sports-channel identity concept",
+      "title": "Downwind - Tom And The Long Run",
+      "scriptText": "Tom saw the whitecaps marching down the bay;\nthe wind had teeth and called him out to play.\n\nThe foil rose clean, the shoreline dropped behind;\nthe board began to read the moving mind.\n\nBut later, when the triumph hit the screen,\nthe ride looked flat, and none knew what had been.\n\nThe speed was gone, the effort had no face;\nthe clever line dissolved without a trace.\n\nWhere was the gust? Which glide had held the run?\nWhich fall was foolish? Which was almost fun?\n\nThen Downwind found a shape inside the spray:\nnot just a ride, but story made from day.\n\nThe logo flashed, the wave became a door;\nthe overlay gave numbers to the roar.\n\nA crash sting laughed, then yielded to the pace;\na map line drew the courage of the chase.\n\nThe little fills kept breath between the scenes;\nthe stats made visible what water means.\n\nNo heavy speech to drown the sea and sky;\njust enough voice to tell the viewer why.\n\nTom carved the swell, then vanished in the foam;\nthe edit brought the whole wild crossing home.\n\nFor channel stings and technical speed lore,\nfor expeditions asking to be more:\n\nLet the water speak, then frame the flight.\nMake the long run visible tonight.\n\nDownwind.\nGo to downwind.continuumkit.org.",
+      "productionNotes": "Probably generate as segmented narration plus video stings, not one long read. Use wave wipes, HUD beeps, glints, crashes, and sparse heroic music.",
+      "meterNotes": "Rhymed couplets with sports-trailer cadence; designed to be cut around footage.",
+      "sourceTruths": [
+        "docs/adverts/selection-workbenches/2026-06-15-continuum-asset-candidates.json#downwind-video-logo-breaking-wave"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "adlib.audio-advert-render-plan.v1",
+  "renderId": "jobdone-yorkshire-enterprise-rough-v1",
+  "scriptId": "JD_ad01_yorkshire_interrupt",
+  "campaign": "jobdone-yorkshire-enterprise-production-v2-20260616",
+  "createdFor": "JobDone Yorkshire enterprise-interruption advert",
+  "sourceManifest": "docs/adverts/jobdone-yorkshire-enterprise/elevenlabs-production-assets-v2.json",
+  "roughRenderPath": "local/audio-adverts/jobdone-yorkshire-enterprise-production-v2-20260616/renders/jobdone-yorkshire-enterprise-rough-v1.mp3",
+  "notes": [
+    "Peter selected John of the North, Dry Sarcastic, as the winner.",
+    "This render is a quick timing preview, not a polished final mix.",
+    "The current asset lengths make the preview about 44 seconds; tighten copy or edit pauses for a 30-second advert.",
+    "The corporate opener is intentionally cut off by the scratch and John interruption."
+  ],
+  "tracks": [
+    {
+      "assetId": "corporate_enterprise_opener",
+      "role": "corporate_voice",
+      "startMs": 0,
+      "trimEndMs": 2550,
+      "gainDb": -2,
+      "path": "local/audio-adverts/jobdone-yorkshire-enterprise-production-v2-20260616/assets/voice/jobdone-yorkshire-enterprise/corporate/corporate_enterprise_opener__smooth_platform_waffle__corporate_daniel.mp3"
+    },
+    {
+      "assetId": "record_scratch_dry_comedy",
+      "role": "sfx_interrupt",
+      "startMs": 2400,
+      "gainDb": -8,
+      "path": "local/audio-adverts/jobdone-yorkshire-enterprise-production-v2-20260616/assets/sfx/interrupt/record-scratch-dry-comedy.wav"
+    },
+    {
+      "assetId": "yorkshire_interrupt_definition",
+      "role": "yorkshireman",
+      "startMs": 2720,
+      "gainDb": 0,
+      "path": "local/audio-adverts/jobdone-yorkshire-enterprise-production-v2-20260616/assets/voice/jobdone-yorkshire-enterprise/yorkshireman/yorkshire_interrupt_definition__dry_sarcastic_selected__yorkshire_john_dry.mp3"
+    },
+    {
+      "assetId": "captured_soft_beep",
+      "role": "sfx_app",
+      "startMs": 16700,
+      "gainDb": -5,
+      "path": "local/audio-adverts/jobdone-yorkshire-enterprise-production-v2-20260616/assets/sfx/app/captured-soft-beep.wav"
+    },
+    {
+      "assetId": "app_capture_mrs_jones",
+      "role": "app_voice",
+      "startMs": 16850,
+      "gainDb": -1.5,
+      "path": "local/audio-adverts/jobdone-yorkshire-enterprise-production-v2-20260616/assets/voice/jobdone-yorkshire-enterprise/app/app_capture_mrs_jones__kitchen_tap_confirmable__app_lily_phone.mp3"
+    },
+    {
+      "assetId": "yorkshire_confirm_recall_bridge",
+      "role": "yorkshireman",
+      "startMs": 23050,
+      "gainDb": 0,
+      "path": "local/audio-adverts/jobdone-yorkshire-enterprise-production-v2-20260616/assets/voice/jobdone-yorkshire-enterprise/yorkshireman/yorkshire_confirm_recall_bridge__dry_practical_bridge__yorkshire_john_dry.mp3"
+    },
+    {
+      "assetId": "found_clean_beep",
+      "role": "sfx_app",
+      "startMs": 30380,
+      "gainDb": -5,
+      "path": "local/audio-adverts/jobdone-yorkshire-enterprise-production-v2-20260616/assets/sfx/app/found-clean-beep.wav"
+    },
+    {
+      "assetId": "app_recall_mrs_jones",
+      "role": "app_voice",
+      "startMs": 30550,
+      "gainDb": -1.5,
+      "path": "local/audio-adverts/jobdone-yorkshire-enterprise-production-v2-20260616/assets/voice/jobdone-yorkshire-enterprise/app/app_recall_mrs_jones__found_kitchen_tap__app_lily_phone.mp3"
+    },
+    {
+      "assetId": "yorkshire_tagline_url",
+      "role": "yorkshireman",
+      "startMs": 35450,
+      "gainDb": 0,
+      "path": "local/audio-adverts/jobdone-yorkshire-enterprise-production-v2-20260616/assets/voice/jobdone-yorkshire-enterprise/yorkshireman/yorkshire_tagline_url__forget_it_url__yorkshire_john_dry.mp3"
+    }
+  ]
+}

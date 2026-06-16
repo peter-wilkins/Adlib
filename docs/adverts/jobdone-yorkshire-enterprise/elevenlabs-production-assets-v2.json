@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "JD_ad01_yorkshire_interrupt",
+  "scriptVersion": "production-assets-v2",
+  "campaign": "jobdone-yorkshire-enterprise-production-v2-20260616",
+  "productTruth": "docs/product-truths/2026-06-02-jobdone.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter selected John of the North with the Dry Sarcastic script on 2026-06-16 and asked to make the assets for the full JobDone Yorkshire enterprise-interruption advert. V2 keeps the spoken URL in dotted form, matching Peter's no-slash URL rule.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "corporate_daniel": {
+      "voiceId": "onwK4e9ZLuTAKqWW03F9",
+      "voiceName": "Daniel - Steady Broadcaster",
+      "role": "Smooth enterprise-style advert opener, there to be interrupted",
+      "defaultSettings": {
+        "stability": 0.38,
+        "similarity_boost": 0.8,
+        "style": 0.48,
+        "speed": 0.98,
+        "use_speaker_boost": true
+      }
+    },
+    "yorkshire_john_dry": {
+      "voiceId": "7rQX8r6PVq3gfJ8rZzyE",
+      "voiceName": "John of the North",
+      "role": "Dry sarcastic Yorkshire-ish no-nonsense tradesman voice selected by Peter",
+      "defaultSettings": {
+        "stability": 0.24,
+        "similarity_boost": 0.84,
+        "style": 0.72,
+        "speed": 0.94,
+        "use_speaker_boost": true
+      }
+    },
+    "app_lily_phone": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Fast, calm JobDone app response voice",
+      "defaultSettings": {
+        "stability": 0.76,
+        "similarity_boost": 0.82,
+        "style": 0.04,
+        "speed": 1.1,
+        "use_speaker_boost": false
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "corporate_enterprise_opener",
+      "takeSlug": "smooth_platform_waffle",
+      "speaker": "corporate_voice",
+      "folder": "voice/jobdone-yorkshire-enterprise/corporate",
+      "text": "Introducing the next generation productivity platform for trade professionals.",
+      "voiceProfiles": [
+        "corporate_daniel"
+      ],
+      "sourceDraft": "scripts/generate_audio_advert_drafts.py#JD_ad01_yorkshire_interrupt",
+      "assetKind": "speech_line",
+      "title": "JobDone Yorkshire Enterprise - Corporate Opener"
+    },
+    {
+      "assetId": "yorkshire_interrupt_definition",
+      "takeSlug": "dry_sarcastic_selected",
+      "speaker": "yorkshireman",
+      "folder": "voice/jobdone-yorkshire-enterprise/yorkshireman",
+      "text": "No. Stop that. It's not a platform. It's a job diary, lad. Revolutionary, I know. You say what happened before you drive off, then JobDone helps you find it later.",
+      "voiceProfiles": [
+        "yorkshire_john_dry"
+      ],
+      "sourceDraft": "docs/adverts/jobdone-yorkshire-enterprise/elevenlabs-john-tone-auditions-v1.json#dry_sarcastic",
+      "assetKind": "speech_line",
+      "title": "JobDone Yorkshire Enterprise - John Dry Sarcastic Interruption"
+    },
+    {
+      "assetId": "app_capture_mrs_jones",
+      "takeSlug": "kitchen_tap_confirmable",
+      "speaker": "app_voice",
+      "folder": "voice/jobdone-yorkshire-enterprise/app",
+      "text": "Captured. Mrs Jones. Kitchen tap. Washer replaced. Isolation valve stiff.",
+      "voiceProfiles": [
+        "app_lily_phone"
+      ],
+      "sourceDraft": "scripts/generate_audio_advert_drafts.py#JD_ad01_yorkshire_interrupt",
+      "assetKind": "speech_line",
+      "title": "JobDone Yorkshire Enterprise - App Capture"
+    },
+    {
+      "assetId": "yorkshire_confirm_recall_bridge",
+      "takeSlug": "dry_practical_bridge",
+      "speaker": "yorkshireman",
+      "folder": "voice/jobdone-yorkshire-enterprise/yorkshireman",
+      "text": "You check it, confirm it, and next time you're there, ask what you did there last time.",
+      "voiceProfiles": [
+        "yorkshire_john_dry"
+      ],
+      "voiceSettings": {
+        "stability": 0.28,
+        "style": 0.66,
+        "speed": 0.95
+      },
+      "sourceDraft": "scripts/generate_audio_advert_drafts.py#JD_ad01_yorkshire_interrupt",
+      "assetKind": "speech_line",
+      "title": "JobDone Yorkshire Enterprise - John Confirm Recall Bridge"
+    },
+    {
+      "assetId": "app_recall_mrs_jones",
+      "takeSlug": "found_kitchen_tap",
+      "speaker": "app_voice",
+      "folder": "voice/jobdone-yorkshire-enterprise/app",
+      "text": "Found it. Mrs Jones. Kitchen tap. Washer replaced. Isolation valve stiff.",
+      "voiceProfiles": [
+        "app_lily_phone"
+      ],
+      "sourceDraft": "scripts/generate_audio_advert_drafts.py#JD_ad01_yorkshire_interrupt",
+      "assetKind": "speech_line",
+      "title": "JobDone Yorkshire Enterprise - App Recall"
+    },
+    {
+      "assetId": "yorkshire_tagline_url",
+      "takeSlug": "forget_it_url",
+      "speaker": "yorkshireman",
+      "folder": "voice/jobdone-yorkshire-enterprise/yorkshireman",
+      "text": "JobDone. Get it out of your head before you forget it. Go to jobdone.continuumkit.org.",
+      "voiceProfiles": [
+        "yorkshire_john_dry"
+      ],
+      "voiceSettings": {
+        "stability": 0.28,
+        "style": 0.58,
+        "speed": 0.95
+      },
+      "sourceDraft": "scripts/generate_audio_advert_drafts.py#JD_ad01_yorkshire_interrupt",
+      "assetKind": "speech_line",
+      "title": "JobDone Yorkshire Enterprise - John Tagline URL"
+    }
+  ]
+}

@@ -124,10 +124,18 @@ def project_from_source(source_draft: str, title: str) -> str:
         return "Continuum Kit"
     if "jobdone" in title_value or "job done" in title_value:
         return "JobDone"
+    if "adlib" in title_value or "ad lib" in title_value:
+        return "AdLib"
+    if "downwind" in title_value:
+        return "Downwind"
 
     value = source_draft.lower()
     if "jobdone" in value or "job-done" in value or "job done" in value:
         return "JobDone"
+    if "adlib" in value or "ad-lib" in value or "ad lib" in value:
+        return "AdLib"
+    if "downwind" in value:
+        return "Downwind"
     if "fieldrelay" in value or "field-relay" in value:
         return "Field Relay"
     if "school" in value or "developer school" in value:

@@ -80,6 +80,22 @@ class GenerateCampaignAudioWorkbenchTest(unittest.TestCase):
 
         self.assertEqual(project, "JobDone")
 
+    def test_project_from_source_detects_adlib_and_downwind(self):
+        self.assertEqual(
+            generate_campaign_audio_workbench.project_from_source(
+                "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#adlib-sam-empty-docs-trailer-150",
+                "AdLib Sam Silent Product - Storybook Excerpt",
+            ),
+            "AdLib",
+        )
+        self.assertEqual(
+            generate_campaign_audio_workbench.project_from_source(
+                "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#downwind-tom-gust-trailer-150",
+                "Downwind Tom Long Run - Storybook Excerpt",
+            ),
+            "Downwind",
+        )
+
     def test_build_assets_copies_campaign_media(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

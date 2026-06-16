@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "movie_trailer_storybook_audition_repairs",
+  "scriptVersion": "storybook-audition-repairs-v1",
+  "campaign": "movie-trailer-storybook-auditions-v2-20260616",
+  "productTruth": [
+    "docs/product-truths/2026-06-02-jobdone.md",
+    "docs/product-truths/2026-06-02-jury-rigged-video-creation.md"
+  ],
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Repair pass for two storybook auditions whose v2 generated clips failed on brand-name pronunciation or transcription. These are voice auditions, so the excerpt avoids the fragile brand word and keeps the poetic storybook tone.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "george_storyteller": {
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "voiceName": "George - Warm, Captivating Storyteller",
+      "role": "Warm British male storybook narrator for comic heroic rhymes",
+      "defaultSettings": {
+        "stability": 0.36,
+        "similarity_boost": 0.82,
+        "style": 0.5,
+        "speed": 0.94,
+        "use_speaker_boost": true
+      }
+    },
+    "chris_playful": {
+      "voiceId": "iP95p4xoKVk53GoZ742B",
+      "voiceName": "Chris - Charming, Down-to-Earth",
+      "role": "Playful grounded male voice for sport, comedy, and practical rhymes",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.78,
+        "style": 0.52,
+        "speed": 1.0,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "jobdone_gary_great_leak_excerpt_repair",
+      "takeSlug": "storybook_excerpt_no_brand",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/storybook-auditions/jobdone-gary",
+      "text": "In dawn's cold hush, when pipes began to cry, brave Gary raised his wrench against the sky. Poor Gary stared where once his triumph stood; the leak was fixed, but not the way he could. Then came one place, not smoke or flame, to keep each job by date and name.",
+      "voiceProfiles": [
+        "george_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_voice_audition",
+      "title": "JobDone Gary Great Leak - George Storybook Repair"
+    },
+    {
+      "assetId": "jury_rigged_barnaby_boat_excerpt_repair",
+      "takeSlug": "storybook_excerpt_no_brand",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/storybook-auditions/jury-rigged-barnaby",
+      "text": "Barnaby dreamed of glory on the tide; his crew brought tape, a bucket, and their pride. The task was clear: cross water, ring the bell. The plan, however, did not age so well. Then came the show beside the dock, and gave the mayhem rhythm, rules, and clock.",
+      "voiceProfiles": [
+        "chris_playful"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jury-rigged-barnaby-boat-trailer-150",
+      "assetKind": "movie_trailer_voice_audition",
+      "title": "Jury Rigged Barnaby Boat - Chris Storybook Repair"
+    },
+    {
+      "assetId": "jury_rigged_barnaby_boat_excerpt_repair_2",
+      "takeSlug": "storybook_excerpt_clearer_task",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/storybook-auditions/jury-rigged-barnaby",
+      "text": "Barnaby dreamed of glory on the tide; his crew brought tape, a bucket, and their pride. The task was plain: sail out and ring the bell. The plan, however, did not age so well. Then came the show beside the dock, and gave the mayhem rhythm, rules, and clock.",
+      "voiceProfiles": [
+        "chris_playful"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jury-rigged-barnaby-boat-trailer-150",
+      "assetKind": "movie_trailer_voice_audition",
+      "title": "Jury Rigged Barnaby Boat - Chris Storybook Repair 2"
+    }
+  ]
+}

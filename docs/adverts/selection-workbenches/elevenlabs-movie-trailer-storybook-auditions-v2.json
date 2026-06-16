@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "movie_trailer_storybook_auditions",
+  "scriptVersion": "storybook-auditions-v2",
+  "campaign": "movie-trailer-storybook-auditions-v2-20260616",
+  "productTruth": [
+    "docs/product-truths/2026-06-02-jobdone.md",
+    "docs/product-truths/2026-06-02-phone-control-surface.md",
+    "docs/product-truths/2026-06-02-continuum-kit-sharing.md",
+    "docs/product-truths/2026-06-02-jury-rigged-video-creation.md",
+    "docs/product-truths/2026-06-02-audio-advert-generator.md"
+  ],
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter asked on 2026-06-16 for short excerpt auditions from each selected movie trailer, with poetic children's-cartoon rhyme energy. Voice directions use broad storybook and character descriptions, not actor cloning or imitation. V2 avoids homophones and phrases that failed the word gate in the first local generation attempt.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "lily_storybook": {
+      "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+      "voiceName": "Lily - Velvety Actress",
+      "role": "Warm British storybook narrator; poetic, clear, gentle, not actor imitation",
+      "defaultSettings": {
+        "stability": 0.42,
+        "similarity_boost": 0.82,
+        "style": 0.38,
+        "speed": 0.94,
+        "use_speaker_boost": true
+      }
+    },
+    "george_storyteller": {
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "voiceName": "George - Warm, Captivating Storyteller",
+      "role": "Warm British male storybook narrator for comic heroic rhymes",
+      "defaultSettings": {
+        "stability": 0.36,
+        "similarity_boost": 0.82,
+        "style": 0.5,
+        "speed": 0.94,
+        "use_speaker_boost": true
+      }
+    },
+    "john_dry_comic": {
+      "voiceId": "7rQX8r6PVq3gfJ8rZzyE",
+      "voiceName": "John of the North",
+      "role": "Dry comic northern character narrator for JobDone practical comedy",
+      "defaultSettings": {
+        "stability": 0.26,
+        "similarity_boost": 0.84,
+        "style": 0.66,
+        "speed": 0.94,
+        "use_speaker_boost": true
+      }
+    },
+    "imogen_storyteller": {
+      "voiceId": "jv41DhCf464zw0TI7I1w",
+      "voiceName": "Imogen - Warm & Professional British Storyteller",
+      "role": "Warm British story narrator for capable adventure reads",
+      "defaultSettings": {
+        "stability": 0.42,
+        "similarity_boost": 0.82,
+        "style": 0.42,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      }
+    },
+    "marta_bright_storyteller": {
+      "voiceId": "ytfkKJNB1AXxIr8dKm5H",
+      "voiceName": "Marta - Warm, Natural & Bright Storyteller",
+      "role": "Bright British storyteller for hopeful founder and product rhymes",
+      "defaultSettings": {
+        "stability": 0.4,
+        "similarity_boost": 0.82,
+        "style": 0.48,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    },
+    "alice_educator_story": {
+      "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
+      "voiceName": "Alice - Clear, Engaging Educator",
+      "role": "Clear British educator with storybook warmth",
+      "defaultSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.82,
+        "style": 0.3,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      }
+    },
+    "lucy_childrens_narrator": {
+      "voiceId": "xOKkuQfZt5N7XfbFdn9W",
+      "voiceName": "Lucy Fennek - Warm Children's Narrator",
+      "role": "Gentle children's narrator for kind, precise rhymed story",
+      "defaultSettings": {
+        "stability": 0.42,
+        "similarity_boost": 0.82,
+        "style": 0.52,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      }
+    },
+    "captain_blackbeard": {
+      "voiceId": "6VgigPFWF0sNZy1BthVg",
+      "voiceName": "Captain Blackbeard - Gritty Pirate Voice",
+      "role": "Comic pirate character voice for Jury Rigged nautical chaos",
+      "defaultSettings": {
+        "stability": 0.3,
+        "similarity_boost": 0.82,
+        "style": 0.72,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      }
+    },
+    "chris_playful": {
+      "voiceId": "iP95p4xoKVk53GoZ742B",
+      "voiceName": "Chris - Charming, Down-to-Earth",
+      "role": "Playful grounded male voice for sport, comedy, and practical rhymes",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.78,
+        "style": 0.52,
+        "speed": 1.0,
+        "use_speaker_boost": true
+      }
+    },
+    "daniel_cinematic": {
+      "voiceId": "onwK4e9ZLuTAKqWW03F9",
+      "voiceName": "Daniel - Steady Broadcaster",
+      "role": "Clear cinematic male narrator for adventure trailer excerpts",
+      "defaultSettings": {
+        "stability": 0.36,
+        "similarity_boost": 0.8,
+        "style": 0.44,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "jobdone_gary_great_leak_excerpt",
+      "takeSlug": "storybook_excerpt",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/storybook-auditions/jobdone-gary",
+      "text": "In dawn's cold hush, when pipes began to cry, brave Gary raised his wrench against the sky. Poor Gary stared where once his triumph stood; the leak was fixed, but not the way he could. Then JobDone came, not smoke or flame, but one clear place to keep the job by name.",
+      "voiceProfiles": [
+        "george_storyteller",
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_voice_audition",
+      "title": "JobDone Gary Great Leak - Storybook Excerpt"
+    },
+    {
+      "assetId": "fieldrelay_mara_busy_hands_excerpt",
+      "takeSlug": "storybook_excerpt",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/storybook-auditions/fieldrelay-mara",
+      "text": "Where signal fades and weather writes the day, young Mara worked where screens got in the way. She had two hands, but five small fires to tend; she had one phone, but could not stop and bend. Then Field Relay came softly through the rain, a field computer ready for the rain.",
+      "voiceProfiles": [
+        "lily_storybook",
+        "imogen_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#fieldrelay-mara-busy-hands-trailer-150",
+      "assetKind": "movie_trailer_voice_audition",
+      "title": "Field Relay Mara Busy Hands - Storybook Excerpt"
+    },
+    {
+      "assetId": "ai_school_ava_human_language_excerpt",
+      "takeSlug": "storybook_excerpt",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/storybook-auditions/ai-school-ava",
+      "text": "Ava had plans that filled a bedroom wall; bright cards and arrows, stacked above them all. The dream was clear; the method would not land. She needed more than wishes in her hand. Then one line struck like morning through the glass: the new programming language is human language.",
+      "voiceProfiles": [
+        "alice_educator_story",
+        "marta_bright_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#ai-school-ava-human-language-trailer-150",
+      "assetKind": "movie_trailer_voice_audition",
+      "title": "AI Developer School Ava Human Language - Storybook Excerpt"
+    },
+    {
+      "assetId": "continuum_nora_thread_excerpt",
+      "takeSlug": "storybook_excerpt",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/storybook-auditions/continuum-nora",
+      "text": "Nora could see ten bridges in one spark, then lose the map by morning in the dark. A note began; another stole the page. A thought grew wings before it found a cage. Then Continuum came quiet, spare, and plain; not one more brain, but rails to find the train.",
+      "voiceProfiles": [
+        "lily_storybook",
+        "lucy_childrens_narrator"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#continuum-nora-brain-sieve-trailer-150",
+      "assetKind": "movie_trailer_voice_audition",
+      "title": "Continuum Nora Finds The Thread - Storybook Excerpt"
+    },
+    {
+      "assetId": "jury_rigged_barnaby_boat_excerpt",
+      "takeSlug": "storybook_excerpt",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/storybook-auditions/jury-rigged-barnaby",
+      "text": "Barnaby dreamed of glory on the tide; his crew brought tape, a bucket, and their pride. The task was clear: cross water, ring the bell. The plan, however, did not age so well. Then Jury Rigged appeared beside the dock, and gave the mayhem rhythm, rules, and clock.",
+      "voiceProfiles": [
+        "captain_blackbeard",
+        "chris_playful"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jury-rigged-barnaby-boat-trailer-150",
+      "assetKind": "movie_trailer_voice_audition",
+      "title": "Jury Rigged Barnaby Boat - Storybook Excerpt"
+    },
+    {
+      "assetId": "adlib_sam_silent_product_excerpt",
+      "takeSlug": "storybook_excerpt",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/storybook-auditions/adlib-sam",
+      "text": "Young Sam built something with purpose, care, and proof; his documents were sound, his pitch stayed on the roof. The homepage sighed. The bullet points were dry. The product lived, but no one knew quite why. Then AdLib opened, practical and small, and asked what truth must stand before them all.",
+      "voiceProfiles": [
+        "george_storyteller",
+        "marta_bright_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#adlib-sam-empty-docs-trailer-150",
+      "assetKind": "movie_trailer_voice_audition",
+      "title": "AdLib Sam Silent Product - Storybook Excerpt"
+    },
+    {
+      "assetId": "downwind_tom_long_run_excerpt",
+      "takeSlug": "storybook_excerpt",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/storybook-auditions/downwind-tom",
+      "text": "Tom saw the whitecaps marching down the bay; the wind had teeth and called him out to play. The foil rose clean, the shoreline dropped behind; the board began to read the moving mind. Then Downwind found a shape inside the spray: not just a ride, but story made from day.",
+      "voiceProfiles": [
+        "chris_playful",
+        "daniel_cinematic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#downwind-tom-gust-trailer-150",
+      "assetKind": "movie_trailer_voice_audition",
+      "title": "Downwind Tom Long Run - Storybook Excerpt"
+    }
+  ]
+}

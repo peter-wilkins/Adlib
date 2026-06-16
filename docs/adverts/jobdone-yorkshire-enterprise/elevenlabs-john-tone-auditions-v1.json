@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "JD_ad01_yorkshire_interrupt",
+  "scriptVersion": "john-tone-auditions-v1",
+  "campaign": "jobdone-john-tone-auditions-20260616",
+  "productTruth": "docs/product-truths/2026-06-02-jobdone.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter selected John of the North as closest on 2026-06-16, then asked to audition just him with different emotional tones and shorter, less tortured wording.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "john_of_the_north": {
+      "voiceId": "7rQX8r6PVq3gfJ8rZzyE",
+      "voiceName": "John of the North",
+      "role": "Gruff dry Yorkshire-ish interruption voice for JobDone enterprise parody",
+      "defaultSettings": {
+        "stability": 0.28,
+        "similarity_boost": 0.84,
+        "style": 0.62,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "yorkshireman_john_tone_audition",
+      "takeSlug": "short_interrupt",
+      "speaker": "yorkshireman",
+      "folder": "voice/jobdone-yorkshire-enterprise/auditions/john-tones",
+      "text": "No. Stop that. It's a job diary, lad. Finish the job, say what happened, check it once, and find it later. JobDone. Get it out of your head before you forget it.",
+      "voiceProfiles": [
+        "john_of_the_north"
+      ],
+      "voiceSettings": {
+        "stability": 0.3,
+        "style": 0.54,
+        "speed": 0.96
+      },
+      "sourceDraft": "scripts/generate_audio_advert_drafts.py#JD_ad01_yorkshire_interrupt",
+      "assetKind": "voice_tone_audition",
+      "title": "JobDone Yorkshire John Tone - Short Interrupt"
+    },
+    {
+      "assetId": "yorkshireman_john_tone_audition",
+      "takeSlug": "dry_sarcastic",
+      "speaker": "yorkshireman",
+      "folder": "voice/jobdone-yorkshire-enterprise/auditions/john-tones",
+      "text": "No. Stop that. It's not a platform. It's a job diary, lad. Revolutionary, I know. You say what happened before you drive off, then JobDone helps you find it later.",
+      "voiceProfiles": [
+        "john_of_the_north"
+      ],
+      "voiceSettings": {
+        "stability": 0.24,
+        "style": 0.72,
+        "speed": 0.94
+      },
+      "sourceDraft": "scripts/generate_audio_advert_drafts.py#JD_ad01_yorkshire_interrupt",
+      "assetKind": "voice_tone_audition",
+      "title": "JobDone Yorkshire John Tone - Dry Sarcastic"
+    },
+    {
+      "assetId": "yorkshireman_john_tone_audition",
+      "takeSlug": "weary_deadpan",
+      "speaker": "yorkshireman",
+      "folder": "voice/jobdone-yorkshire-enterprise/auditions/john-tones",
+      "text": "No. Stop that. Fancy words won't fix a leaky tap. JobDone is a job diary. Say what happened, check it, and find it later when your head's full.",
+      "voiceProfiles": [
+        "john_of_the_north"
+      ],
+      "voiceSettings": {
+        "stability": 0.36,
+        "style": 0.48,
+        "speed": 0.93
+      },
+      "sourceDraft": "scripts/generate_audio_advert_drafts.py#JD_ad01_yorkshire_interrupt",
+      "assetKind": "voice_tone_audition",
+      "title": "JobDone Yorkshire John Tone - Weary Deadpan"
+    },
+    {
+      "assetId": "yorkshireman_john_tone_audition",
+      "takeSlug": "gruff_practical",
+      "speaker": "yorkshireman",
+      "folder": "voice/jobdone-yorkshire-enterprise/auditions/john-tones",
+      "text": "No. Stop that. JobDone is a job diary for trades. Finish a job, say what happened, confirm it, and ask for it next time you're there.",
+      "voiceProfiles": [
+        "john_of_the_north"
+      ],
+      "voiceSettings": {
+        "stability": 0.3,
+        "style": 0.6,
+        "speed": 0.95
+      },
+      "sourceDraft": "scripts/generate_audio_advert_drafts.py#JD_ad01_yorkshire_interrupt",
+      "assetKind": "voice_tone_audition",
+      "title": "JobDone Yorkshire John Tone - Gruff Practical"
+    },
+    {
+      "assetId": "yorkshireman_john_tone_audition",
+      "takeSlug": "wry_old_hand",
+      "speaker": "yorkshireman",
+      "folder": "voice/jobdone-yorkshire-enterprise/auditions/john-tones",
+      "text": "No. Stop that. If it takes three breaths to explain, it's not helping. JobDone lets you say the job, confirm it, and find it later.",
+      "voiceProfiles": [
+        "john_of_the_north"
+      ],
+      "voiceSettings": {
+        "stability": 0.26,
+        "style": 0.68,
+        "speed": 0.94
+      },
+      "sourceDraft": "scripts/generate_audio_advert_drafts.py#JD_ad01_yorkshire_interrupt",
+      "assetKind": "voice_tone_audition",
+      "title": "JobDone Yorkshire John Tone - Wry Old Hand"
+    },
+    {
+      "assetId": "yorkshireman_john_tone_audition",
+      "takeSlug": "doesnt_suffer_fools",
+      "speaker": "yorkshireman",
+      "folder": "voice/jobdone-yorkshire-enterprise/auditions/john-tones",
+      "text": "No. Stop that. It's a job diary, lad. Not a boardroom chant. You finish the work, speak the facts, confirm them, and find them when you need them.",
+      "voiceProfiles": [
+        "john_of_the_north"
+      ],
+      "voiceSettings": {
+        "stability": 0.22,
+        "style": 0.76,
+        "speed": 0.94
+      },
+      "sourceDraft": "scripts/generate_audio_advert_drafts.py#JD_ad01_yorkshire_interrupt",
+      "assetKind": "voice_tone_audition",
+      "title": "JobDone Yorkshire John Tone - Does Not Suffer Fools"
+    }
+  ]
+}

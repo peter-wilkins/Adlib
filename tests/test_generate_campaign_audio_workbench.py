@@ -31,6 +31,8 @@ class GenerateCampaignAudioWorkbenchTest(unittest.TestCase):
         self.assertIn("media/asset.mp3", page)
         self.assertIn("Field Relay Test", page)
         self.assertIn("word gate pass", page)
+        self.assertIn("1 generated audio clips", page)
+        self.assertNotIn("generated Lily clips", page)
 
     def test_asset_from_metadata_extracts_gate_transcript(self):
         data = {
@@ -69,6 +71,14 @@ class GenerateCampaignAudioWorkbenchTest(unittest.TestCase):
         )
 
         self.assertEqual(project, "Jury Rigged")
+
+    def test_project_from_source_detects_jobdone_from_source(self):
+        project = generate_campaign_audio_workbench.project_from_source(
+            "scripts/generate_audio_advert_drafts.py#JD_ad01_yorkshire_interrupt",
+            "JobDone Yorkshire Enterprise Interrupt Audition",
+        )
+
+        self.assertEqual(project, "JobDone")
 
     def test_build_assets_copies_campaign_media(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "JD_ad01_yorkshire_interrupt",
+  "scriptVersion": "gruff-yorkshire-auditions-v1",
+  "campaign": "jobdone-yorkshire-enterprise-auditions-20260616",
+  "productTruth": "docs/product-truths/2026-06-02-jobdone.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter asked on 2026-06-16 to create auditions for a different Yorkshireman: gruffer and does not suffer fools gladly. This is an audition batch for the Yorkshireman interruption role in JD_ad01_yorkshire_interrupt.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "nige_yorkshire": {
+      "voiceId": "QMc6FU2Fkzs9Dkeq7swc",
+      "voiceName": "Nige - Yorkshire UK",
+      "role": "New Yorkshire candidate; audition for gruff no-nonsense tradesman",
+      "defaultSettings": {
+        "stability": 0.28,
+        "similarity_boost": 0.84,
+        "style": 0.62,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    },
+    "paul_deep_yorkshire": {
+      "voiceId": "oCXdm5WkYoKVEdlbPLev",
+      "voiceName": "Paul - Deep & Warm - Yorkshire",
+      "role": "Older deeper Yorkshire option; auditioned with gruffer delivery settings",
+      "defaultSettings": {
+        "stability": 0.3,
+        "similarity_boost": 0.84,
+        "style": 0.58,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      }
+    },
+    "craig_linton": {
+      "voiceId": "pVO3hb8CkRBDORpESeTP",
+      "voiceName": "Craig Linton Voice",
+      "role": "Voice Library Yorkshire-search candidate; audition for blunt tradesman authority",
+      "defaultSettings": {
+        "stability": 0.28,
+        "similarity_boost": 0.84,
+        "style": 0.62,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    },
+    "john_of_the_north": {
+      "voiceId": "7rQX8r6PVq3gfJ8rZzyE",
+      "voiceName": "John of the North",
+      "role": "Gruff British search candidate; audition for severe no-nonsense interruption",
+      "defaultSettings": {
+        "stability": 0.26,
+        "similarity_boost": 0.84,
+        "style": 0.66,
+        "speed": 0.94,
+        "use_speaker_boost": true
+      }
+    },
+    "tony_northern": {
+      "voiceId": "v9I7auPeR1xGKYRPwQGG",
+      "voiceName": "Tony - Middle-aged, Northern and Natural",
+      "role": "Middle-aged Northern candidate; audition for grounded gruff realism",
+      "defaultSettings": {
+        "stability": 0.3,
+        "similarity_boost": 0.84,
+        "style": 0.56,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    },
+    "james_northern_commanding": {
+      "voiceId": "tkWr6klIDADZ7T8TWUuj",
+      "voiceName": "James - Northern UK Commanding",
+      "role": "Commanding Northern UK candidate; audition for enterprise-advert takedown",
+      "defaultSettings": {
+        "stability": 0.28,
+        "similarity_boost": 0.84,
+        "style": 0.64,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    },
+    "david_yorkshire_baseline": {
+      "voiceId": "8KgifH3usc0tJtr7QzP4",
+      "voiceName": "David - Yorkshire Warm, Trustworthy",
+      "role": "Previously selected Yorkshire voice, included only as baseline control",
+      "defaultSettings": {
+        "stability": 0.32,
+        "similarity_boost": 0.82,
+        "style": 0.48,
+        "speed": 0.97,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "yorkshireman_enterprise_interrupt_audition",
+      "takeSlug": "doesnt_suffer_fools",
+      "speaker": "yorkshireman",
+      "folder": "voice/jobdone-yorkshire-enterprise/auditions",
+      "text": "No. Stop that. It's not a next-generation field productivity intelligence platform. It's a job diary, lad. You finish a job, say what happened before you drive off. You check it, confirm it, and later ask what you did there last time. JobDone. Get it out of your head before you forget it.",
+      "voiceProfiles": [
+        "nige_yorkshire",
+        "paul_deep_yorkshire",
+        "craig_linton",
+        "john_of_the_north",
+        "tony_northern",
+        "james_northern_commanding",
+        "david_yorkshire_baseline"
+      ],
+      "sourceDraft": "scripts/generate_audio_advert_drafts.py#JD_ad01_yorkshire_interrupt",
+      "assetKind": "voice_audition",
+      "title": "JobDone Yorkshire Enterprise Interrupt Audition"
+    }
+  ]
+}

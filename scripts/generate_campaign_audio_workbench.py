@@ -122,8 +122,12 @@ def project_from_source(source_draft: str, title: str) -> str:
         return "Entrepreneurs AI Developer School"
     if "continuum" in title_value:
         return "Continuum Kit"
+    if "jobdone" in title_value or "job done" in title_value:
+        return "JobDone"
 
     value = source_draft.lower()
+    if "jobdone" in value or "job-done" in value or "job done" in value:
+        return "JobDone"
     if "fieldrelay" in value or "field-relay" in value:
         return "Field Relay"
     if "school" in value or "developer school" in value:
@@ -233,7 +237,7 @@ def render_page(payload: dict[str, Any]) -> str:
   <main>
     <header>
       <h1>{campaign} Audio Workbench</h1>
-      <div class="meta">{count} generated Lily clips. Technical gate exact passes: {pass_count} / {count}. Yellow badges mean listen with human ears before keeping.</div>
+      <div class="meta">{count} generated audio clips. Technical gate exact passes: {pass_count} / {count}. Yellow badges mean listen with human ears before keeping.</div>
     </header>
     <section class="toolbar">
       <input id="q" type="search" placeholder="search title, script, transcript" autocomplete="off">

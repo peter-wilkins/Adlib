@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "movie_trailer_full_chunk_repairs_8",
+  "scriptVersion": "full-chunk-repairs-v8",
+  "campaign": "movie-trailer-full-chunks-20260616",
+  "productTruth": [
+    "docs/product-truths/2026-06-02-jobdone.md",
+    "docs/product-truths/2026-06-02-phone-control-surface.md",
+    "docs/product-truths/2026-06-02-continuum-kit-sharing.md",
+    "docs/product-truths/2026-06-02-jury-rigged-video-creation.md",
+    "docs/product-truths/2026-06-02-audio-advert-generator.md",
+    "docs/adverts/selection-workbenches/movie-trailer-storybook-voice-decisions-20260616.md"
+  ],
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Eighth repair pass removes the word scoring, which Whisper heard as scarring in Pirate Marshal's accent.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "pirate_marshal": {
+      "voiceId": "PPzYpIqttlTYA83688JI",
+      "voiceName": "Pirate Marshal",
+      "role": "Selected Jury Rigged and Downwind comic nautical narrator",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.82,
+        "style": 0.64,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "jury-rigged-barnaby-boat_chunk_03_repair_8",
+      "takeSlug": "full_trailer_chunk_repair_8",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jury-rigged-barnaby-boat/repairs",
+      "text": "It shaped the game before the shouting rose: the rules, the shots, the limits, and the close. It marked the beats an editor will need, the hidden tools, the wins, the almost-deeds. It made a plan before the cameras rolled, so every reckless turn could still be told. The final race began with fiddle fire; the bucket sank, the staircase drifted higher.",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jury-rigged-barnaby-boat-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair_8",
+      "title": "Jury Rigged - Barnaby And The Questionable Boat - chunk 03 repair 8"
+    }
+  ]
+}

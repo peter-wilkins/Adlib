@@ -31,9 +31,18 @@ CANONICAL_TOKEN_PHRASES = {
     ("ad", "lib"): "adlib",
     ("check", "dam"): "checkdam",
     ("eleven", "labs"): "elevenlabs",
+    ("field", "relay"): "fieldrelay",
+    ("fieldrelay", "continuumkit"): "fieldrelaycontinuumkit",
     ("frog", "spawn"): "frogspawn",
     ("job", "done"): "jobdone",
+    ("jobdone", "continuumkit"): "jobdonecontinuumkit",
+    ("jury", "rigged"): "juryrigged",
+    ("juryrigged", "continuumkit"): "juryriggedcontinuumkit",
     ("missus",): "mrs",
+    ("adlib", "continuumkit"): "adlibcontinuumkit",
+    ("downwind", "continuumkit"): "downwindcontinuumkit",
+    ("school", "continuumkit"): "schoolcontinuumkit",
+    ("white", "caps"): "whitecaps",
     ("wind", "stats"): "windstats",
 }
 

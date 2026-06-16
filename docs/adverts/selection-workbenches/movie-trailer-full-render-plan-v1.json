@@ -1,0 +1,379 @@
+{
+  "schemaVersion": "adlib.movie-trailer-full-render-plan.v1",
+  "campaign": "movie-trailer-full-chunks-20260616",
+  "generatedAt": "2026-06-16T23:22:18+01:00",
+  "sourceManifest": "docs/adverts/selection-workbenches/elevenlabs-movie-trailer-full-chunks-v1.json",
+  "repairManifests": [
+    "docs/adverts/selection-workbenches/elevenlabs-movie-trailer-full-chunk-repairs-v1.json",
+    "docs/adverts/selection-workbenches/elevenlabs-movie-trailer-full-chunk-repairs-v2.json",
+    "docs/adverts/selection-workbenches/elevenlabs-movie-trailer-full-chunk-repairs-v3.json",
+    "docs/adverts/selection-workbenches/elevenlabs-movie-trailer-full-chunk-repairs-v4.json",
+    "docs/adverts/selection-workbenches/elevenlabs-movie-trailer-full-chunk-repairs-v5.json",
+    "docs/adverts/selection-workbenches/elevenlabs-movie-trailer-full-chunk-repairs-v6.json",
+    "docs/adverts/selection-workbenches/elevenlabs-movie-trailer-full-chunk-repairs-v7.json",
+    "docs/adverts/selection-workbenches/elevenlabs-movie-trailer-full-chunk-repairs-v8.json",
+    "docs/adverts/selection-workbenches/elevenlabs-movie-trailer-full-chunk-repairs-v9.json"
+  ],
+  "renders": [
+    {
+      "slug": "jobdone-gary-great-leak",
+      "title": "JobDone - Gary And The Great Leak",
+      "outputPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/renders/full-trailers-v1/jobdone-gary-great-leak-full-trailer-v1.mp3",
+      "media": "media/jobdone-gary-great-leak-full-trailer-v1.mp3",
+      "durationSeconds": 173.964,
+      "chunks": [
+        {
+          "assetId": "jobdone-gary-great-leak_chunk_01_repair",
+          "title": "JobDone - Gary And The Great Leak - chunk 01 repair",
+          "voiceName": "John of the North",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_jobdone-gary-great-leak_chunk_01_repair__full_trailer_chunk_repair__john_dry_comic__20260616T220209Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/jobdone-gary-great-leak/repairs/jobdone-gary-great-leak_chunk_01_repair__full_trailer_chunk_repair__john_dry_comic.mp3",
+          "durationSeconds": 30.465
+        },
+        {
+          "assetId": "jobdone-gary-great-leak_chunk_02_repair",
+          "title": "JobDone - Gary And The Great Leak - chunk 02 repair",
+          "voiceName": "John of the North",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_jobdone-gary-great-leak_chunk_02_repair__full_trailer_chunk_repair__john_dry_comic__20260616T220214Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/jobdone-gary-great-leak/repairs/jobdone-gary-great-leak_chunk_02_repair__full_trailer_chunk_repair__john_dry_comic.mp3",
+          "durationSeconds": 29.304
+        },
+        {
+          "assetId": "jobdone-gary-great-leak_chunk_03",
+          "title": "JobDone - Gary And The Great Leak - chunk 03",
+          "voiceName": "John of the North",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_jobdone-gary-great-leak_chunk_03__full_trailer_chunk__john_dry_comic__20260616T215434Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/jobdone-gary-great-leak/chunks/jobdone-gary-great-leak_chunk_03__full_trailer_chunk__john_dry_comic.mp3",
+          "durationSeconds": 30.836
+        },
+        {
+          "assetId": "jobdone-gary-great-leak_chunk_04_repair_4",
+          "title": "JobDone - Gary And The Great Leak - chunk 04 repair 4",
+          "voiceName": "John of the North",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_4_jobdone-gary-great-leak_chunk_04_repair_4__full_trailer_chunk_repair_4__john_dry_comic__20260616T221231Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/jobdone-gary-great-leak/repairs/jobdone-gary-great-leak_chunk_04_repair_4__full_trailer_chunk_repair_4__john_dry_comic.mp3",
+          "durationSeconds": 33.669
+        },
+        {
+          "assetId": "jobdone-gary-great-leak_chunk_05_repair_3",
+          "title": "JobDone - Gary And The Great Leak - chunk 05 repair 3",
+          "voiceName": "John of the North",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_3_jobdone-gary-great-leak_chunk_05_repair_3__full_trailer_chunk_repair_3__john_dry_comic__20260616T220435Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/jobdone-gary-great-leak/repairs/jobdone-gary-great-leak_chunk_05_repair_3__full_trailer_chunk_repair_3__john_dry_comic.mp3",
+          "durationSeconds": 26.657
+        },
+        {
+          "assetId": "jobdone-gary-great-leak_chunk_06_repair_2",
+          "title": "JobDone - Gary And The Great Leak - chunk 06 repair 2",
+          "voiceName": "John of the North",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_2_jobdone-gary-great-leak_chunk_06_repair_2__full_trailer_chunk_repair_2__john_dry_comic__20260616T220402Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/jobdone-gary-great-leak/repairs/jobdone-gary-great-leak_chunk_06_repair_2__full_trailer_chunk_repair_2__john_dry_comic.mp3",
+          "durationSeconds": 23.034
+        }
+      ]
+    },
+    {
+      "slug": "fieldrelay-mara-busy-hands",
+      "title": "Field Relay - Mara And The Busy Hands",
+      "outputPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/renders/full-trailers-v1/fieldrelay-mara-busy-hands-full-trailer-v1.mp3",
+      "media": "media/fieldrelay-mara-busy-hands-full-trailer-v1.mp3",
+      "durationSeconds": 125.341,
+      "chunks": [
+        {
+          "assetId": "fieldrelay-mara-busy-hands_chunk_01",
+          "title": "Field Relay - Mara And The Busy Hands - chunk 01",
+          "voiceName": "Imogen - Warm & Professional British Storyteller",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_fieldrelay-mara-busy-hands_chunk_01__full_trailer_chunk__imogen_storyteller__20260616T215452Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/fieldrelay-mara-busy-hands/chunks/fieldrelay-mara-busy-hands_chunk_01__full_trailer_chunk__imogen_storyteller.mp3",
+          "durationSeconds": 27.91
+        },
+        {
+          "assetId": "fieldrelay-mara-busy-hands_chunk_02",
+          "title": "Field Relay - Mara And The Busy Hands - chunk 02",
+          "voiceName": "Imogen - Warm & Professional British Storyteller",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_fieldrelay-mara-busy-hands_chunk_02__full_trailer_chunk__imogen_storyteller__20260616T215457Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/fieldrelay-mara-busy-hands/chunks/fieldrelay-mara-busy-hands_chunk_02__full_trailer_chunk__imogen_storyteller.mp3",
+          "durationSeconds": 30.557
+        },
+        {
+          "assetId": "fieldrelay-mara-busy-hands_chunk_03_repair",
+          "title": "Field Relay - Mara And The Busy Hands - chunk 03 repair",
+          "voiceName": "Imogen - Warm & Professional British Storyteller",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_fieldrelay-mara-busy-hands_chunk_03_repair__full_trailer_chunk_repair__imogen_storyteller__20260616T220201Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/fieldrelay-mara-busy-hands/repairs/fieldrelay-mara-busy-hands_chunk_03_repair__full_trailer_chunk_repair__imogen_storyteller.mp3",
+          "durationSeconds": 22.57
+        },
+        {
+          "assetId": "fieldrelay-mara-busy-hands_chunk_04",
+          "title": "Field Relay - Mara And The Busy Hands - chunk 04",
+          "voiceName": "Imogen - Warm & Professional British Storyteller",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_fieldrelay-mara-busy-hands_chunk_04__full_trailer_chunk__imogen_storyteller__20260616T215505Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/fieldrelay-mara-busy-hands/chunks/fieldrelay-mara-busy-hands_chunk_04__full_trailer_chunk__imogen_storyteller.mp3",
+          "durationSeconds": 26.517
+        },
+        {
+          "assetId": "fieldrelay-mara-busy-hands_chunk_05_repair",
+          "title": "Field Relay - Mara And The Busy Hands - chunk 05 repair",
+          "voiceName": "Imogen - Warm & Professional British Storyteller",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_fieldrelay-mara-busy-hands_chunk_05_repair__full_trailer_chunk_repair__imogen_storyteller__20260616T220204Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/fieldrelay-mara-busy-hands/repairs/fieldrelay-mara-busy-hands_chunk_05_repair__full_trailer_chunk_repair__imogen_storyteller.mp3",
+          "durationSeconds": 17.786
+        }
+      ]
+    },
+    {
+      "slug": "ai-school-ava-human-language",
+      "title": "AI Developer School - Ava Learns The New Language",
+      "outputPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/renders/full-trailers-v1/ai-school-ava-human-language-full-trailer-v1.mp3",
+      "media": "media/ai-school-ava-human-language-full-trailer-v1.mp3",
+      "durationSeconds": 110.713,
+      "chunks": [
+        {
+          "assetId": "ai-school-ava-human-language_chunk_01_repair",
+          "title": "AI Developer School - Ava Learns The New Language - chunk 01 repair",
+          "voiceName": "Alice - Clear, Engaging Educator",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_ai-school-ava-human-language_chunk_01_repair__full_trailer_chunk_repair__alice_educator_story__20260616T220141Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/ai-school-ava-human-language/repairs/ai-school-ava-human-language_chunk_01_repair__full_trailer_chunk_repair__alice_educator_story.mp3",
+          "durationSeconds": 24.056
+        },
+        {
+          "assetId": "ai-school-ava-human-language_chunk_02_repair",
+          "title": "AI Developer School - Ava Learns The New Language - chunk 02 repair",
+          "voiceName": "Alice - Clear, Engaging Educator",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_ai-school-ava-human-language_chunk_02_repair__full_trailer_chunk_repair__alice_educator_story__20260616T220146Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/ai-school-ava-human-language/repairs/ai-school-ava-human-language_chunk_02_repair__full_trailer_chunk_repair__alice_educator_story.mp3",
+          "durationSeconds": 29.025
+        },
+        {
+          "assetId": "ai-school-ava-human-language_chunk_03_repair_4",
+          "title": "AI Developer School - Ava Learns The New Language - chunk 03 repair 4",
+          "voiceName": "Alice - Clear, Engaging Educator",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_4_ai-school-ava-human-language_chunk_03_repair_4__full_trailer_chunk_repair_4__alice_educator_story__20260616T221235Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/ai-school-ava-human-language/repairs/ai-school-ava-human-language_chunk_03_repair_4__full_trailer_chunk_repair_4__alice_educator_story.mp3",
+          "durationSeconds": 24.706
+        },
+        {
+          "assetId": "ai-school-ava-human-language_chunk_04",
+          "title": "AI Developer School - Ava Learns The New Language - chunk 04",
+          "voiceName": "Alice - Clear, Engaging Educator",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_ai-school-ava-human-language_chunk_04__full_trailer_chunk__alice_educator_story__20260616T215525Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/ai-school-ava-human-language/chunks/ai-school-ava-human-language_chunk_04__full_trailer_chunk__alice_educator_story.mp3",
+          "durationSeconds": 25.542
+        },
+        {
+          "assetId": "ai-school-ava-human-language_chunk_05",
+          "title": "AI Developer School - Ava Learns The New Language - chunk 05",
+          "voiceName": "Alice - Clear, Engaging Educator",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_ai-school-ava-human-language_chunk_05__full_trailer_chunk__alice_educator_story__20260616T215527Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/ai-school-ava-human-language/chunks/ai-school-ava-human-language_chunk_05__full_trailer_chunk__alice_educator_story.mp3",
+          "durationSeconds": 7.384
+        }
+      ]
+    },
+    {
+      "slug": "continuum-nora-thread",
+      "title": "Continuum - Nora Finds The Thread",
+      "outputPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/renders/full-trailers-v1/continuum-nora-thread-full-trailer-v1.mp3",
+      "media": "media/continuum-nora-thread-full-trailer-v1.mp3",
+      "durationSeconds": 102.864,
+      "chunks": [
+        {
+          "assetId": "continuum-nora-thread_chunk_01",
+          "title": "Continuum - Nora Finds The Thread - chunk 01",
+          "voiceName": "Alice - Clear, Engaging Educator",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_continuum-nora-thread_chunk_01__full_trailer_chunk__alice_educator_story__20260616T215531Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/continuum-nora-thread/chunks/continuum-nora-thread_chunk_01__full_trailer_chunk__alice_educator_story.mp3",
+          "durationSeconds": 26.146
+        },
+        {
+          "assetId": "continuum-nora-thread_chunk_02",
+          "title": "Continuum - Nora Finds The Thread - chunk 02",
+          "voiceName": "Alice - Clear, Engaging Educator",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_continuum-nora-thread_chunk_02__full_trailer_chunk__alice_educator_story__20260616T215536Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/continuum-nora-thread/chunks/continuum-nora-thread_chunk_02__full_trailer_chunk__alice_educator_story.mp3",
+          "durationSeconds": 27.957
+        },
+        {
+          "assetId": "continuum-nora-thread_chunk_03",
+          "title": "Continuum - Nora Finds The Thread - chunk 03",
+          "voiceName": "Alice - Clear, Engaging Educator",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_continuum-nora-thread_chunk_03__full_trailer_chunk__alice_educator_story__20260616T215540Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/continuum-nora-thread/chunks/continuum-nora-thread_chunk_03__full_trailer_chunk__alice_educator_story.mp3",
+          "durationSeconds": 26.517
+        },
+        {
+          "assetId": "continuum-nora-thread_chunk_04",
+          "title": "Continuum - Nora Finds The Thread - chunk 04",
+          "voiceName": "Alice - Clear, Engaging Educator",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_continuum-nora-thread_chunk_04__full_trailer_chunk__alice_educator_story__20260616T215544Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/continuum-nora-thread/chunks/continuum-nora-thread_chunk_04__full_trailer_chunk__alice_educator_story.mp3",
+          "durationSeconds": 22.245
+        }
+      ]
+    },
+    {
+      "slug": "jury-rigged-barnaby-boat",
+      "title": "Jury Rigged - Barnaby And The Questionable Boat",
+      "outputPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/renders/full-trailers-v1/jury-rigged-barnaby-boat-full-trailer-v1.mp3",
+      "media": "media/jury-rigged-barnaby-boat-full-trailer-v1.mp3",
+      "durationSeconds": 118.979,
+      "chunks": [
+        {
+          "assetId": "jury-rigged-barnaby-boat_chunk_01",
+          "title": "Jury Rigged - Barnaby And The Questionable Boat - chunk 01",
+          "voiceName": "Pirate Marshal",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_jury-rigged-barnaby-boat_chunk_01__full_trailer_chunk__pirate_marshal__20260616T215549Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/jury-rigged-barnaby-boat/chunks/jury-rigged-barnaby-boat_chunk_01__full_trailer_chunk__pirate_marshal.mp3",
+          "durationSeconds": 28.514
+        },
+        {
+          "assetId": "jury-rigged-barnaby-boat_chunk_02_repair",
+          "title": "Jury Rigged - Barnaby And The Questionable Boat - chunk 02 repair",
+          "voiceName": "Pirate Marshal",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_jury-rigged-barnaby-boat_chunk_02_repair__full_trailer_chunk_repair__pirate_marshal__20260616T220232Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/jury-rigged-barnaby-boat/repairs/jury-rigged-barnaby-boat_chunk_02_repair__full_trailer_chunk_repair__pirate_marshal.mp3",
+          "durationSeconds": 28.003
+        },
+        {
+          "assetId": "jury-rigged-barnaby-boat_chunk_03_repair_8",
+          "title": "Jury Rigged - Barnaby And The Questionable Boat - chunk 03 repair 8",
+          "voiceName": "Pirate Marshal",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_8_jury-rigged-barnaby-boat_chunk_03_repair_8__full_trailer_chunk_repair_8__pirate_marshal__20260616T221712Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/jury-rigged-barnaby-boat/repairs/jury-rigged-barnaby-boat_chunk_03_repair_8__full_trailer_chunk_repair_8__pirate_marshal.mp3",
+          "durationSeconds": 28.375
+        },
+        {
+          "assetId": "jury-rigged-barnaby-boat_chunk_04",
+          "title": "Jury Rigged - Barnaby And The Questionable Boat - chunk 04",
+          "voiceName": "Pirate Marshal",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_jury-rigged-barnaby-boat_chunk_04__full_trailer_chunk__pirate_marshal__20260616T215602Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/jury-rigged-barnaby-boat/chunks/jury-rigged-barnaby-boat_chunk_04__full_trailer_chunk__pirate_marshal.mp3",
+          "durationSeconds": 26.239
+        },
+        {
+          "assetId": "jury-rigged-barnaby-boat_chunk_05",
+          "title": "Jury Rigged - Barnaby And The Questionable Boat - chunk 05",
+          "voiceName": "Pirate Marshal",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_jury-rigged-barnaby-boat_chunk_05__full_trailer_chunk__pirate_marshal__20260616T215604Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/jury-rigged-barnaby-boat/chunks/jury-rigged-barnaby-boat_chunk_05__full_trailer_chunk__pirate_marshal.mp3",
+          "durationSeconds": 7.848
+        }
+      ]
+    },
+    {
+      "slug": "adlib-sam-silent-product",
+      "title": "AdLib - Sam And The Silent Product",
+      "outputPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/renders/full-trailers-v1/adlib-sam-silent-product-full-trailer-v1.mp3",
+      "media": "media/adlib-sam-silent-product-full-trailer-v1.mp3",
+      "durationSeconds": 93.112,
+      "chunks": [
+        {
+          "assetId": "adlib-sam-silent-product_chunk_01_repair",
+          "title": "AdLib - Sam And The Silent Product - chunk 01 repair",
+          "voiceName": "George - Warm, Captivating Storyteller",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_adlib-sam-silent-product_chunk_01_repair__full_trailer_chunk_repair__george_storyteller__20260616T220133Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/adlib-sam-silent-product/repairs/adlib-sam-silent-product_chunk_01_repair__full_trailer_chunk_repair__george_storyteller.mp3",
+          "durationSeconds": 24.799
+        },
+        {
+          "assetId": "adlib-sam-silent-product_chunk_02_repair",
+          "title": "AdLib - Sam And The Silent Product - chunk 02 repair",
+          "voiceName": "George - Warm, Captivating Storyteller",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_adlib-sam-silent-product_chunk_02_repair__full_trailer_chunk_repair__george_storyteller__20260616T220137Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/adlib-sam-silent-product/repairs/adlib-sam-silent-product_chunk_02_repair__full_trailer_chunk_repair__george_storyteller.mp3",
+          "durationSeconds": 23.313
+        },
+        {
+          "assetId": "adlib-sam-silent-product_chunk_03",
+          "title": "AdLib - Sam And The Silent Product - chunk 03",
+          "voiceName": "George - Warm, Captivating Storyteller",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_adlib-sam-silent-product_chunk_03__full_trailer_chunk__george_storyteller__20260616T215616Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/adlib-sam-silent-product/chunks/adlib-sam-silent-product_chunk_03__full_trailer_chunk__george_storyteller.mp3",
+          "durationSeconds": 23.87
+        },
+        {
+          "assetId": "adlib-sam-silent-product_chunk_04",
+          "title": "AdLib - Sam And The Silent Product - chunk 04",
+          "voiceName": "George - Warm, Captivating Storyteller",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_adlib-sam-silent-product_chunk_04__full_trailer_chunk__george_storyteller__20260616T215619Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/adlib-sam-silent-product/chunks/adlib-sam-silent-product_chunk_04__full_trailer_chunk__george_storyteller.mp3",
+          "durationSeconds": 21.13
+        }
+      ]
+    },
+    {
+      "slug": "downwind-tom-long-run",
+      "title": "Downwind - Tom And The Long Run",
+      "outputPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/renders/full-trailers-v1/downwind-tom-long-run-full-trailer-v1.mp3",
+      "media": "media/downwind-tom-long-run-full-trailer-v1.mp3",
+      "durationSeconds": 96.734,
+      "chunks": [
+        {
+          "assetId": "downwind-tom-long-run_chunk_01",
+          "title": "Downwind - Tom And The Long Run - chunk 01",
+          "voiceName": "Pirate Marshal",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_downwind-tom-long-run_chunk_01__full_trailer_chunk__pirate_marshal__20260616T215624Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/downwind-tom-long-run/chunks/downwind-tom-long-run_chunk_01__full_trailer_chunk__pirate_marshal.mp3",
+          "durationSeconds": 29.489
+        },
+        {
+          "assetId": "downwind-tom-long-run_chunk_02_repair_9",
+          "title": "Downwind - Tom And The Long Run - chunk 02 repair 9",
+          "voiceName": "Pirate Marshal",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_9_downwind-tom-long-run_chunk_02_repair_9__full_trailer_chunk_repair_9__pirate_marshal__20260616T222047Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/downwind-tom-long-run/repairs/downwind-tom-long-run_chunk_02_repair_9__full_trailer_chunk_repair_9__pirate_marshal.mp3",
+          "durationSeconds": 27.771
+        },
+        {
+          "assetId": "downwind-tom-long-run_chunk_03_repair",
+          "title": "Downwind - Tom And The Long Run - chunk 03 repair",
+          "voiceName": "Pirate Marshal",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunk_repairs_downwind-tom-long-run_chunk_03_repair__full_trailer_chunk_repair__pirate_marshal__20260616T220156Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/downwind-tom-long-run/repairs/downwind-tom-long-run_chunk_03_repair__full_trailer_chunk_repair__pirate_marshal.mp3",
+          "durationSeconds": 28.05
+        },
+        {
+          "assetId": "downwind-tom-long-run_chunk_04",
+          "title": "Downwind - Tom And The Long Run - chunk 04",
+          "voiceName": "Pirate Marshal",
+          "testStatus": "preflight_passed_needs_creative_critic",
+          "metadataPath": "/home/peter/adlib/data/processed/audio-ads/movie-trailer-full-chunks-20260616/elevenlabs/voice-lines/movie_trailer_full_chunks_downwind-tom-long-run_chunk_04__full_trailer_chunk__pirate_marshal__20260616T215635Z.json",
+          "audioPath": "/home/peter/adlib/local/audio-adverts/movie-trailer-full-chunks-20260616/assets/voice/movie-trailers/full/downwind-tom-long-run/chunks/downwind-tom-long-run_chunk_04__full_trailer_chunk__pirate_marshal.mp3",
+          "durationSeconds": 11.424
+        }
+      ]
+    }
+  ]
+}

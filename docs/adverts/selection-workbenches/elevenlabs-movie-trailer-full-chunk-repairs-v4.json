@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "movie_trailer_full_chunk_repairs_4",
+  "scriptVersion": "full-chunk-repairs-v4",
+  "campaign": "movie-trailer-full-chunks-20260616",
+  "productTruth": [
+    "docs/product-truths/2026-06-02-jobdone.md",
+    "docs/product-truths/2026-06-02-phone-control-surface.md",
+    "docs/product-truths/2026-06-02-continuum-kit-sharing.md",
+    "docs/product-truths/2026-06-02-jury-rigged-video-creation.md",
+    "docs/product-truths/2026-06-02-audio-advert-generator.md",
+    "docs/adverts/selection-workbenches/movie-trailer-storybook-voice-decisions-20260616.md"
+  ],
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Fourth repair pass removes magic wording from final selected movie trailer chunks.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "john_dry_comic": {
+      "voiceId": "7rQX8r6PVq3gfJ8rZzyE",
+      "voiceName": "John of the North",
+      "role": "Selected JobDone poetic comic narrator; dry northern practical humour",
+      "defaultSettings": {
+        "stability": 0.28,
+        "similarity_boost": 0.84,
+        "style": 0.64,
+        "speed": 0.94,
+        "use_speaker_boost": true
+      }
+    },
+    "alice_educator_story": {
+      "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
+      "voiceName": "Alice - Clear, Engaging Educator",
+      "role": "Selected AI Developer School and Continuum storybook narrator",
+      "defaultSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.82,
+        "style": 0.3,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      }
+    },
+    "pirate_marshal": {
+      "voiceId": "PPzYpIqttlTYA83688JI",
+      "voiceName": "Pirate Marshal",
+      "role": "Selected Jury Rigged and Downwind comic nautical narrator",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.82,
+        "style": 0.64,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "jobdone-gary-great-leak_chunk_04_repair_4",
+      "takeSlug": "full_trailer_chunk_repair_4",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jobdone-gary-great-leak/repairs",
+      "text": "The phone app appeared: no fuss, no fog, no flame, just one clear place to keep the job by name. He spoke the facts while boots were still on floor; what failed, what changed, who owned the cellar door. He checked the words, confirmed the proper place, and sealed the entry in its rightful space. The Timeline held what Gary could not hold; the Contact, Location, date, and story told.",
+      "voiceProfiles": [
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair_4",
+      "title": "JobDone - Gary And The Great Leak - chunk 04 repair 4"
+    },
+    {
+      "assetId": "ai-school-ava-human-language_chunk_03_repair_4",
+      "takeSlug": "full_trailer_chunk_repair_4",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/ai-school-ava-human-language/repairs",
+      "text": "She made small loops where feedback could reply, and killed weak claims before they learned to fly. She wrote the advert, built the rough first screen, then asked what proof would make the meaning clean. No silver throne, no genius in a jar; just better steering by a clearer star. The agents worked when Ava set the frame; the product found a shape, a price, a name.",
+      "voiceProfiles": [
+        "alice_educator_story"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#ai-school-ava-human-language-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair_4",
+      "title": "AI Developer School - Ava Learns The New Language - chunk 03 repair 4"
+    },
+    {
+      "assetId": "jury-rigged-barnaby-boat_chunk_03_repair_4",
+      "takeSlug": "full_trailer_chunk_repair_4",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jury-rigged-barnaby-boat/repairs",
+      "text": "It shaped the game before the shouting rose: the run sheet, scoring, limits, shots, and close. It marked the beats the later edit needs, the hidden tools, the wins, the almost-deeds. No promise here of finished broadcast shows; just planned disorder, tied with better bows. The final race began with fiddle fire; the bucket sank, the staircase drifted higher.",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jury-rigged-barnaby-boat-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair_4",
+      "title": "Jury Rigged - Barnaby And The Questionable Boat - chunk 03 repair 4"
+    }
+  ]
+}

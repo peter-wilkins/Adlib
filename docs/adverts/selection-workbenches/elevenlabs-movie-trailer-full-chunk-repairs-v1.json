@@ -1,0 +1,278 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "movie_trailer_full_chunk_repairs",
+  "scriptVersion": "full-chunk-repairs-v1",
+  "campaign": "movie-trailer-full-chunks-20260616",
+  "productTruth": [
+    "docs/product-truths/2026-06-02-jobdone.md",
+    "docs/product-truths/2026-06-02-phone-control-surface.md",
+    "docs/product-truths/2026-06-02-continuum-kit-sharing.md",
+    "docs/product-truths/2026-06-02-jury-rigged-video-creation.md",
+    "docs/product-truths/2026-06-02-audio-advert-generator.md",
+    "docs/adverts/selection-workbenches/movie-trailer-storybook-voice-decisions-20260616.md"
+  ],
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Repair pass for full movie trailer chunks that failed strict Whisper word matching due to homophones, brand tokenization, or accent-driven substitutions. Keeps the trailer content while improving spoken clarity.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "alice_educator_story": {
+      "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
+      "voiceName": "Alice - Clear, Engaging Educator",
+      "role": "Selected AI Developer School and Continuum storybook narrator",
+      "defaultSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.82,
+        "style": 0.3,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      }
+    },
+    "george_storyteller": {
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "voiceName": "George - Warm, Captivating Storyteller",
+      "role": "Selected AdLib poetic storybook narrator",
+      "defaultSettings": {
+        "stability": 0.36,
+        "similarity_boost": 0.82,
+        "style": 0.5,
+        "speed": 0.94,
+        "use_speaker_boost": true
+      }
+    },
+    "imogen_storyteller": {
+      "voiceId": "jv41DhCf464zw0TI7I1w",
+      "voiceName": "Imogen - Warm & Professional British Storyteller",
+      "role": "Selected Field Relay poetic storybook narrator",
+      "defaultSettings": {
+        "stability": 0.42,
+        "similarity_boost": 0.82,
+        "style": 0.42,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      }
+    },
+    "john_dry_comic": {
+      "voiceId": "7rQX8r6PVq3gfJ8rZzyE",
+      "voiceName": "John of the North",
+      "role": "Selected JobDone poetic comic narrator; dry northern practical humour",
+      "defaultSettings": {
+        "stability": 0.28,
+        "similarity_boost": 0.84,
+        "style": 0.64,
+        "speed": 0.94,
+        "use_speaker_boost": true
+      }
+    },
+    "pirate_marshal": {
+      "voiceId": "PPzYpIqttlTYA83688JI",
+      "voiceName": "Pirate Marshal",
+      "role": "Selected Jury Rigged and Downwind comic nautical narrator",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.82,
+        "style": 0.64,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "adlib-sam-silent-product_chunk_01_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/adlib-sam-silent-product/repairs",
+      "text": "Sam built a thing with purpose, care, and proof; his documents were sound, the pitch stayed on the roof. The homepage sighed. The bullet points were dry. The product lived, but no one knew quite why. He tried a slogan, polished it with fear; it sounded grand, and meant less every year. He tried a studio quote beyond his means; he tried to edit words between machines.",
+      "voiceProfiles": [
+        "george_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#adlib-sam-empty-docs-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "AdLib - Sam And The Silent Product - chunk 01 repair"
+    },
+    {
+      "assetId": "adlib-sam-silent-product_chunk_02_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/adlib-sam-silent-product/repairs",
+      "text": "The message hid beneath the clever clay; the buyer shrugged and slowly clicked away. Then AdLib opened, practical and small, and asked what truth must stand before them all. No claims that run ahead of what is built; no golden fog, no borrowed pools of guilt. The documents became a script that he could hear; the weak line cracked, the strong line sounded clear.",
+      "voiceProfiles": [
+        "george_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#adlib-sam-empty-docs-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "AdLib - Sam And The Silent Product - chunk 02 repair"
+    },
+    {
+      "assetId": "ai-school-ava-human-language_chunk_01_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/ai-school-ava-human-language/repairs",
+      "text": "Ava had plans that filled a bedroom wall; bright cards and arrows, stacked above them all. She knew the buyer's problem, price, and heart, yet every build attempt fell apart. The code looked strange, the tools changed every day; the demos died in tabs along the way. She asked a model, watched it nod and spin, then lost the thread before the work began.",
+      "voiceProfiles": [
+        "alice_educator_story"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#ai-school-ava-human-language-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "AI Developer School - Ava Learns The New Language - chunk 01 repair"
+    },
+    {
+      "assetId": "ai-school-ava-human-language_chunk_02_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/ai-school-ava-human-language/repairs",
+      "text": "The dream was clear; the method would not land. She needed more than wishes in her hand. Then one line struck like morning through the glass: the new programming language is human language. Not vague desire, not prompts that beg and plead; but sharp intent, good taste, and tested need. She learned to name the truth before the sale, to brief the agent, then inspect it well.",
+      "voiceProfiles": [
+        "alice_educator_story"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#ai-school-ava-human-language-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "AI Developer School - Ava Learns The New Language - chunk 02 repair"
+    },
+    {
+      "assetId": "downwind-tom-long-run_chunk_02_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/downwind-tom-long-run/repairs",
+      "text": "Where was the gust? Which glide had held the run? Which fall was foolish? Which was almost fun? Then Downwind found a shape inside the spray: not just a ride, but story made from day. The logo flashed, the wave became a door; the overlay gave numbers to the score. A crash sting laughed, then yielded to the pace; a map line drew the courage of the chase.",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#downwind-tom-gust-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "Downwind - Tom And The Long Run - chunk 02 repair"
+    },
+    {
+      "assetId": "downwind-tom-long-run_chunk_03_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/downwind-tom-long-run/repairs",
+      "text": "The little fills kept breath between the scenes; the stats made visible what water means. No heavy speech to drown the sea and sky; just enough voice to tell the viewer why. Tom carved the swell, then vanished in the foam; the edit brought the whole wild voyage home. For channel stings and technical speed lore, for expedition stories built for more:",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#downwind-tom-gust-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "Downwind - Tom And The Long Run - chunk 03 repair"
+    },
+    {
+      "assetId": "downwind-tom-long-run_chunk_04_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/downwind-tom-long-run/repairs",
+      "text": "Let the water speak, then frame the flight. Make the long run visible tonight. Downwind. Go to downwind dot continuumkit dot org.",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#downwind-tom-gust-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "Downwind - Tom And The Long Run - chunk 04 repair"
+    },
+    {
+      "assetId": "fieldrelay-mara-busy-hands_chunk_03_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/fieldrelay-mara-busy-hands/repairs",
+      "text": "Then Field Relay came softly through the rain, a field computer ready for the rain. Not always hearing, not a hidden spy; just ready when a busy voice says why. She spoke the note while holding fast the gate; she logged the place before the thought was late. She called the checklist, marked the broken part, and sent the job toward her waiting chart.",
+      "voiceProfiles": [
+        "imogen_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#fieldrelay-mara-busy-hands-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "Field Relay - Mara And The Busy Hands - chunk 03 repair"
+    },
+    {
+      "assetId": "fieldrelay-mara-busy-hands_chunk_05_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/fieldrelay-mara-busy-hands/repairs",
+      "text": "For eyes on work and hands that cannot pause, for muddy boots and practical causes: Field Relay stands where ordinary screens cannot keep up with what field work means. Part of the Continuum family. Go to fieldrelay.continuumkit.org.",
+      "voiceProfiles": [
+        "imogen_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#fieldrelay-mara-busy-hands-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "Field Relay - Mara And The Busy Hands - chunk 05 repair"
+    },
+    {
+      "assetId": "jobdone-gary-great-leak_chunk_01_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jobdone-gary-great-leak/repairs",
+      "text": "In dawn's cold hush, when pipes began to cry, brave Gary raised his wrench against the sky. The street below lay shining, wide, and wet; the tenants watched with faces full of fret. He found the valve, he stemmed the silver flood, then patched the joint with tape and honest mud. The boilers sighed, the cupboards ceased to rain, and all the flats were peaceful once again.",
+      "voiceProfiles": [
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "JobDone - Gary And The Great Leak - chunk 01 repair"
+    },
+    {
+      "assetId": "jobdone-gary-great-leak_chunk_02_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jobdone-gary-great-leak/repairs",
+      "text": "They cheered his name from stair and kitchen door; no plumber there had seemed so wise before. But time, that thief, came creeping through the lane, and brought the selfsame leak to life again. The plumber stared where once his triumph stood; he knew he'd fixed it, but not how he could. Was that the bend behind the second wall? Was Mrs Green the tenant he should call?",
+      "voiceProfiles": [
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "JobDone - Gary And The Great Leak - chunk 02 repair"
+    },
+    {
+      "assetId": "jobdone-gary-great-leak_chunk_04_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jobdone-gary-great-leak/repairs",
+      "text": "The phone app appeared: not magic, smoke, or flame, but one clear place to keep the job by name. He spoke the facts while boots were still on floor; what failed, what changed, who owned the cellar door. He checked the words, confirmed the proper place, and sealed the entry in its rightful space. The Timeline held what Gary could not hold; the Contact, Location, date, and story told.",
+      "voiceProfiles": [
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "JobDone - Gary And The Great Leak - chunk 04 repair"
+    },
+    {
+      "assetId": "jobdone-gary-great-leak_chunk_05_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jobdone-gary-great-leak/repairs",
+      "text": "Next time the leak returned with wicked grin, our Gary tapped Recall, and looked within. The source came back, not guesswork in disguise: the fitting size, the note, the warning signs. He walked in armed with history in hand, and made the water bend to his command. No invoice trick, no chatbot's legal claw; just grounded memory for the jobs he saw.",
+      "voiceProfiles": [
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "JobDone - Gary And The Great Leak - chunk 05 repair"
+    },
+    {
+      "assetId": "jobdone-gary-great-leak_chunk_06_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jobdone-gary-great-leak/repairs",
+      "text": "Capture the work, confirm the truth you know, then ask the past which way the pipes should go. So Gary smiled, his boots were dry and new; he fixed the leak, and knew what he must do. JobDone remembers what the work has shown. Go to jobdone.continuumkit.org.",
+      "voiceProfiles": [
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "JobDone - Gary And The Great Leak - chunk 06 repair"
+    },
+    {
+      "assetId": "jury-rigged-barnaby-boat_chunk_02_repair",
+      "takeSlug": "full_trailer_chunk_repair",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jury-rigged-barnaby-boat/repairs",
+      "text": "A head start waited where the puzzles lay; a pulley prize could change the final day. But chaos hates a camera with a plan; it eats the shot before the shot began. Who has the score? Which team may take the mast? What safety line was checked before they passed? Then Jury Rigged appeared beside the dock, a concept built with rhythm, rules, and clock.",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jury-rigged-barnaby-boat-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "Jury Rigged - Barnaby And The Questionable Boat - chunk 02 repair"
+    }
+  ]
+}

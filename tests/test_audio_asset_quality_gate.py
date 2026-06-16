@@ -74,6 +74,33 @@ class AudioAssetQualityGateTest(unittest.TestCase):
         self.assertEqual(result.status, "exact_match")
         self.assertEqual(result.gate_status, "pass")
 
+    def test_multi_word_brand_variants_do_not_create_drift(self):
+        result = classify_script_drift(
+            "Jury Rigged and Field Relay are part of the Continuum family.",
+            "JuryRigged and field relay are part of the Continuum family.",
+        )
+
+        self.assertEqual(result.status, "exact_match")
+        self.assertEqual(result.gate_status, "pass")
+
+    def test_continuumkit_domain_tokenization_does_not_create_drift(self):
+        result = classify_script_drift(
+            "Go to downwind.continuumkit.org.",
+            "Go to downwindcontinuumkit.org.",
+        )
+
+        self.assertEqual(result.status, "exact_match")
+        self.assertEqual(result.gate_status, "pass")
+
+    def test_compound_noun_tokenization_does_not_create_drift(self):
+        result = classify_script_drift(
+            "The whitecaps marked the line.",
+            "The white caps marked the line.",
+        )
+
+        self.assertEqual(result.status, "exact_match")
+        self.assertEqual(result.gate_status, "pass")
+
     def test_frogspawn_spelling_variants_do_not_create_drift(self):
         result = classify_script_drift(
             "Don't collect frogs or frogspawn from the wild.",

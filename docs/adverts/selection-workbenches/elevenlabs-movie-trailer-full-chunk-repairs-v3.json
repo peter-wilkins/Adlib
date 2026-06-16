@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "movie_trailer_full_chunk_repairs_3",
+  "scriptVersion": "full-chunk-repairs-v3",
+  "campaign": "movie-trailer-full-chunks-20260616",
+  "productTruth": [
+    "docs/product-truths/2026-06-02-jobdone.md",
+    "docs/product-truths/2026-06-02-phone-control-surface.md",
+    "docs/product-truths/2026-06-02-continuum-kit-sharing.md",
+    "docs/product-truths/2026-06-02-jury-rigged-video-creation.md",
+    "docs/product-truths/2026-06-02-audio-advert-generator.md",
+    "docs/adverts/selection-workbenches/movie-trailer-storybook-voice-decisions-20260616.md"
+  ],
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Third repair pass for JobDone chunk 05 after the phrase our Gary was transcribed as R. Garry.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "john_dry_comic": {
+      "voiceId": "7rQX8r6PVq3gfJ8rZzyE",
+      "voiceName": "John of the North",
+      "role": "Selected JobDone poetic comic narrator; dry northern practical humour",
+      "defaultSettings": {
+        "stability": 0.28,
+        "similarity_boost": 0.84,
+        "style": 0.64,
+        "speed": 0.94,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "jobdone-gary-great-leak_chunk_05_repair_3",
+      "takeSlug": "full_trailer_chunk_repair_3",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jobdone-gary-great-leak/repairs",
+      "text": "Next time the leak returned with wicked grin, the plumber tapped Recall, and looked within. The source came back, not guesswork in disguise: the fitting size, the note, the warning signs. He brought the history in his hand, and made the water bend to his command. No invoice trick. No legal claw. Just grounded memory for the jobs he saw.",
+      "voiceProfiles": [
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_full_chunk_repair",
+      "title": "JobDone - Gary And The Great Leak - chunk 05 repair 3"
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "movie_trailer_full_chunks",
+  "scriptVersion": "full-chunks-v1",
+  "campaign": "movie-trailer-full-chunks-20260616",
+  "productTruth": [
+    "docs/product-truths/2026-06-02-jobdone.md",
+    "docs/product-truths/2026-06-02-phone-control-surface.md",
+    "docs/product-truths/2026-06-02-continuum-kit-sharing.md",
+    "docs/product-truths/2026-06-02-jury-rigged-video-creation.md",
+    "docs/product-truths/2026-06-02-audio-advert-generator.md",
+    "docs/adverts/selection-workbenches/movie-trailer-storybook-voice-decisions-20260616.md"
+  ],
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter asked on 2026-06-16 to create all selected movie trailers in full. This manifest uses the documented production cast and chunks each full script into reusable story beats for later video editing.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "john_dry_comic": {
+      "voiceId": "7rQX8r6PVq3gfJ8rZzyE",
+      "voiceName": "John of the North",
+      "role": "Selected JobDone poetic comic narrator; dry northern practical humour",
+      "defaultSettings": {
+        "stability": 0.28,
+        "similarity_boost": 0.84,
+        "style": 0.64,
+        "speed": 0.94,
+        "use_speaker_boost": true
+      }
+    },
+    "imogen_storyteller": {
+      "voiceId": "jv41DhCf464zw0TI7I1w",
+      "voiceName": "Imogen - Warm & Professional British Storyteller",
+      "role": "Selected Field Relay poetic storybook narrator",
+      "defaultSettings": {
+        "stability": 0.42,
+        "similarity_boost": 0.82,
+        "style": 0.42,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      }
+    },
+    "alice_educator_story": {
+      "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
+      "voiceName": "Alice - Clear, Engaging Educator",
+      "role": "Selected AI Developer School and Continuum storybook narrator",
+      "defaultSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.82,
+        "style": 0.3,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      }
+    },
+    "george_storyteller": {
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "voiceName": "George - Warm, Captivating Storyteller",
+      "role": "Selected AdLib poetic storybook narrator",
+      "defaultSettings": {
+        "stability": 0.36,
+        "similarity_boost": 0.82,
+        "style": 0.5,
+        "speed": 0.94,
+        "use_speaker_boost": true
+      }
+    },
+    "pirate_marshal": {
+      "voiceId": "PPzYpIqttlTYA83688JI",
+      "voiceName": "Pirate Marshal",
+      "role": "Selected Jury Rigged and Downwind comic nautical narrator",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.82,
+        "style": 0.64,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "jobdone-gary-great-leak_chunk_01",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jobdone-gary-great-leak/chunks",
+      "text": "In dawn's cold hush, when pipes began to cry, brave Gary raised his wrench against the sky. The street below lay shining, wide, and wet; the tenants watched with faces full of fret. He found the valve, he stemmed the silver flood, then patched the joint with tape and honest mud. The boiler sighed, the cupboard ceased to rain, and all the flats were peaceful once again.",
+      "voiceProfiles": [
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "JobDone - Gary And The Great Leak - chunk 01"
+    },
+    {
+      "assetId": "jobdone-gary-great-leak_chunk_02",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jobdone-gary-great-leak/chunks",
+      "text": "They cheered his name from stair and kitchen door; no plumber there had seemed so wise before. But time, that thief, came creeping through the lane, and brought the selfsame leak to life again. Poor Gary stared where once his triumph stood; he knew he fixed it, but not how he could. Was that the bend behind the second wall? Was Mrs Green the tenant he should call?",
+      "voiceProfiles": [
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "JobDone - Gary And The Great Leak - chunk 02"
+    },
+    {
+      "assetId": "jobdone-gary-great-leak_chunk_03",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jobdone-gary-great-leak/chunks",
+      "text": "Which part had split? Which washer had he used? Which stopcock stuck? Which note had he refused? His photos slept in chats from long ago; his voice notes mumbled things he could not know. His memory, once mighty, brave, and bright, went clanking down the drain that rainy night. Then, from the phone that shivered in his hand, a hum arose, as calm as solid land.",
+      "voiceProfiles": [
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "JobDone - Gary And The Great Leak - chunk 03"
+    },
+    {
+      "assetId": "jobdone-gary-great-leak_chunk_04",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jobdone-gary-great-leak/chunks",
+      "text": "JobDone appeared: not magic, smoke, or flame, but one clear place to keep the job by name. He spoke the facts while boots were still on floor; what failed, what changed, who owned the cellar door. He checked the words, confirmed the proper place, and sealed the entry in its rightful space. The Timeline held what Gary could not hold; the Contact, Location, date, and story told.",
+      "voiceProfiles": [
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "JobDone - Gary And The Great Leak - chunk 04"
+    },
+    {
+      "assetId": "jobdone-gary-great-leak_chunk_05",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jobdone-gary-great-leak/chunks",
+      "text": "Next time the leak returned with wicked grin, our Gary tapped Recall, and looked within. The source came back, not guesswork in disguise: the fitting size, the note, the warning signs. He walked in sure, with history in his hand, and made the water bend to his command. No invoice spell, no chatbot dressed as law; just grounded memory for the jobs he saw.",
+      "voiceProfiles": [
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "JobDone - Gary And The Great Leak - chunk 05"
+    },
+    {
+      "assetId": "jobdone-gary-great-leak_chunk_06",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jobdone-gary-great-leak/chunks",
+      "text": "Capture the work, confirm the truth you know, then ask the past which way the pipes should go. So Gary smiled, his boots no longer blue; he fixed the leak, and knew what he must do. JobDone remembers what the work has shown. Go to jobdone.continuumkit.org.",
+      "voiceProfiles": [
+        "john_dry_comic"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jobdone-gary-great-leak-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "JobDone - Gary And The Great Leak - chunk 06"
+    },
+    {
+      "assetId": "fieldrelay-mara-busy-hands_chunk_01",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/fieldrelay-mara-busy-hands/chunks",
+      "text": "Where signal fades and weather writes the day, young Mara worked where screens got in the way. Her gloves were wet, her notebook blown and torn; her list was gone before the second horn. The gate was loose, the pump had coughed at three, the cracked old fitting hid behind a tree. A sailor called, a farmer waved her near, a warning note dissolved before her ear.",
+      "voiceProfiles": [
+        "imogen_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#fieldrelay-mara-busy-hands-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Field Relay - Mara And The Busy Hands - chunk 01"
+    },
+    {
+      "assetId": "fieldrelay-mara-busy-hands_chunk_02",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/fieldrelay-mara-busy-hands/chunks",
+      "text": "She had two hands, but five small fires to tend; she had one phone, but could not stop and bend. The world kept asking, now, before, and next; her thumbs were cold, her tired eyes were vexed. At dusk she found, beneath a dripping coat, the ghost of every half-remembered note. What field was that? Which tool was left behind? Which job belonged to which half-busy mind?",
+      "voiceProfiles": [
+        "imogen_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#fieldrelay-mara-busy-hands-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Field Relay - Mara And The Busy Hands - chunk 02"
+    },
+    {
+      "assetId": "fieldrelay-mara-busy-hands_chunk_03",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/fieldrelay-mara-busy-hands/chunks",
+      "text": "Then Field Relay came softly through the rain, a field computer fitted for the plain. Not always hearing, not a hidden spy; just ready when a busy voice says why. She spoke the note while holding fast the gate; she logged the place before the thought was late. She called the checklist, marked the broken part, and sent the job toward her waiting chart.",
+      "voiceProfiles": [
+        "imogen_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#fieldrelay-mara-busy-hands-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Field Relay - Mara And The Busy Hands - chunk 03"
+    },
+    {
+      "assetId": "fieldrelay-mara-busy-hands_chunk_04",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/fieldrelay-mara-busy-hands/chunks",
+      "text": "A tricorder, but built for mud and rope; a command line dressed in weatherproof hope. Bring your own agent, teach your own command; build tools that fit the work beneath your hand. The pump was fixed, the field report was clear; the sailor found the kit she left last year. The phone became no tyrant in her palm, but one small relay, useful, quick, and calm.",
+      "voiceProfiles": [
+        "imogen_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#fieldrelay-mara-busy-hands-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Field Relay - Mara And The Busy Hands - chunk 04"
+    },
+    {
+      "assetId": "fieldrelay-mara-busy-hands_chunk_05",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/fieldrelay-mara-busy-hands/chunks",
+      "text": "For eyes on work and hands that cannot pause, for muddy boots and practical causes: Field Relay waits where ordinary screens cannot keep up with what the fieldwork means. Part of the Continuum family. Go to fieldrelay.continuumkit.org.",
+      "voiceProfiles": [
+        "imogen_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#fieldrelay-mara-busy-hands-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Field Relay - Mara And The Busy Hands - chunk 05"
+    },
+    {
+      "assetId": "ai-school-ava-human-language_chunk_01",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/ai-school-ava-human-language/chunks",
+      "text": "Ava had plans that filled a bedroom wall; bright cards and arrows, stacked above them all. She knew the buyer, pain, and price by heart, yet every build attempt fell apart. The code looked strange, the tools changed every day; the demos died in tabs along the way. She asked a model, watched it nod and spin, then lost the thread before the work began.",
+      "voiceProfiles": [
+        "alice_educator_story"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#ai-school-ava-human-language-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "AI Developer School - Ava Learns The New Language - chunk 01"
+    },
+    {
+      "assetId": "ai-school-ava-human-language_chunk_02",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/ai-school-ava-human-language/chunks",
+      "text": "The dream was clear; the method would not land. She needed more than wishes in her hand. Then one line struck like morning through the glass: the new programming language is human language. Not vague desire, not prompts that beg and plead; but sharp intent, good taste, and tested need. She learned to name the truth before the sell, to brief the agent, then inspect it well.",
+      "voiceProfiles": [
+        "alice_educator_story"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#ai-school-ava-human-language-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "AI Developer School - Ava Learns The New Language - chunk 02"
+    },
+    {
+      "assetId": "ai-school-ava-human-language_chunk_03",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/ai-school-ava-human-language/chunks",
+      "text": "She made small loops where feedback could reply, and killed weak claims before they learned to fly. She wrote the advert, built the rough first screen, then asked what proof would make the meaning clean. No magic throne, no genius in a jar; just better steering by a clearer star. The agents worked when Ava set the frame; the product found a shape, a price, a name.",
+      "voiceProfiles": [
+        "alice_educator_story"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#ai-school-ava-human-language-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "AI Developer School - Ava Learns The New Language - chunk 03"
+    },
+    {
+      "assetId": "ai-school-ava-human-language_chunk_04",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/ai-school-ava-human-language/chunks",
+      "text": "Her first rough demo limped, but it was real; her first crude advert showed what people feel. She shipped before the energy was gone, then shaped the next attempt from what was shown. For founders lost between idea and code, for clever minds that need a shorter road: Learn product truth, learn prompts that hold their spine; learn when to trust, and when to draw the line.",
+      "voiceProfiles": [
+        "alice_educator_story"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#ai-school-ava-human-language-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "AI Developer School - Ava Learns The New Language - chunk 04"
+    },
+    {
+      "assetId": "ai-school-ava-human-language_chunk_05",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/ai-school-ava-human-language/chunks",
+      "text": "Wrangle the agents. Build the business. Part of the Continuum family. Go to school.continuumkit.org.",
+      "voiceProfiles": [
+        "alice_educator_story"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#ai-school-ava-human-language-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "AI Developer School - Ava Learns The New Language - chunk 05"
+    },
+    {
+      "assetId": "continuum-nora-thread_chunk_01",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/continuum-nora-thread/chunks",
+      "text": "Nora could see ten bridges in one spark; then lose the map by morning in the dark. Her mind made storms where other minds made lists; bright links appeared, then vanished into mist. A note began; another stole the page. A thought grew wings before it found a cage. The inbox filled with fragments, names, and starts; her greatest plans were scattered into parts.",
+      "voiceProfiles": [
+        "alice_educator_story"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#continuum-nora-brain-sieve-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Continuum - Nora Finds The Thread - chunk 01"
+    },
+    {
+      "assetId": "continuum-nora-thread_chunk_02",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/continuum-nora-thread/chunks",
+      "text": "They called it chaos. She called it a day. The thread was there, then always slipped away. She did not need a louder self-help bell, or one more box where good intentions fell. She needed paths from capture back to why, a way to tell the work: you did not die. Then Continuum came quiet, spare, and plain; not one more brain, but rails to find the train.",
+      "voiceProfiles": [
+        "alice_educator_story"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#continuum-nora-brain-sieve-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Continuum - Nora Finds The Thread - chunk 02"
+    },
+    {
+      "assetId": "continuum-nora-thread_chunk_03",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/continuum-nora-thread/chunks",
+      "text": "A private loop, made public-safe with care, where agents find the context waiting there. The capture held the spark that crossed her mind; the status showed what mattered, not the grind. Decisions sat where future work could see; next actions stopped pretending to be free. The storm still came; no system made it small. But now the thread could answer when she'd call.",
+      "voiceProfiles": [
+        "alice_educator_story"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#continuum-nora-brain-sieve-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Continuum - Nora Finds The Thread - chunk 03"
+    },
+    {
+      "assetId": "continuum-nora-thread_chunk_04",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/continuum-nora-thread/chunks",
+      "text": "No finished kit in one triumphant click; real workflows grow from what is true and thick. For people rich in thought and poor in shelves, who need a way to work with future selves: Capture the thread. Recover the context. Keep moving when the old trail is lost. Continuum Kit. Go to continuumkit.org.",
+      "voiceProfiles": [
+        "alice_educator_story"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#continuum-nora-brain-sieve-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Continuum - Nora Finds The Thread - chunk 04"
+    },
+    {
+      "assetId": "jury-rigged-barnaby-boat_chunk_01",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jury-rigged-barnaby-boat/chunks",
+      "text": "Barnaby dreamed of glory on the tide; his crew brought tape, a bucket, and their pride. The task was clear: cross water, ring the bell. The plan, however, did not age so well. One team found rope beneath a picnic chair; one swapped a sail for half a garden stair. The clever parts were hidden in plain sight; the rules were fair, the methods less polite.",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jury-rigged-barnaby-boat-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Jury Rigged - Barnaby And The Questionable Boat - chunk 01"
+    },
+    {
+      "assetId": "jury-rigged-barnaby-boat_chunk_02",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jury-rigged-barnaby-boat/chunks",
+      "text": "A head start waited where the puzzles lay; a pulley prize could change the final day. But chaos hates a camera with a plan; it eats the shot before the shot began. Who has the score? Which team may take the mast? What safety line was checked before they passed? Then Jury Rigged appeared beside the quay, a concept built for making mayhem see.",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jury-rigged-barnaby-boat-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Jury Rigged - Barnaby And The Questionable Boat - chunk 02"
+    },
+    {
+      "assetId": "jury-rigged-barnaby-boat_chunk_03",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jury-rigged-barnaby-boat/chunks",
+      "text": "It shaped the game before the shouting rose: the run sheet, scoring, limits, shots, and close. It marked the beats a later edit needs, the hidden tools, the wins, the almost-deeds. No promise here of magic finished shows; just planned disorder, tied with better bows. The final race began with fiddle fire; the bucket sank, the staircase drifted higher.",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jury-rigged-barnaby-boat-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Jury Rigged - Barnaby And The Questionable Boat - chunk 03"
+    },
+    {
+      "assetId": "jury-rigged-barnaby-boat_chunk_04",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jury-rigged-barnaby-boat/chunks",
+      "text": "Barnaby laughed, then found the winning clue: the boring checklist saved the daft canoe. The bell was rung, the splash was seen again; the story held the shape inside the rain. For creators chasing glorious mistakes, for games where every plank and pulley shakes: Design the puzzle. Capture the best moments. Make the mayhem watchable.",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jury-rigged-barnaby-boat-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Jury Rigged - Barnaby And The Questionable Boat - chunk 04"
+    },
+    {
+      "assetId": "jury-rigged-barnaby-boat_chunk_05",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/jury-rigged-barnaby-boat/chunks",
+      "text": "Jury Rigged. Part of the Continuum family. Go to juryrigged.continuumkit.org.",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jury-rigged-barnaby-boat-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Jury Rigged - Barnaby And The Questionable Boat - chunk 05"
+    },
+    {
+      "assetId": "adlib-sam-silent-product_chunk_01",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/adlib-sam-silent-product/chunks",
+      "text": "Sam built a thing with purpose, care, and proof; the docs were sound, the pitch stayed on the roof. The homepage sighed. The bullet points were dry. The product lived, but no one knew quite why. He tried a slogan, polished it with fear; it sounded grand, and meant less every year. He tried a studio quote beyond his means; he tried to edit words between machines.",
+      "voiceProfiles": [
+        "george_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#adlib-sam-empty-docs-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "AdLib - Sam And The Silent Product - chunk 01"
+    },
+    {
+      "assetId": "adlib-sam-silent-product_chunk_02",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/adlib-sam-silent-product/chunks",
+      "text": "The message hid beneath the clever clay; the buyer shrugged and slowly clicked away. Then AdLib opened, practical and small, and asked what truth must stand before them all. No claims that run ahead of what is built; no golden fog, no borrowed pools of guilt. The docs became a script that he could hear; the weak line cracked, the strong line sounded clear.",
+      "voiceProfiles": [
+        "george_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#adlib-sam-empty-docs-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "AdLib - Sam And The Silent Product - chunk 02"
+    },
+    {
+      "assetId": "adlib-sam-silent-product_chunk_03",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/adlib-sam-silent-product/chunks",
+      "text": "A rough voice read the offer back in time; a second take made tangled meaning rhyme. The clips were saved with titles, tags, and source; so later work could find the proper course. Not final gloss, not studio-perfect art; but fast enough to test the buyer's heart. The advert spoke. The silence lost its throne. Sam heard the message working on its own.",
+      "voiceProfiles": [
+        "george_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#adlib-sam-empty-docs-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "AdLib - Sam And The Silent Product - chunk 03"
+    },
+    {
+      "assetId": "adlib-sam-silent-product_chunk_04",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/adlib-sam-silent-product/chunks",
+      "text": "For builders rich in notes and short on sound, for products waiting still to be found: Turn docs to audio advert. Share the draft. Hear what lands, then sharpen up the craft. AdLib. Docs to audio advert. Part of the Continuum family. Go to adlib.continuumkit.org.",
+      "voiceProfiles": [
+        "george_storyteller"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#adlib-sam-empty-docs-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "AdLib - Sam And The Silent Product - chunk 04"
+    },
+    {
+      "assetId": "downwind-tom-long-run_chunk_01",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/downwind-tom-long-run/chunks",
+      "text": "Tom saw the whitecaps marching down the bay; the wind had teeth and called him out to play. The foil rose clean, the shoreline dropped behind; the board began to read the moving mind. But later, when the triumph hit the screen, the ride looked flat, and none knew what had been. The speed was gone, the effort had no face; the clever line dissolved without a trace.",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#downwind-tom-gust-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Downwind - Tom And The Long Run - chunk 01"
+    },
+    {
+      "assetId": "downwind-tom-long-run_chunk_02",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/downwind-tom-long-run/chunks",
+      "text": "Where was the gust? Which glide had held the run? Which fall was foolish? Which was almost fun? Then Downwind found a shape inside the spray: not just a ride, but story made from day. The logo flashed, the wave became a door; the overlay gave numbers to the roar. A crash sting laughed, then yielded to the pace; a map line drew the courage of the chase.",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#downwind-tom-gust-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Downwind - Tom And The Long Run - chunk 02"
+    },
+    {
+      "assetId": "downwind-tom-long-run_chunk_03",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/downwind-tom-long-run/chunks",
+      "text": "The little fills kept breath between the scenes; the stats made visible what water means. No heavy speech to drown the sea and sky; just enough voice to tell the viewer why. Tom carved the swell, then vanished in the foam; the edit brought the whole wild crossing home. For channel stings and technical speed lore, for expeditions asking to be more:",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#downwind-tom-gust-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Downwind - Tom And The Long Run - chunk 03"
+    },
+    {
+      "assetId": "downwind-tom-long-run_chunk_04",
+      "takeSlug": "full_trailer_chunk",
+      "speaker": "storybook_narrator",
+      "folder": "voice/movie-trailers/full/downwind-tom-long-run/chunks",
+      "text": "Let the water speak, then frame the flight. Make the long run visible tonight. Downwind. Go to downwind.continuumkit.org.",
+      "voiceProfiles": [
+        "pirate_marshal"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#downwind-tom-gust-trailer-150",
+      "assetKind": "movie_trailer_full_chunk",
+      "title": "Downwind - Tom And The Long Run - chunk 04"
+    }
+  ]
+}

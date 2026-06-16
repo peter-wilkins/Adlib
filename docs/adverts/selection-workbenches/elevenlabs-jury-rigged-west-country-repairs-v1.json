@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "workflow-manager.audio-advert.elevenlabs-voice-lines.v1",
+  "scriptId": "jury_rigged_west_country_voice_repairs",
+  "scriptVersion": "west-country-repairs-v1",
+  "campaign": "jury-rigged-west-country-auditions-20260616",
+  "productTruth": "docs/product-truths/2026-06-02-jury-rigged-video-creation.md",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Repair pass for Davy and Pirate Marshal after the first West Country / pirate audition batch failed strict word matching on the opening phrase.",
+  "endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
+  "modelId": "eleven_multilingual_v2",
+  "outputFormat": "mp3_44100_128",
+  "voiceProfiles": {
+    "pirate_marshal": {
+      "voiceId": "PPzYpIqttlTYA83688JI",
+      "voiceName": "Pirate Marshal",
+      "role": "Lighter British pirate character option after Captain Blackbeard was rejected",
+      "defaultSettings": {
+        "stability": 0.32,
+        "similarity_boost": 0.82,
+        "style": 0.68,
+        "speed": 0.96,
+        "use_speaker_boost": true
+      }
+    },
+    "davy_sailor": {
+      "voiceId": "Myn1LuZgd2qPMOg9BNtC",
+      "voiceName": "Davy - Deep, Friendly and Round",
+      "role": "Friendly British sailor/story voice; nautical without full pantomime pirate",
+      "defaultSettings": {
+        "stability": 0.34,
+        "similarity_boost": 0.82,
+        "style": 0.58,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      }
+    }
+  },
+  "takes": [
+    {
+      "assetId": "jury_rigged_barnaby_west_country_excerpt_repair",
+      "takeSlug": "clearer_opening",
+      "speaker": "storybook_narrator",
+      "folder": "voice/jury-rigged/west-country-auditions",
+      "text": "Barnaby longed for glory on the tide; his crew brought tape, a bucket, and their pride. The task was plain: sail out and ring the bell. The plan, however, did not age so well. Then came the show beside the dock, and gave the mayhem rhythm, rules, and clock.",
+      "voiceProfiles": [
+        "pirate_marshal",
+        "davy_sailor"
+      ],
+      "sourceDraft": "docs/adverts/selection-workbenches/2026-06-16-movie-trailer-candidates.json#jury-rigged-barnaby-boat-trailer-150",
+      "assetKind": "movie_trailer_voice_audition",
+      "title": "Jury Rigged Barnaby Boat - West Country Pirate Repair"
+    }
+  ]
+}

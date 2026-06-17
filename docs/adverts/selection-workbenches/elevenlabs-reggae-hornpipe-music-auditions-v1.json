@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "adlib.elevenlabs-music-auditions.v1",
+  "scriptId": "reggae_hornpipe_music_auditions",
+  "scriptVersion": "v1",
+  "campaign": "reggae-hornpipe-music-auditions-20260617",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter asked on 2026-06-17 to ask ElevenLabs for reggae hornpipe fusion music clips.",
+  "endpoint": "https://api.elevenlabs.io/v1/music",
+  "modelId": "music_v2",
+  "outputFormat": "mp3_44100_128",
+  "forceInstrumental": true,
+  "takes": [
+    {
+      "assetId": "reggae-hornpipe-skank-jig-20",
+      "title": "Reggae Hornpipe - Skank Jig",
+      "project": "Jury Rigged / Downwind",
+      "assetKind": "music_audition",
+      "folder": "music/reggae-hornpipe-auditions",
+      "musicLengthMs": 20000,
+      "prompt": "Instrumental 20 second reggae hornpipe fusion cue. Laid-back one-drop reggae drums and offbeat guitar skank under a fast nautical hornpipe fiddle melody. Concertina answers the fiddle, warm reggae bass line, rim clicks, hand percussion, tiny ship bell accents, playful pirate deck energy. Bright, funny, summery, catchy, suitable for a sea-sport challenge show or comic sailing bumper. Clear hook in the first four seconds, clean button ending. No vocals, no lyrics, no direct imitation of any existing song."
+    },
+    {
+      "assetId": "reggae-hornpipe-dub-pirate-20",
+      "title": "Reggae Hornpipe - Dub Pirate",
+      "project": "Jury Rigged",
+      "assetKind": "music_audition",
+      "folder": "music/reggae-hornpipe-auditions",
+      "musicLengthMs": 20000,
+      "prompt": "Instrumental 20 second dub reggae pirate hornpipe. Deep warm reggae bass, relaxed offbeat guitar, spring reverb snare, tape echo accents, then a cheeky fiddle and concertina hornpipe tune dancing over the groove. Nautical but not dark: ship bell, wooden deck percussion, little splash cymbals, comic adventure feel. Make it weird enough to be memorable but clean enough for a YouTube sting. No vocals, no lyrics, no direct imitation of any existing song."
+    },
+    {
+      "assetId": "reggae-hornpipe-race-bumper-20",
+      "title": "Reggae Hornpipe - Race Bumper",
+      "project": "Downwind / Jury Rigged",
+      "assetKind": "music_audition",
+      "folder": "music/reggae-hornpipe-auditions",
+      "musicLengthMs": 20000,
+      "prompt": "Instrumental 20 second logo and race bumper blending reggae groove with nautical hornpipe. Start immediately with a bright fiddle hornpipe hook, then drop into sunny reggae skank guitar, bouncy bass, light steel pan color, concertina, snare rimshot, deck stomp, and buoy bell. Energetic but not frantic, funny pirate-water-sports mood, useful before a challenge, crash montage, or downwind stats overlay. Strong branded final sting. No vocals, no lyrics, no direct imitation of any existing song."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "adlib.elevenlabs-music-auditions.v1",
+  "scriptId": "arcade_hornpipe_music_auditions",
+  "scriptVersion": "v1",
+  "campaign": "arcade-hornpipe-music-auditions-20260617",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter asked on 2026-06-17 to create three ElevenLabs music clips crossing bright arcade kart-race energy with hornpipe / nautical pirate music. Prompts avoid named game soundtrack references.",
+  "endpoint": "https://api.elevenlabs.io/v1/music",
+  "modelId": "music_v2",
+  "outputFormat": "mp3_44100_128",
+  "forceInstrumental": true,
+  "takes": [
+    {
+      "assetId": "arcade-hornpipe-race-start-18",
+      "title": "Arcade Hornpipe - Race Start",
+      "project": "Jury Rigged / Downwind",
+      "assetKind": "music_audition",
+      "folder": "music/arcade-hornpipe-auditions",
+      "musicLengthMs": 18000,
+      "prompt": "Instrumental 18 second music cue for a funny nautical racing show. Bright bouncy arcade kart-race energy, fast 6/8 hornpipe rhythm, fiddle and concertina lead, pizzicato strings, tuba bounce, hand claps, snare rolls, splashy cymbal hits, tiny ship bell. Starts with a quick race countdown feel, drives forward with comic momentum, finishes with a clean button ending for a logo. No vocals, no lyrics, no direct imitation of any existing game soundtrack."
+    },
+    {
+      "assetId": "arcade-hornpipe-pirate-gameshow-18",
+      "title": "Arcade Hornpipe - Pirate Game Show",
+      "project": "Jury Rigged",
+      "assetKind": "music_audition",
+      "folder": "music/arcade-hornpipe-auditions",
+      "musicLengthMs": 18000,
+      "prompt": "Instrumental 18 second theme for a chaotic pirate game show at sea. Nautical hornpipe and jig, fiddle, accordion, penny whistle, stomping deck percussion, comic brass stabs, playful arcade racing synth bass underneath, energetic but friendly. Make it feel like contestants are about to do a ridiculous boat challenge. Strong memorable hook in the first four seconds, loopable middle, crisp final hit. No vocals, no lyrics, no direct imitation of any existing game soundtrack."
+    },
+    {
+      "assetId": "arcade-hornpipe-wave-logo-sting-18",
+      "title": "Arcade Hornpipe - Wave Logo Sting",
+      "project": "Downwind",
+      "assetKind": "music_audition",
+      "folder": "music/arcade-hornpipe-auditions",
+      "musicLengthMs": 18000,
+      "prompt": "Instrumental 18 second logo sting for fast water-sports videos. Upbeat arcade racing pulse blended with nautical hornpipe melody, fiddle and bright synth marimba, buoy bell accents, rolling toms like waves, splashy transition hits, quick rising glissando like a logo spin and flash. Sporty, funny, technical, clean enough to sit under speed overlays. End with a sharp branded sting. No vocals, no lyrics, no direct imitation of any existing game soundtrack."
+    }
+  ]
+}

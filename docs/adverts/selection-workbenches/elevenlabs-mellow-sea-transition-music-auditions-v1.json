@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "adlib.elevenlabs-music-auditions.v1",
+  "scriptId": "mellow_sea_transition_music_auditions",
+  "scriptVersion": "v1",
+  "campaign": "mellow-sea-transition-music-auditions-20260618",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter asked on 2026-06-18 for mellower transition music: Hawaiian slide guitar hornpipe fusion, and single fiddle playing something slow and beautiful about the sea.",
+  "endpoint": "https://api.elevenlabs.io/v1/music",
+  "modelId": "music_v2",
+  "outputFormat": "mp3_44100_128",
+  "forceInstrumental": true,
+  "takes": [
+    {
+      "assetId": "hawaiian-slide-hornpipe-tide-turn-16",
+      "title": "Hawaiian Slide Hornpipe - Tide Turn",
+      "project": "Downwind / Jury Rigged",
+      "assetKind": "music_transition_audition",
+      "folder": "music/mellow-sea-transition-auditions",
+      "musicLengthMs": 16000,
+      "prompt": "Instrumental 16 second mellow transition cue. Hawaiian lap steel slide guitar plays a gentle sea melody, lightly fused with a slow nautical hornpipe rhythm. Warm ukulele pulse, soft upright bass, brushed snare, distant ship bell, subtle ocean shimmer. Relaxed, sunlit, coastal, good for moving from one scene to the next in a water-sports or sailing video. Beautiful but still a little playful. Clean soft ending. No vocals, no lyrics, no direct imitation of any existing song."
+    },
+    {
+      "assetId": "hawaiian-slide-hornpipe-sunset-harbour-16",
+      "title": "Hawaiian Slide Hornpipe - Sunset Harbour",
+      "project": "Downwind / Jury Rigged",
+      "assetKind": "music_transition_audition",
+      "folder": "music/mellow-sea-transition-auditions",
+      "musicLengthMs": 16000,
+      "prompt": "Instrumental 16 second mellow Hawaiian slide guitar and hornpipe fusion for a transition. Slow lap steel swells, soft concertina undertone, gentle fiddle harmony, ukulele offbeats, brushed percussion, warm bass, tiny buoy bell. The hornpipe influence should be graceful and maritime, not frantic. Dreamy sunset harbour mood, calm water, a small smile, useful under travel footage or a quiet setup before the next challenge. No vocals, no lyrics, no direct imitation of any existing song."
+    },
+    {
+      "assetId": "solo-fiddle-sea-lament-16",
+      "title": "Solo Fiddle - Sea Lament",
+      "project": "Downwind / Jury Rigged",
+      "assetKind": "music_transition_audition",
+      "folder": "music/mellow-sea-transition-auditions",
+      "musicLengthMs": 16000,
+      "prompt": "Instrumental 16 second solo fiddle transition. A single fiddle only, no backing band, playing a slow beautiful melody about the sea. Sparse, human, slightly Celtic, wistful but not sad, like looking over calm water after a long crossing. Use natural bowing, gentle phrasing, a few ornamented notes, plenty of space between phrases, and a soft unresolved ending that can lead into the next scene. No vocals, no lyrics, no direct imitation of any existing song."
+    },
+    {
+      "assetId": "solo-fiddle-slow-horizon-16",
+      "title": "Solo Fiddle - Slow Horizon",
+      "project": "Downwind / Jury Rigged",
+      "assetKind": "music_transition_audition",
+      "folder": "music/mellow-sea-transition-auditions",
+      "musicLengthMs": 16000,
+      "prompt": "Instrumental 16 second solo fiddle cue for a quiet sea transition. One fiddle, intimate and close, playing a slow graceful maritime air with a faint hornpipe ancestry in the turns of the melody. Beautiful, reflective, open horizon, salt air, gentle tide. No rhythm section, no pads, no percussion, no extra instruments. Leave breathing room so narration or wave sound could sit around it. No vocals, no lyrics, no direct imitation of any existing song."
+    }
+  ]
+}

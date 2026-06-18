@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "adlib.elevenlabs-music-auditions.v1",
+  "scriptId": "accordion_banjo_hornpipe_music_auditions",
+  "scriptVersion": "v1",
+  "campaign": "accordion-banjo-hornpipe-music-auditions-20260618",
+  "approvedForPaidGeneration": true,
+  "approvalNote": "Peter asked on 2026-06-18 for French accordion jigs and deep south banjo / hornpipe fusion music clips.",
+  "endpoint": "https://api.elevenlabs.io/v1/music",
+  "modelId": "music_v2",
+  "outputFormat": "mp3_44100_128",
+  "forceInstrumental": true,
+  "takes": [
+    {
+      "assetId": "french-accordion-hornpipe-cafe-jig-20",
+      "title": "French Accordion Hornpipe - Cafe Jig",
+      "project": "Jury Rigged / Downwind",
+      "assetKind": "music_audition",
+      "folder": "music/accordion-banjo-hornpipe-auditions",
+      "musicLengthMs": 20000,
+      "prompt": "Instrumental 20 second French accordion jig fused with nautical hornpipe. Musette accordion leads a bright 6/8 jig melody, fiddle answers, light upright bass, brushed snare, hand claps, tiny ship bell, sunny street-cafe charm with comic pirate deck energy. Playful, nimble, catchy, useful for a funny sea challenge show or sailing bumper. Clear hook in the first four seconds, clean branded button ending. No vocals, no lyrics, no direct imitation of any existing song."
+    },
+    {
+      "assetId": "french-accordion-hornpipe-pirate-bal-20",
+      "title": "French Accordion Hornpipe - Pirate Bal",
+      "project": "Jury Rigged",
+      "assetKind": "music_audition",
+      "folder": "music/accordion-banjo-hornpipe-auditions",
+      "musicLengthMs": 20000,
+      "prompt": "Instrumental 20 second comic pirate bal-musette hornpipe. French accordion and concertina trade a fast hornpipe tune, fiddle doubles the hook, walking bass, brushed drums, wooden deck stomps, claps, buoy bell, and a little brass oom-pah for bounce. It should sound like a ridiculous harbour tavern race is about to begin: lively, warm, funny, nautical, not dark. Crisp final hit for logo use. No vocals, no lyrics, no direct imitation of any existing song."
+    },
+    {
+      "assetId": "french-accordion-hornpipe-wave-waltz-jig-20",
+      "title": "French Accordion Hornpipe - Wave Jig",
+      "project": "Downwind",
+      "assetKind": "music_audition",
+      "folder": "music/accordion-banjo-hornpipe-auditions",
+      "musicLengthMs": 20000,
+      "prompt": "Instrumental 20 second French accordion sea-sport jig. Start immediately with a charming musette accordion hook, then add hornpipe fiddle, brushed percussion, upright bass, splash cymbals, ship bell accents, and light racing pulse. Breezy, comic, coastal, slightly romantic but still energetic enough for downwind water-sports overlays or challenge stings. Strong final logo sting. No vocals, no lyrics, no direct imitation of any existing song."
+    },
+    {
+      "assetId": "banjo-hornpipe-bayou-deck-race-20",
+      "title": "Banjo Hornpipe - Bayou Deck Race",
+      "project": "Jury Rigged / Downwind",
+      "assetKind": "music_audition",
+      "folder": "music/accordion-banjo-hornpipe-auditions",
+      "musicLengthMs": 20000,
+      "prompt": "Instrumental 20 second deep south banjo and nautical hornpipe fusion. Fast clawhammer banjo drives a 6/8 hornpipe jig, fiddle answers, resonator guitar chops, upright bass slap, washboard percussion, stomped wooden deck rhythm, ship bell, splash cymbal hits. Funny, propulsive, rustic, sunny, like a bayou boat race crossed with a pirate challenge show. Memorable hook in the first four seconds and a clean final button ending. No vocals, no lyrics, no direct imitation of any existing song."
+    },
+    {
+      "assetId": "banjo-hornpipe-swamp-pirate-jig-20",
+      "title": "Banjo Hornpipe - Swamp Pirate Jig",
+      "project": "Jury Rigged",
+      "assetKind": "music_audition",
+      "folder": "music/accordion-banjo-hornpipe-auditions",
+      "musicLengthMs": 20000,
+      "prompt": "Instrumental 20 second swampy pirate hornpipe with deep south banjo. Banjo and fiddle play a bright jig hook, concertina adds nautical colour, washboard and foot stomps keep a wooden deck groove, upright bass bounces, harmonica accents, little ship bell and rope creak details. Comic, catchy, muddy-boots adventure, not menacing. Use a strong edit-friendly ending for a TV-show sting. No vocals, no lyrics, no direct imitation of any existing song."
+    },
+    {
+      "assetId": "banjo-hornpipe-southern-race-bumper-20",
+      "title": "Banjo Hornpipe - Southern Race Bumper",
+      "project": "Downwind / Jury Rigged",
+      "assetKind": "music_audition",
+      "folder": "music/accordion-banjo-hornpipe-auditions",
+      "musicLengthMs": 20000,
+      "prompt": "Instrumental 20 second southern race bumper blending banjo, bluegrass fiddle, and nautical hornpipe. Snappy banjo roll, fiddle hornpipe melody, mandolin chop, upright bass, brushed snare, deck stomp, buoy bell, quick splash transitions. Energetic and funny for sea-sport clips, crash montages, or silly pirate challenge intros. Keep it bright and clean, with a hook that lands instantly and a sharp branded final sting. No vocals, no lyrics, no direct imitation of any existing song."
+    }
+  ]
+}
